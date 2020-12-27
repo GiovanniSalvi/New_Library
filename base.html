@@ -94,16 +94,22 @@
   <div class="container">
    <div class="row">
       <div class="nav-menu"><span>My Library</span>
-        <a href="home.html" class="btn btn-primary btn-lg " tabindex="-1" role="button" ><i class="fa fa-home" aria-hidden="true"></i></a>
+        <a href="#" class="btn btn-primary btn-lg " tabindex="-1" role="button" ><i class="fa fa-home" aria-hidden="true"></i></a>
       </div>
-   </div>
+      <div class="menu-list row">
+         <div class="col">Search</div>
+         <div class="col">Add Book</div>
+         <div class="col">Remove Book</div>
+         <div class="col">Register User</div>
+      </div>
+    </div>
   </div>
-  <main>
-      <section class="section-container">
+  <section>
+      <main class="section-container">
        {% block content %}
        {% endblock %}
-      </section>
-  </main>
+      </main>
+    </section>
 <footer class="container" id="footer">
         <!---social media bar-->
     <div class="icon-bar row">
