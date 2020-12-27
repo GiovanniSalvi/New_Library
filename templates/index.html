@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+
+    {% for BooksData in tasks %}
+        {{ BooksData.Title }}<br>
+        {{ BooksData.Author }}<br>
+        {{ BooksData.Genre }}<br>
+        {{ BooksData.Year }}<br>
+        {{ BooksData.Country }}<br>
+        {{ BooksData.Location }}<br>
+        {{ BooksData.Status }}<br>
+    {% endfor %}
+
+{% endblock %}
