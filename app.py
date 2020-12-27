@@ -21,7 +21,7 @@ mongo = PyMongo(app)
 @app.route("/get_tasks")
 def get_BooksData():
     tasks = mongo.db.BooksData.find()
-    return render_template("index.html", tasks=tasks)
+    return render_template("home.html", tasks=tasks)
 
 
 if __name__ == "__main__":

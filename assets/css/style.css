@@ -1,4 +1,4 @@
-body{
+    body{
         widows: 100%;
         background-image: url(https://cdn.wallpapersafari.com/62/74/WigTJs.jpg);
         background-size: cover;
@@ -39,9 +39,8 @@ body{
         opacity: 0.6;
         transition: 0.5s;
     }
-    .btn.btn-primary:hover {opacity:1;
-        
-        
+    .btn.btn-primary:hover {
+        opacity:1;
     }
     
     .menu-list{
@@ -52,9 +51,9 @@ body{
         height:120px;
     }
 
-    .section-container{
+    /*.section-container{
         display: none;
-    }
+    }*/
     .col {
         font-family: cursive;
         font-weight: bold;
