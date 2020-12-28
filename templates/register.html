@@ -1,10 +1,63 @@
 {% extends "base.html" %}
 {% block body %}
+<div class="container">
+<form class="needs-validation" novalidate>
+  <div class="form-row">
+    <div class="col-md-6 mb-6">
+      <label for="validationCustom01">First name</label>
+      <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-6 mb-6">
+      <label for="validationCustom02">Last name</label>
+      <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Otto" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-6 mb-6">
+      <label for="validationCustomEmailAddress">Email</label>
+      <div class="input-group">
+        <input type="text" class="form-control" id="validationCustomUsername" placeholder="Email Address" aria-describedby="inputGroupPrepend" required>
+        <div class="invalid-feedback">
+          Please enter your email Address.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-6">
+      <label for="validationCustom03">Phone Number</label>
+      <input type="text" class="form-control" id="validationCustom03" placeholder="Tel." required>
+      <div class="invalid-feedback">
+        Please provide a valid phone number.
+      </div>
+    </div>
+    <div class="col-md-6 mb-6">
+      <label for="validationCustom04">Date-of-Birth</label>
+      <input type="text" class="form-control" id="validationCustom04" placeholder="dd/mm/yyyy" required>
+      <div class="invalid-feedback">
+        Please provide a valid Date of Birth.
+      </div>
+    </div>
+    <div class="col-md-6 mb-6">
+      <label for="validationCustom05">PostCode</label>
+      <input type="text" class="form-control" id="validationCustom05" placeholder="Postcode" required>
+      <div class="invalid-feedback">
+        Please provide a valid postcode.
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-primary registration" type="submit">Submit</button>
+</form>
+</div>
 
-    
+
         
     
 
-<p>register block</p>
+
 
 {% endblock %}

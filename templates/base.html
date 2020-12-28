@@ -10,7 +10,7 @@
 </head>
 <style type="text/css">
     body{
-        widows: 100%;
+        width: 100%;
         background-image: url(https://cdn.wallpapersafari.com/62/74/WigTJs.jpg);
         background-size: cover;
         
@@ -58,8 +58,8 @@
         text-align: center;
         word-spacing: 5em;
     }
-    main{
-        height:120px;
+    section{
+        max-height: 60vw;
     }
 
     /*.section-container{
@@ -86,6 +86,45 @@
         display: inline-block;
         font-size: 20px;
     }
+
+    .form-control{
+        max-width: 40%;
+        margin:5px;
+    }
+    .catalogue{
+        color:#051d40;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .search-form{
+        background-color: #6f6868eb;
+        border-radius: 25px;
+        opacity: 0.8;
+    }
+    .fa.fa-search{
+        font-size: 20px;
+        color: #141619;
+        position: relative;
+        right:2em;
+        top: 0.1em;
+    }
+    input:focus::placeholder {
+        color: transparent;
+    }
+    #books_data{
+        width:60%;
+        height: 300px;
+        display: none;
+    }
+    .needs-validation{
+        overflow: hidden;
+        
+    }
+    .registration{
+        right: 1em;
+        bottom: 1em;
+    }
+    
 
     
 </style>
