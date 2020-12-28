@@ -2,10 +2,12 @@
 {% block menu %}
   
    <div class="menu-list row">
-         <div class="col">Search</div>
-         <div class="col">Add Book</div>
-         <div class="col">Remove Book</div>
-         <div class="col">Register User</div>
+       <ul>
+         <li class="col"><a href="{{ url_for('search_task') }}" style="text-decoration:none; color:black">Search</a></li>
+         <li class="col"><a href="{{ url_for('add_task') }}" style="text-decoration:none; color:black">AddBook</a></li>
+         <li class="col"><a href="{{ url_for('remove') }}" style="text-decoration:none; color:black">RemoveBook</a></li>
+         <li class="col"><a href="{{ url_for('register') }}" style="text-decoration:none; color:black">RegisterUser</a></li>
+        </ul>
    </div>
 
     

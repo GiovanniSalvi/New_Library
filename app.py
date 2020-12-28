@@ -18,11 +18,24 @@ mongo = PyMongo(app)
 
 
 @app.route("/")
-@app.route("/get_tasks")
-def get_BooksData():
-    tasks = mongo.db.BooksData.find()
-    return render_template("home.html", tasks=tasks)
+def home():
+    return render_template("home.html")
 
+@app.route("/search_task", methods=["GET", "POST"])
+def search_task():
+    return render_template("search_task.html")
+
+@app.route("/add_task", methods=["GET", "POST"])
+def add_task():
+    return render_template("add_task.html")
+
+@app.route("/remove", methods=["GET", "POST"])
+def remove():
+    return render_template("remove.html")
+
+@app.route("/register", methods=["GET", "POST"])
+def register():
+    return render_template("register.html")
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
