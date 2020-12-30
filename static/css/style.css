@@ -1,7 +1,10 @@
 body{
-        width: 100%;
-        background-image: url(https://cdn.wallpapersafari.com/62/74/WigTJs.jpg);
-        background-size: cover;
+    width: 100vw;
+    background-image: url(https://cdn.wallpapersafari.com/62/74/WigTJs.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position-x: center;
+    background-attachment: fixed;
         
         
     }
@@ -40,8 +43,7 @@ body{
         border: none;
     }
     .registration{
-        position: relative;
-        bottom: 3rem;
+        bottom:66px;
     }
     
     
@@ -110,9 +112,17 @@ body{
         overflow: hidden;
         
     }
-    @media screen and (min-width: 420px) {
-    .btn.btn-primary {
-    
+    @media screen and (max-width: 420px) {
+    .btn {
+        bottom: 20px;
+        float: unset;
+        position: relative;    
+    }
+}
+@media screen and (max-width: 780px) {
+    .form-control{
+        max-width: unset; 
+        margin-left: 3rem;
     }
 }
     
