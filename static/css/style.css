@@ -49,6 +49,7 @@ body{
         transition: 0.5s;
         border: none;
         float: right;
+        font-size: 20px;
     }
     .menu-list{
         position: relative;
@@ -120,8 +121,7 @@ body{
         padding: 10px;
     }
     @media screen and (max-width: 420px) {
-    .btn-primary {
-        
+    .btn.btn-primary {
         float: unset!important;
         position: relative;    
     }
@@ -129,10 +129,9 @@ body{
 @media screen and (max-width: 780px) {
     .form-control{
         max-width: unset; 
-        margin-left: 3rem;
-    }
+    }    
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 740px) {
     label{
         padding: 10px;
         position: relative;
@@ -140,6 +139,12 @@ body{
         font-size: 20px;
         font-weight: 400;
     }
+}
+@media screen and (max-width: 420px) {
+    #registration {
+        float:right!important;
+    }
+
 }
     
     
