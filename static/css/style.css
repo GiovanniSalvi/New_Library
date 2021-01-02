@@ -50,6 +50,7 @@ body{
         border: none;
         float: right;
         font-size: 20px;
+        color:white;
     }
     .menu-list{
         position: relative;
@@ -58,7 +59,10 @@ body{
     }
     main{
         max-height: 300px;
-    }
+        position: relative;
+        bottom: 40px;
+}
+    
 
     .col {
         font-family: cursive;
@@ -125,7 +129,7 @@ body{
     .register{
         text-align: center;
         position: relative;
-        bottom: 4rem;
+        bottom: 1.5rem;
         color: #051d40;
         padding-bottom:10px;
     }
@@ -137,6 +141,20 @@ body{
         color: #051d40;
         padding-bottom:10px;
     }
+
+.btn btn-danger{
+    position: relative;
+    left: 40%;
+}
+.btn btn-secondary{
+    position: relative;
+    left: 45%;
+}
+.btn btn-success{
+    position: relative;
+    left: 40%;
+}
+
 @media screen and (max-width: 420px) {
     .btn.btn-primary {
         float: unset!important;
@@ -149,15 +167,8 @@ body{
         max-width: unset; 
     }    
 }
-@media screen and (max-width: 740px) {
-    label{
-        padding: 10px;
-        position: relative;
-        left: 35%;
-        font-size: 20px;
-        font-weight: 400;
-    }
-}
+
+
 @media screen and (max-width: 420px) {
     #registration {
         float:right!important;
