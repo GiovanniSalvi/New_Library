@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% block body %}
+<h2 class="register">Registration</h2>
 <div class="container">
 <form class="needs-validation" novalidate>
   <div class="form-row">
@@ -18,7 +19,7 @@
       <label for="validationCustomEmailAddress">Email</label>
       <div class="input-group">
         <input type="text" class="form-control" id="validationCustomUsername" placeholder="Email Address" aria-describedby="inputGroupPrepend" required>
-        <div class="invalid-feedback">Please enter your email Address.
+        <div class="invalid-feedback">
         </div>
       </div>
     </div>
@@ -27,23 +28,24 @@
     <div class="col-md-6 mb-6">
       <label for="validationCustom03">Phone Number</label>
       <input type="text" class="form-control" id="validationCustom03" placeholder="07405572XXX" required>
-      <div class="invalid-feedback">Please provide a valid phone number.
+      <div class="invalid-feedback">
     </div>
     </div>
     <div class="col-md-6 mb-6">
       <label for="validationCustom04">Date-of-Birth</label>
       <input type="text" class="form-control" id="validationCustom04" placeholder="dd/mm/yyyy" required>
-      <div class="invalid-feedback">Please provide a valid Date of Birth.
+      <div class="invalid-feedback">
     </div>
     </div>
     <div class="col-md-6 mb-6">
       <label for="validationCustom05">PostCode</label>
       <input type="text" class="form-control" id="validationCustom05" placeholder="LLN NLL" required>
-      <div class="invalid-feedback"> Please provide a valid postcode.
+      <div class="invalid-feedback"> 
     </div>
     </div>
+    <button id="registration"" class="btn btn-primary"  tabindex="-1" type="submit" >Submit</button>
   </div>
-  <button id="registration"" class="btn btn-primary"  tabindex="-1" type="submit" >Submit</button>
+  
 </form>
 </div>
 
