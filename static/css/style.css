@@ -59,7 +59,8 @@ body{
     }
     main{
         max-height: 300px;
-        
+        position: relative;
+        bottom: 40px;
 }
     
 
@@ -74,7 +75,7 @@ body{
     #footer{
         background-color: #6f6868eb;
         position: relative;
-        top:55%;
+        top:60%;
         border-radius: 25px;
         opacity: 0.8;
         height:80px;
@@ -136,10 +137,11 @@ body{
     .adding{
         text-align: center;
         position: relative;
-        bottom: 1.5rem;
+        bottom: 4rem;
         color: #051d40;
         padding-bottom:10px;
     }
+
 
 .btn.btn-danger{
     position: relative;
@@ -171,6 +173,8 @@ body{
 @media screen and (max-width: 420px) {
     #registration {
         float:right!important;
+        font-size:10px;
+        position:unset;
     }
 
 }
