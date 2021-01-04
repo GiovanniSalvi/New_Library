@@ -9,6 +9,23 @@
          <li class="col"><a href="{{ url_for('register') }}" style="text-decoration:none; color:black">RegisterUser</a></li>
         </ul>
    </div>
+   <section>
+        <!-- flash messages -->
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="row flashes">
+                        <h4 >{{ message }}</h4>
+                    </div>
+                {% endfor %}
+                <div>
+                    <h5>Name:{{ register.First }}</h5>
+                </div>
+            {% endif %}
+            
+        {% endwith %}
+       
+    </section>
 
     
 

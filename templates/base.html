@@ -25,12 +25,16 @@
       </div>--->
     </div>
   </div>
-  <section>
       <main class="section-container">
        {% block body %}
        {% endblock %}
       </main>
-    </section>
+      <section>
+        <!-- flash messages -->
+        {% with messages = get_flashed_messages() %}
+        {% endwith %}
+       </section>
+    
 <footer class="container" id="footer">
         <!---social media bar-->
     <div class="icon-bar row">

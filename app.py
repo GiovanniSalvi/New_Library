@@ -19,7 +19,7 @@ mongo = PyMongo(app)
 
 @app.route("/")
 def home():
-    return render_template("home.html")
+    return render_template("home.html", register=register)
 
 @app.route("/search_task", methods=["GET", "POST"])
 def search_task():
@@ -35,7 +35,33 @@ def remove():
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
+    if request.method == "POST":
+        existing_user = mongo.db.UsersData.find_one(
+            {"Email": request.form.get("Email").lower()})
+        
+        if existing_user:
+            flash("Email already exists")
+            return redirect(url_for("register"))
+
+        register = {
+            "First": request.form.get("First").lower(),
+            "Last": request.form.get("Last").lower(),
+            "dob": request.form.get("dob").lower(),
+            "Tel": request.form.get("Tel").lower(),
+            "Postcode": request.form.get("Postcode").lower(),
+            "Email": request.form.get("Email").lower()
+            
+        }
+        mongo.db.UsersData.insert_one(register)
+        
+        flash("Registration Successful!")
+        return redirect(url_for("home", register=register))
+            
+      
+
     return render_template("register.html")
+
+
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),

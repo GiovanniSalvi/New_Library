@@ -2,23 +2,23 @@
 {% block body %}
 <h2 class="register">Registration</h2>
 <div class="container">
-<form class="needs-validation" novalidate>
+<form class="needs-validation" novalidate method="POST" action="{{ url_for('register') }}">
   <div class="form-row">
     <div class="col-md-6 mb-6">
       <label for="validationCustom01">First name</label>
-      <input type="text" class="form-control" id="validationCustom01" placeholder="First name"  required>
+      <input type="text" class="form-control" name="First" id="validationCustom01" placeholder="First name"  required>
       <div class="valid-feedback">
       </div>
     </div>
     <div class="col-md-6 mb-6">
       <label for="validationCustom02">Last name</label>
-      <input type="text" class="form-control" id="validationCustom02" placeholder="Last name"  required>
+      <input type="text" class="form-control" name="Last" id="validationCustom02" placeholder="Last name"  required>
       
     </div>
     <div class="col-md-6 mb-6">
       <label for="validationCustomEmailAddress">Email</label>
       <div class="input-group">
-        <input type="text" class="form-control" id="validationCustomUsername" placeholder="Email Address" aria-describedby="inputGroupPrepend" required>
+        <input type="text" class="form-control" name="Email" id="validationCustomUsername" placeholder="Email Address" aria-describedby="inputGroupPrepend" required>
         <div class="invalid-feedback">
         </div>
       </div>
@@ -27,19 +27,19 @@
   <div class="form-row">
     <div class="col-md-6 mb-6">
       <label for="validationCustom03">Phone Number</label>
-      <input type="text" class="form-control" id="validationCustom03" placeholder="07405572XXX" required>
+      <input type="text" class="form-control" name="Tel" id="validationCustom03" placeholder="07405572XXX" required>
       <div class="invalid-feedback">
     </div>
     </div>
     <div class="col-md-6 mb-6">
       <label for="validationCustom04">Date-of-Birth</label>
-      <input type="text" class="form-control" id="validationCustom04" placeholder="dd/mm/yyyy" required>
+      <input type="text" class="form-control" name="dob" id="validationCustom04" placeholder="dd/mm/yyyy" required>
       <div class="invalid-feedback">
     </div>
     </div>
     <div class="col-md-6 mb-6">
       <label for="validationCustom05">PostCode</label>
-      <input type="text" class="form-control" id="validationCustom05" placeholder="LLN NLL" required>
+      <input type="text" class="form-control" name="Postcode" id="validationCustom05" placeholder="LLN NLL" required>
       <div class="invalid-feedback"> 
     </div>
     </div>

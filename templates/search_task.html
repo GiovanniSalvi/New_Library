@@ -3,13 +3,14 @@
 <div class="container">
 <div  class="search-form row">
   <h2 class="catalogue">Library<strong>Search</strong></h2>
-  <form  class="form-inline d-flex justify-content-center md-form form-sm" style="padding-bottom: 5px;">
+  <form  class="form-inline d-flex justify-content-center md-form form-sm" style="padding-bottom: 5px;" method="POST" action="{{ url_for('add_task') }}">
    <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Insert Book Title"
     aria-label="Search">
      <button class="btn"><i class="fa fa-search" ></i></button>
   </form>
 </div>
 </div>
+<div style="background-color:unset!important;" class="container">
 <div class="row ">
   <div class="table-responsive-sm">
     <table class="table table-bordered" style="background-color: #b7ababb5;">
@@ -41,6 +42,7 @@
       </tbody>
     </table>
   </div>
+</div>
 </div>
 
 <button style="box-shadow: none;"  type="button" class="btn btn-success">Rent</button>
