@@ -27,7 +27,30 @@ def search_task():
 
 @app.route("/add_task", methods=["GET", "POST"])
 def add_task():
+    if request.method == "POST":
+        existing_title = mongo.db.BooksData.find_one(
+            {"Title": request.form.get("Title").lower()})
+        
+        if existing_title:
+            flash("Book already exists in the database")
+            return redirect(url_for("add_task"))
+       
+        add = {
+            "Title": request.form.get("Title"),
+            "Author": request.form.get("Author"),
+            "Genre": request.form.get("Genre"),
+            "Year": request.form.get("Year"),
+            "Country": request.form.get("Country"),
+            "Location": request.form.get("Location"),
+        }
+        mongo.db.BooksData.insert_one(add)
+
+        flash("Book Successfully Added")
+        return redirect(url_for("home",))
+
+
     return render_template("add_task.html")
+
 
 @app.route("/remove", methods=["GET", "POST"])
 def remove():

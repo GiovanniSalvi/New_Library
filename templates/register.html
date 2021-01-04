@@ -6,19 +6,18 @@
   <div class="form-row">
     <div class="col-md-6 mb-6">
       <label for="validationCustom01">First name</label>
-      <input type="text" class="form-control" name="First" id="validationCustom01" placeholder="First name"  required>
+      <input type="text" class="form-control" name="First" id="validationCustom01" pattern="(?=.*[a-z])(?=.*[A-Z]).{2,}$" placeholder="First name" required>
       <div class="valid-feedback">
       </div>
     </div>
     <div class="col-md-6 mb-6">
       <label for="validationCustom02">Last name</label>
-      <input type="text" class="form-control" name="Last" id="validationCustom02" placeholder="Last name"  required>
-      
+      <input type="text" class="form-control" name="Last" id="validationCustom02" pattern="(?=.*[a-z])(?=.*[A-Z]).{2,}$"  placeholder="Last name"  required>
     </div>
     <div class="col-md-6 mb-6">
       <label for="validationCustomEmailAddress">Email</label>
       <div class="input-group">
-        <input type="text" class="form-control" name="Email" id="validationCustomUsername" placeholder="Email Address" aria-describedby="inputGroupPrepend" required>
+        <input type="text" class="form-control" name="Email" id="validationCustomUsername" placeholder="Email Address" aria-describedby="inputGroupPrepend" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
         <div class="invalid-feedback">
         </div>
       </div>
@@ -27,19 +26,19 @@
   <div class="form-row">
     <div class="col-md-6 mb-6">
       <label for="validationCustom03">Phone Number</label>
-      <input type="text" class="form-control" name="Tel" id="validationCustom03" placeholder="07405572XXX" required>
+      <input type="text" class="form-control" name="Tel" id="validationCustom03"  placeholder="07405572XXX" pattern="[0-9]{4}/[0-9]{7}$"  minlenght="5" maxlength="15" required>
       <div class="invalid-feedback">
     </div>
     </div>
     <div class="col-md-6 mb-6">
       <label for="validationCustom04">Date-of-Birth</label>
-      <input type="text" class="form-control" name="dob" id="validationCustom04" placeholder="dd/mm/yyyy" required>
+      <input type="text" class="form-control" name="dob" id="validationCustom04" placeholder="dd-mm-yyyy" pattern="[0-9]{2}-[0-9]{2}-[0-9]{4}$" required>
       <div class="invalid-feedback">
     </div>
     </div>
     <div class="col-md-6 mb-6">
       <label for="validationCustom05">PostCode</label>
-      <input type="text" class="form-control" name="Postcode" id="validationCustom05" placeholder="LLN NLL" required>
+      <input type="text" class="form-control" name="Postcode" id="validationCustom05" placeholder="LL4 5LL" required>
       <div class="invalid-feedback"> 
     </div>
     </div>
