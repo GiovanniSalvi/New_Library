@@ -89,6 +89,8 @@ body{
     .form-control{
         max-width: 40%;
         margin:5px;
+        position:relative;
+        left:35px;
     }
     .catalogue{
         color:#051d40;
@@ -129,7 +131,7 @@ body{
     .register{
         text-align: center;
         position: relative;
-        bottom: 1.5rem;
+        bottom: 3rem;
         color: #051d40;
         padding-bottom:10px;
     }
@@ -137,7 +139,7 @@ body{
     .adding{
         text-align: center;
         position: relative;
-        bottom: 2rem;
+        bottom: 3rem;
         color: #051d40;
         padding-bottom:10px;
     }
@@ -157,11 +159,11 @@ body{
 }
 .btn.btn-secondary{
     position: relative;
-    left: 43%;
+    left: 48%;
 }
 .btn.btn-success{
     position: relative;
-    left: 48%;
+    left: 43%;
 }
 
 @media screen and (max-width: 420px) {
