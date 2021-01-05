@@ -6,20 +6,20 @@
   <div class="form-row">
     <div class="col-md-8 col-mb-4">
       <label for="validationCustom01">Title</label>
-      <input type="text" name="Title" class="form-control" id="validationCustom01" placeholder="Insert Title"  required>
+      <input type="text" name="Title" class="form-control" id="validationCustom01" placeholder="Insert Title" pattern="[A-Z][a-z]+$"  required>
       
     </div>
   </div> 
   <div class="form-row">
     <div class="col-md-8 col-mb-4">
       <label for="validationCustom02">Author</label>
-      <input type="text" name="Author" class="form-control" id="validationCustom02" placeholder="Insert Author"  required>
+      <input type="text" name="Author" class="form-control" id="validationCustom02" placeholder="Insert Author" pattern="[A-Z][a-z]+$"  required>
       
     </div>
     <div class="col-md-8 col-mb-4">
       <label for="validationCustomEmailAddress">Genre</label>
       <div class="input-group">
-        <input type="text" name="Genre" class="form-control" id="validationCustomUsername" placeholder="Insert Genre" aria-describedby="inputGroupPrepend" required>
+        <input type="text" name="Genre" class="form-control" id="validationCustomUsername" placeholder="Insert Genre" pattern="[A-Z][a-z]+$" required>
         
       </div>
     </div>
@@ -27,12 +27,12 @@
   <div class="form-row">
     <div class="col-md-8 col-mb-4">
       <label for="validationCustom03">Year</label>
-      <input type="text" name="Year" class="form-control" id="validationCustom03" placeholder="Insert year" required>
+      <input type="text" name="Year" class="form-control" id="validationCustom03" placeholder="Insert year" pattern="[0-9]+" required>
       
     </div>
     <div class="col-md-8 col-mb-4">
       <label for="validationCustom04">Country</label>
-      <input type="text" name="Country" class="form-control" id="validationCustom04" placeholder="Insert Country" required>
+      <input type="text" name="Country" class="form-control" id="validationCustom04" placeholder="Insert Country" pattern="[A-Z][a-z]+$" required>
       
     </div>
     <div class="col-md-8 col-mb-4">
