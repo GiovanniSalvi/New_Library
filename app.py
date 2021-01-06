@@ -23,7 +23,19 @@ def home():
 
 @app.route("/search_task", methods=["GET", "POST"])
 def search_task():
-    return render_template("search_task.html")
+    if request.method == "POST":
+        existing_book = mongo.db.Booksdata.find_one(
+        {"Title": request.form.get("search_title").lower()})
+        if existing_book:
+            return redirect(url_for("search_task", book=existing_book))
+        
+        else:
+        
+            flash("Book does not exist in the database")
+            return redirect(url_for("search_task"))
+
+    return render_template("search_task.html", book="")
+    
 
 @app.route("/add_task", methods=["GET", "POST"])
 def add_task():
@@ -42,6 +54,7 @@ def add_task():
             "Year": request.form.get("Year"),
             "Country": request.form.get("Country"),
             "Location": request.form.get("Location"),
+            "Status": "Available"
         }
         mongo.db.BooksData.insert_one(add)
 
@@ -67,8 +80,8 @@ def register():
             return redirect(url_for("register"))
 
         register = {
-            "First": request.form.get("First").lower(),
-            "Last": request.form.get("Last").lower(),
+            "First": request.form.get("First"),
+            "Last": request.form.get("Last"),
             "dob": request.form.get("dob").lower(),
             "Tel": request.form.get("Tel").lower(),
             "Postcode": request.form.get("Postcode").lower(),
