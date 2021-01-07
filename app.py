@@ -24,10 +24,11 @@ def home():
 @app.route("/search_task", methods=["GET", "POST"])
 def search_task():
     if request.method == "POST":
-        existing_book = mongo.db.Booksdata.find_one(
+        existing_book = mongo.db.BooksData.find_one(
         {"Title": request.form.get("search_title").lower()})
         if existing_book:
-            return redirect(url_for("search_task", book=existing_book))
+            flash("book found")
+            return redirect(url_for("search_task"))
         
         else:
         
@@ -41,7 +42,7 @@ def search_task():
 def add_task():
     if request.method == "POST":
         existing_title = mongo.db.BooksData.find_one(
-            {"Title": request.form.get("Title").lower()})
+            {"Title": request.form.get("search_title").lower()})
         
         if existing_title:
             flash("Book already exists in the database")
@@ -60,7 +61,6 @@ def add_task():
 
         flash("Book Successfully Added")
         return redirect(url_for("home",))
-
 
     return render_template("add_task.html")
 
