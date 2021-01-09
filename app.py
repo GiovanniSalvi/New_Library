@@ -21,17 +21,24 @@ mongo = PyMongo(app)
 def home():
     return render_template("home.html", register=register)
 
+
+@app.route("/book_add/<new_book>", methods=["GET"])
+def book_add(new_book):
+    new_book = mongo.db.BooksData.find_one({"_id": ObjectId(new_book)})
+    return render_template("book_add.html", new_book=new_book)
+
+
+
 @app.route("/search_task", methods=["GET", "POST"])
 def search_task():
     if request.method == "POST":
         existing_book = mongo.db.BooksData.find_one(
-        {"Title": request.form.get("search_title").lower()})
+            {"Title": request.form.get("search_title")})
         if existing_book:
             flash("book found")
             return redirect(url_for("search_task"))
         
         else:
-        
             flash("Book does not exist in the database")
             return redirect(url_for("search_task"))
 
@@ -42,7 +49,7 @@ def search_task():
 def add_task():
     if request.method == "POST":
         existing_title = mongo.db.BooksData.find_one(
-            {"Title": request.form.get("search_title").lower()})
+            {"Title": request.form.get("serach_title")})
         
         if existing_title:
             flash("Book already exists in the database")
@@ -57,10 +64,10 @@ def add_task():
             "Location": request.form.get("Location"),
             "Status": "Available"
         }
-        mongo.db.BooksData.insert_one(add)
+        new_book = mongo.db.BooksData.insert_one(add)
 
         flash("Book Successfully Added")
-        return redirect(url_for("home",))
+        return redirect(url_for("book_add", new_book=new_book.inserted_id))
 
     return render_template("add_task.html")
 

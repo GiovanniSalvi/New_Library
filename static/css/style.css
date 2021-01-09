@@ -137,7 +137,7 @@ body{
     .adding{
         text-align: center;
         position: relative;
-        bottom: 2.5rem;
+        bottom: 2.8rem;
         color: #051d40;
         padding-bottom:10px;
     }
@@ -149,6 +149,24 @@ body{
         top:50px;
         letter-spacing: 2px;
     }
+
+    .book_display{
+        color: #051d40;
+        background-color: #6f6868ba;
+        max-width: 400px;
+        min-height: 600px;
+        position: relative;
+        left: 35%;
+}
+ul{
+    list-style-type: none;
+}
+li {
+    padding: 25px 0 10px 30px;
+    font-size: 30px;
+}
+
+    
 
 
 .btn.btn-danger{
