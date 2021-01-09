@@ -9,7 +9,7 @@ body{
         
     }
     .container{
-        background-color: #6f6868eb;
+        background-color: #6f6868ba;
         border-radius: 25px;
         opacity: 0.8;
     }
@@ -153,17 +153,16 @@ body{
     .book_display{
         color: #051d40;
         background-color: #6f6868ba;
-        max-width: 400px;
-        min-height: 600px;
-        position: relative;
-        left: 35%;
+        max-height: 600px;
+        
 }
 ul{
     list-style-type: none;
 }
 li {
-    padding: 25px 0 10px 30px;
+    padding: 15px 0 10px 10px;
     font-size: 30px;
+    display: inline-block;
 }
 
     
@@ -175,12 +174,20 @@ li {
 }
 .btn.btn-secondary{
     position: relative;
-    left: 48%;
+    left: 38%;
 }
 .btn.btn-success{
     position: relative;
     left: 43%;
 }
+
+.btn.btn-link{
+    position: relative;
+    left: 48%;
+    border: 1px #0d6efd solid;
+    text-decoration: none;
+}
+
 
 @media screen and (max-width: 420px) {
     .btn.btn-primary {

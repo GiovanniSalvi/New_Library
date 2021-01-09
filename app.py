@@ -41,15 +41,21 @@ def search_task():
         else:
             flash("Book does not exist in the database")
             return redirect(url_for("search_task"))
+        archive = mongo.db.BooksData.insert_one('')
 
-    return render_template("search_task.html", book="")
-    
+    return render_template("rent_book.html", archive=archive.inserted_Id)
+
+@app.route("/rent_book/<archive>", methods=["GET"])
+def rent_book(archive):
+    archive = mongo.db.BooksData.find_one({"_id": ObjectId(archive)})
+    return render_template("rent_book.html", archive=archive)
+
 
 @app.route("/add_task", methods=["GET", "POST"])
 def add_task():
     if request.method == "POST":
         existing_title = mongo.db.BooksData.find_one(
-            {"Title": request.form.get("serach_title")})
+            {"Title": request.form.get("search_title")})
         
         if existing_title:
             flash("Book already exists in the database")

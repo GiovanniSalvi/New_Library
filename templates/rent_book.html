@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block body %}
+
+<div class="container">
+<div class="row book_display">
+    <ul>
+        <li>Title: {{ .Title }}</li><br>
+        <li>Author: {{ .Author }}</li><br>
+        <li>Genre: {{ .Genre }}</li><br>
+        <li>Year: {{ .Year }}</li><br>
+        <li>Country: {{ .Country }}</li><br>
+        <li>Location: {{ .Location }}</li><br>
+        <li>Status: <spam style="color:#02ff02db;">{{ new_book.Status }}</spam></li>
+
+    </ul>
+    </div>
+</div>
+<button style="box-shadow: none;"  type="button" class="btn btn-success">Rent</button>
+<button style="box-shadow: none;"   type="button" class="btn btn-secondary">Edit</button>
+<a href="{{ url_for('search_task') }}"><button style="box-shadow: none;" formmethod="GET"  type="submit" class="btn btn-link">Cancel</button></a>
+
+
+{% endblock %}
