@@ -28,7 +28,6 @@ def book_add(new_book):
     return render_template("book_add.html", new_book=new_book)
 
 
-
 @app.route("/search_task", methods=["GET", "POST"])
 def search_task():
     if request.method == "POST":
@@ -41,9 +40,10 @@ def search_task():
         else:
             flash("Book does not exist in the database")
             return redirect(url_for("search_task"))
-        archive = mongo.db.BooksData.insert_one('')
+        archive = mongo.db.BooksData.insert_one()
 
     return render_template("rent_book.html", archive=archive.inserted_Id)
+
 
 @app.route("/rent_book/<archive>", methods=["GET"])
 def rent_book(archive):
@@ -82,6 +82,7 @@ def add_task():
 def remove():
     return render_template("remove.html")
 
+
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
@@ -89,7 +90,7 @@ def register():
             {"Email": request.form.get("Email").lower()})
         
         if existing_user:
-            flash("Email already exists")
+            flash("User already exists")
             return redirect(url_for("register"))
 
         register = {
@@ -106,10 +107,7 @@ def register():
         flash("Registration Successful!")
         return redirect(url_for("home", register=register))
             
-      
-
     return render_template("register.html")
-
 
 
 if __name__ == "__main__":

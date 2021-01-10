@@ -17,5 +17,15 @@
     });
   }, false);
 })();
-
- 
+var status = "Available";
+(function (){
+    
+    if (status) {
+     
+      document.getElementById("status_color").style.color = '#008000';
+    }
+    else
+    {
+      document.getElementById("status_color").style.color = '#FF0000';
+    }  
+    });   

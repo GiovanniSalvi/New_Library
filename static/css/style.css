@@ -36,14 +36,14 @@ body{
         position: relative;
         top: 22%;
         font-size: 20px;
-        background-color:#051d40;
+        background-color:#040f1f;
         cursor:pointer;
         opacity: 0.6;
         transition: 0.5s;
         border: none;
     }
     #registration{
-        background-color:#051d40;
+        background-color:#040f1f;
         cursor:pointer;
         opacity: 0.6;
         transition: 0.5s;
@@ -129,7 +129,7 @@ body{
     .register{
         text-align: center;
         position: relative;
-        bottom: 3rem;
+        bottom: 2.7rem;
         color: #051d40;
         padding-bottom:10px;
     }
@@ -138,22 +138,21 @@ body{
         text-align: center;
         position: relative;
         bottom: 2.8rem;
-        color: #051d40;
+        color: #091d3a;
         padding-bottom:10px;
     }
 
     .flashes{
         text-align: center;
-        color:#330505;
-        position:relative;
-        top:50px;
+        color:#2d0404;
         letter-spacing: 2px;
+        
     }
 
     .book_display{
-        color: #051d40;
-        background-color: #6f6868ba;
-        max-height: 600px;
+        color: #091d3a;
+        height: 50vw;
+        display: inline-block;
         
 }
 ul{
@@ -165,27 +164,32 @@ li {
     display: inline-block;
 }
 
-    
+li span{
+    position:relative;
+    top:0px;
+    font-size: 27px;
+}    
 
 
 .btn.btn-danger{
     position: relative;
-    left: 43%;
+    left: 42%;
 }
 .btn.btn-secondary{
     position: relative;
-    left: 38%;
+    left: 37%;
 }
 .btn.btn-success{
     position: relative;
-    left: 43%;
+    left: 42%;
 }
 
 .btn.btn-link{
     position: relative;
-    left: 48%;
+    left: 47%;
     border: 1px #0d6efd solid;
     text-decoration: none;
+    background-color: #b3b3b3e6;
 }
 
 
