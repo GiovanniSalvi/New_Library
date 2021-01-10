@@ -34,13 +34,13 @@ def search_task():
         existing_book = mongo.db.BooksData.find_one(
             {"Title": request.form.get("search_title")})
         if existing_book:
-            flash("book found")
+            flash("Book found")
             return redirect(url_for("search_task"))
         
         else:
             flash("Book does not exist in the database")
             return redirect(url_for("search_task"))
-        archive = mongo.db.BooksData.insert_one()
+        archive = mongo.db.BooksData.insert_one({"Title"})
 
     return render_template("rent_book.html", archive=archive.inserted_Id)
 
@@ -56,11 +56,11 @@ def add_task():
     if request.method == "POST":
         existing_title = mongo.db.BooksData.find_one(
             {"Title": request.form.get("search_title")})
-        
+
         if existing_title:
             flash("Book already exists in the database")
             return redirect(url_for("add_task"))
-       
+        
         add = {
             "Title": request.form.get("Title"),
             "Author": request.form.get("Author"),
@@ -74,6 +74,8 @@ def add_task():
 
         flash("Book Successfully Added")
         return redirect(url_for("book_add", new_book=new_book.inserted_id))
+
+        
 
     return render_template("add_task.html")
 
