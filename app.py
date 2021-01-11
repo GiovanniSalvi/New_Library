@@ -35,14 +35,13 @@ def search_task():
             {"Title": request.form.get("search_title")})
         if existing_book:
             flash("Book found")
-            return redirect(url_for("search_task"))
+            return redirect(url_for("rent_book", archive=existing_book.get('_id')))
         
         else:
             flash("Book does not exist in the database")
             return redirect(url_for("search_task"))
-        archive = mongo.db.BooksData.insert_one({"Title"})
-
-    return render_template("rent_book.html", archive=archive.inserted_Id)
+        
+    return render_template("search_task.html")
 
 
 @app.route("/rent_book/<archive>", methods=["GET"])
@@ -55,13 +54,13 @@ def rent_book(archive):
 def add_task():
     if request.method == "POST":
         existing_title = mongo.db.BooksData.find_one(
-            {"Title": request.form.get("search_title")})
-
+            {"Title": request.form.get("Title")})
         if existing_title:
             flash("Book already exists in the database")
             return redirect(url_for("add_task"))
-        
-        add = {
+        else:
+
+            add = {
             "Title": request.form.get("Title"),
             "Author": request.form.get("Author"),
             "Genre": request.form.get("Genre"),
@@ -69,20 +68,33 @@ def add_task():
             "Country": request.form.get("Country"),
             "Location": request.form.get("Location"),
             "Status": "Available"
-        }
-        new_book = mongo.db.BooksData.insert_one(add)
+            }
+            new_book = mongo.db.BooksData.insert_one(add)
 
-        flash("Book Successfully Added")
-        return redirect(url_for("book_add", new_book=new_book.inserted_id))
-
-        
+            flash("Book Successfully Added")
+            return redirect(url_for("book_add", new_book=new_book.inserted_id))
 
     return render_template("add_task.html")
 
 
 @app.route("/remove", methods=["GET", "POST"])
 def remove():
+    if request.method == "POST":
+        existing_book = mongo.db.BooksData.find_one(
+            {"Title": request.form.get("remove_title")})
+        if existing_book:
+            flash("Book found")
+            return redirect(url_for("remove_book", archive=existing_book.get('_id')))
+        
+        else:
+            flash("Book does not exist in the database")
+            return redirect(url_for("remove"))
     return render_template("remove.html")
+
+@app.route("/remove_book/<archive>", methods=["GET"])
+def remove_book(archive):
+    archive = mongo.db.BooksData.find_one({"_id": ObjectId(archive)})
+    return render_template("remove_book.html", archive=archive)
 
 
 @app.route("/register", methods=["GET", "POST"])

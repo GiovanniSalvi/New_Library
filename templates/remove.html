@@ -3,9 +3,9 @@
 
 <div class="container">
 <div  class="search-form row">
-  <h2 class="catalogue">Library<strong>Search</strong></h2>
-  <form  class="form-inline d-flex justify-content-center md-form form-sm">
-   <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Insert Book Title"
+  <h2 class="catalogue">Remove<strong>Book</strong></h2>
+  <form  class="form-inline d-flex justify-content-center md-form form-sm" style="padding-bottom: 5px;" method="POST" action="{{ url_for('remove') }}">
+   <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="insertbooktitle(lowercase no-spaces)" name="remove_title"
     aria-label="Search">
      <button style="position:relative;right: 10px;box-shadow: unset;" class="btn"><i class="fa fa-search"></i></button>
   </form>

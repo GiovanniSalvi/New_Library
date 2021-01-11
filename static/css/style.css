@@ -9,9 +9,10 @@ body{
         
     }
     .container{
-        background-color: #6f6868ba;
+        background-color: #6f6868;
         border-radius: 25px;
         opacity: 0.8;
+        max-height: 630px;
     }
     .row {
         line-height: 2.5;
@@ -75,7 +76,7 @@ body{
     #footer{
         background-color: #6f6868eb;
         position: relative;
-        top:60%;
+        top:80%;
         border-radius: 25px;
         opacity: 0.8;
         height:80px;
@@ -98,7 +99,6 @@ body{
         padding-bottom: 10px;
     }
     .search-form{
-        background-color: #6f6868eb;
         border-radius: 25px;
         opacity: 0.8;
     }
@@ -150,7 +150,7 @@ body{
     }
 
     .book_display{
-        color: #091d3a;
+        color: #031023;
         height: 50vw;
         display: inline-block;
         
@@ -170,7 +170,10 @@ li span{
     font-size: 27px;
 }    
 
-
+.user_detail{
+    color: #031023;
+    padding: 10px 0 0 40px;
+}
 .btn.btn-danger{
     position: relative;
     left: 42%;
@@ -186,7 +189,7 @@ li span{
 
 .btn.btn-link{
     position: relative;
-    left: 47%;
+    left: 44%;
     border: 1px #0d6efd solid;
     text-decoration: none;
     background-color: #b3b3b3e6;
@@ -216,5 +219,30 @@ li span{
     }
 
 }
-    
+@media screen and (max-width: 480px) {
+    .btn.btn-success {
+        font-size: 0.7rem;
+    }
+}
+@media screen and (max-width: 480px) {
+    .btn.btn-link {
+        font-size: 0.7rem;
+    }
+}
+@media screen and (max-width: 480px) {
+    .btn.btn-danger {
+        font-size: 0.7rem;
+    }
+}
+@media screen and (max-width: 480px) {
+    .btn.btn-secondary {
+        font-size: 0.7rem;
+    }
+}
+@media screen and (max-width: 380px) {
+    #footer {
+        position: relative;
+        top: 90%;
+    }
+}   
     

@@ -2,22 +2,22 @@
 {% block body %}
 
 <div class="container">
-<div class="row book_display">
+<div class="book_display">
     <ul>
-        <li>Title: {{ new_book.Title }}</li><br>
-        <li>Author: {{ new_book.Author }}</li><br>
-        <li>Genre: {{ new_book.Genre }}</li><br>
-        <li>Year: {{ new_book.Year }}</li><br>
-        <li>Country: {{ new_book.Country }}</li><br>
-        <li>Location: {{ new_book.Location }}</li><br>
-        <li>Status: <spam style="color:#02ff02db;">{{ new_book.Status }}</spam></li>
+        <li>Title: {{ archive.Title }}</li><br>
+        <li>Author: {{ archive.Author }}</li><br>
+        <li>Genre: {{ archive.Genre }}</li><br>
+        <li>Year: {{ archive.Year }}</li><br>
+        <li>Country: {{ archive.Country }}</li><br>
+        <li>Location: {{ archive.Location }}</li><br>
+        <li>Status: <spam id="status_color">{{ archive.Status }}</spam></li>
 
     </ul>
     </div>
 </div>
 
   <button style="box-shadow: none;" type="button" class="btn btn-danger">Delete</button>
-  <button style="box-shadow: none;" type="button" class="btn btn-link">Cancel</button>
+  <a href="{{ url_for('remove') }}"><button style="box-shadow: none;" type="button" class="btn btn-link">Cancel</button></a>
 
 
 {% endblock %}
