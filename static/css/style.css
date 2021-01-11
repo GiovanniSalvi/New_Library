@@ -10,7 +10,7 @@ body{
     }
     .container{
         background-color: #6f6868;
-        border-radius: 25px;
+        border-radius: 15px;
         opacity: 0.8;
         max-height: 630px;
     }
@@ -73,11 +73,10 @@ body{
         text-align: center;
         text-decoration: none;
     }
-    #footer{
-        background-color: #6f6868eb;
+    
+    #footer{   
         position: relative;
-        top:80%;
-        border-radius: 25px;
+        top:60%;
         opacity: 0.8;
         height:80px;
         text-align: center;
@@ -172,7 +171,8 @@ li span{
 
 .user_detail{
     color: #031023;
-    padding: 10px 0 0 40px;
+    margin-left: 20px;
+    padding: 10px;
 }
 .btn.btn-danger{
     position: relative;
@@ -184,15 +184,19 @@ li span{
 }
 .btn.btn-success{
     position: relative;
-    left: 42%;
+    left: 48%;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 .btn.btn-link{
     position: relative;
-    left: 44%;
+    left: 48%;
     border: 1px #0d6efd solid;
     text-decoration: none;
-    background-color: #b3b3b3e6;
+    background-color: #ffe8e8e6;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 
@@ -239,10 +243,31 @@ li span{
         font-size: 0.7rem;
     }
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 480px) {
     #footer {
         position: relative;
-        top: 90%;
+        top: 30%;
     }
 }   
-    
+@media screen and (max-width: 1025px) {
+    #footer {
+        position: relative;
+        top: 45%;
+    }
+}   
+@media screen and (max-width: 580px) {
+    .container{
+        border-radius: unset;
+    }    
+}
+@media screen and (max-width: 780px) {
+    li{
+        font-size: 25px;
+    }    
+}
+@media screen and (max-width: 780px) {
+    .user_detail{
+        font-size: 25px;
+        padding: 15px 0px 15px 10px;
+}
+    }    
