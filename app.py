@@ -91,11 +91,12 @@ def remove():
             return redirect(url_for("remove"))
     return render_template("remove.html")
 
-@app.route("/remove_book/<archive>", methods=["GET"])
+@app.route("/remove_book/<archive>")
 def remove_book(archive):
-    archive = mongo.db.BooksData.find_one({"_id": ObjectId(archive)})
-    return render_template("remove_book.html", archive=archive)
-
+    mongo.db.BooksData.remove({"_id": ObjectId(archive)})
+    
+    return redirect(url_for("remove"))
+    flash("Book Successfully Deleted")
 
 @app.route("/register", methods=["GET", "POST"])
 def register():

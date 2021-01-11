@@ -76,7 +76,7 @@ body{
     
     #footer{   
         position: relative;
-        top:60%;
+        top:100%;
         opacity: 0.8;
         height:80px;
         text-align: center;
@@ -145,7 +145,8 @@ body{
         text-align: center;
         color:#2d0404;
         letter-spacing: 2px;
-        
+        position: relative;
+        bottom:4rem;
     }
 
     .book_display{
