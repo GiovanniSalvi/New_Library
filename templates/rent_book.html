@@ -15,11 +15,11 @@
     </ul>
     </div>
 </div>
-<!----<button style="box-shadow: none;"   type="button" class="btn btn-secondary">Edit</button>---->
-<div style="background-color: unset;" class="container">
-    <a href="{{ url_for('search_task') }}"><button style="box-shadow: none;" formmethod="GET"  type="submit" class="btn btn-link">Cancel</button></a>
-</div>
-<div class="container">
+
+<!--<div style="background-color: unset;" class="container">
+       <button style="box-shadow: none;"   type="button" class="btn btn-secondary">Edit</button>
+</div>--->
+<div style="margin-top: 1em;" class="container">
     <h2 class="user_details">User's Details</h2>
 <form class="needs-validation" novalidate method="POST" action="{{ url_for('register') }}">
   <div class="form-row">
@@ -41,7 +41,7 @@
   </div>
 </form>
 <div style="background-color: unset;" class="container">
-   <button style="box-shadow: none;"  type="button" class="btn btn-success">Borrow</button>
+   <button style="box-shadow: none;" method="POST" action="{{ url_for('search_task') }}" tabindex="-1"  type="button" class="btn btn-success">Borrow</button>
 </div> 
 {% endblock %}
 

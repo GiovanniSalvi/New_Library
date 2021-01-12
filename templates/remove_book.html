@@ -10,13 +10,15 @@
         <li>Year: {{ archive.Year }}</li><br>
         <li>Country: {{ archive.Country }}</li><br>
         <li>Location: {{ archive.Location }}</li><br>
-        <li>Status: <spam id="status_color">{{ archive.Status }}</spam></li>
+        <li>Status: <spam style="color:greenyellow" id="status_color">{{ archive.Status }}</spam></li>
 
     </ul>
 </div>
-   <div style="background-color:unset" class="container">
-      <button style="box-shadow: none;" name="delete" type="button" class="btn btn-danger">Delete</button>
+   <div style="background-color:unset"  class="container">
+    <form method="POST" action="{{url_for('remove_book', archive=archive)}}">
+      <button style="box-shadow: none;" name="delete"  type="button" class="btn btn-danger">Delete</button>
       <a href="{{ url_for('remove') }}"><button style="box-shadow: none;" type="button" class="btn btn-link">Cancel</button></a>
+    </form>
     </div>
 </div>
 

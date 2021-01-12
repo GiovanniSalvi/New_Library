@@ -34,7 +34,6 @@ def search_task():
         existing_book = mongo.db.BooksData.find_one(
             {"Title": request.form.get("search_title")})
         if existing_book:
-            flash("Book found")
             return redirect(url_for("rent_book", archive=existing_book.get('_id')))
         
         else:
@@ -81,22 +80,36 @@ def add_task():
 def remove():
     if request.method == "POST":
         existing_book = mongo.db.BooksData.find_one(
-            {"Title": request.form.get("remove_title")})
+            {"Title": request.form.get("remove_title").lower()})
+        print(existing_book)
+        print(existing_book.get('_id'))
         if existing_book:
-            flash("Book found")
             return redirect(url_for("remove_book", archive=existing_book.get('_id')))
-        
         else:
             flash("Book does not exist in the database")
             return redirect(url_for("remove"))
     return render_template("remove.html")
 
-@app.route("/remove_book/<archive>")
+
+@app.route("/remove_book/<archive>", methods=["GET", "POST"])
 def remove_book(archive):
-    mongo.db.BooksData.remove({"_id": ObjectId(archive)})
+    print(archive)
+    if request.method == "POST":
+        print("check1")
+        try:
+            mongo.db.BooksData.remove({"_id": ObjectId(archive)})
+            flash("Book successful removed")
+            print("check2")
+        except ValueError:
+            flash("Removing book failed, try again")
+            print("check3")
+            return redirect(url_for("home"))
+           
+    archive = mongo.db.BooksData.find_one({"_id": ObjectId(archive)})
+    print(archive)
+    return render_template("remove_book.html", archive=archive)
+
     
-    return redirect(url_for("remove"))
-    flash("Book Successfully Deleted")
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
