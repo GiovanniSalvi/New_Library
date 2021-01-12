@@ -15,11 +15,11 @@
     </ul>
 </div>
    <div style="background-color:unset"  class="container">
-    <form method="POST" action="{{url_for('remove_book', archive=archive)}}">
-      <button style="box-shadow: none;" name="delete"  type="button" class="btn btn-danger">Delete</button>
-      <a href="{{ url_for('remove') }}"><button style="box-shadow: none;" type="button" class="btn btn-link">Cancel</button></a>
-    </form>
-    </div>
+   <form method="POST" action="{{url_for('remove_book', archive=archive._id)}}">
+      <button  name="delete"  type="submit" class="btn btn-danger">Delete</button>
+      <button style="box-shadow: none" class="btn btn-link"><a href="{{ url_for('remove') }}">Back</a></button>
+   </form>
+   </div>
 </div>
 
   

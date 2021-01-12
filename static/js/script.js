@@ -18,6 +18,11 @@
   }, false);
 })();
 
+function text(){
+changeColor = document.getElementById("status_color");
+changeColor.innerHTML = "Available";
+changeColor.style.color = "Yellowgreen";
 
 
+}
 

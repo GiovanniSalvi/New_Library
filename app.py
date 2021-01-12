@@ -93,6 +93,7 @@ def remove():
 
 @app.route("/remove_book/<archive>", methods=["GET", "POST"])
 def remove_book(archive):
+    print("First attempt")
     print(archive)
     if request.method == "POST":
         print("check1")
@@ -106,6 +107,7 @@ def remove_book(archive):
             return redirect(url_for("home"))
            
     archive = mongo.db.BooksData.find_one({"_id": ObjectId(archive)})
+    print("Second attempt")
     print(archive)
     return render_template("remove_book.html", archive=archive)
 
