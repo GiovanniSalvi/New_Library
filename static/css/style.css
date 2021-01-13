@@ -76,7 +76,7 @@ body{
     
     #footer{   
         position: relative;
-        top:100%;
+        top:70%;
         opacity: 0.8;
         height:80px;
         text-align: center;
@@ -144,7 +144,7 @@ body{
     .flashes{
         text-align: center;
         color:#2d0404;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
         position: relative;
         bottom:4rem;
     }
@@ -175,10 +175,6 @@ li span{
     margin-left: 20px;
     padding: 10px;
 }
-.btn.btn-danger{
-    position: relative;
-    left: 42%;
-}
 .btn.btn-secondary{
     position: relative;
     left: 37%;
@@ -191,13 +187,10 @@ li span{
 }
 
 .btn.btn-link{
-    position: relative;
-    left: 48%;
     border: 1px #0d6efd solid;
     text-decoration: none;
     background-color: #ffe8e8e6;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    float: right;
 }
 
 
@@ -244,16 +237,11 @@ li span{
         font-size: 0.7rem;
     }
 }
-@media screen and (max-width: 480px) {
-    #footer {
-        position: relative;
-        top: 30%;
-    }
-}   
+
 @media screen and (max-width: 1025px) {
     #footer {
         position: relative;
-        top: 45%;
+        top: 70%;
     }
 }   
 @media screen and (max-width: 580px) {
@@ -270,5 +258,27 @@ li span{
     .user_detail{
         font-size: 25px;
         padding: 15px 0px 15px 10px;
-}
+    }
+}    
+@media screen and (max-width: 780px) {
+    .email-control{
+        position: unset!important;
     }    
+}
+@media screen and (max-width: 780px) {
+    .genre{
+        position: unset!important;
+    }    
+}
+@media screen and (max-width: 480px) {
+    .flashes{
+        bottom:0.5rem!important;
+        letter-spacing: unset;
+        text-align: unset!important;
+    }    
+}
+@media screen and (max-width: 1025px) {
+    .delete_button {
+        background-color: unset!important;
+    }
+}

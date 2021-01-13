@@ -11,7 +11,19 @@
   </form>
 </div>
 </div>
-
+<div>
+      {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    <div style="position: relative; left:3rem; bottom: 35.5rem;" class="row flashes">
+                        <h4 >{{ message }}</h4>
+                    </div>
+                {% endfor %}
+                
+            {% endif %}
+            
+        {% endwith %}
+  </div>
  
 
     

@@ -43,8 +43,17 @@ def search_task():
     return render_template("search_task.html")
 
 
-@app.route("/rent_book/<archive>", methods=["GET"])
+@app.route("/rent_book/<archive>", methods=["GET", "POST"])
 def rent_book(archive):
+    if request.method == "POST":
+        existing_tel = mongo.db.UsersData.find_one({
+            "Tel": request.form.get("Tel")})
+        if existing_tel:
+            flash("tel exists")
+            return redirect(url_for("remove", archive=existing_tel.get('_id')))
+        else:
+            flash("User not registered")
+            return redirect(url_for("rent_book", ))
     archive = mongo.db.BooksData.find_one({"_id": ObjectId(archive)})
     return render_template("rent_book.html", archive=archive)
 
@@ -55,7 +64,7 @@ def add_task():
         existing_title = mongo.db.BooksData.find_one(
             {"Title": request.form.get("Title")})
         if existing_title:
-            flash("Book already exists in the database")
+            flash("Book already in the database")
             return redirect(url_for("add_task"))
         else:
 
@@ -86,6 +95,7 @@ def remove():
         if existing_book:
             return redirect(url_for("remove_book", archive=existing_book.get('_id')))
         else:
+            print("flash message")
             flash("Book does not exist in the database")
             return redirect(url_for("remove"))
     return render_template("remove.html")

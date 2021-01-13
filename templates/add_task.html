@@ -19,7 +19,7 @@
     <div class="col-md-8 col-mb-4">
       <label for="validationCustomEmailAddress">Genre</label>
       <div class="input-group">
-        <input type="text" name="Genre" class="form-control" id="validationCustomUsername" placeholder="Insert Genre" pattern="[A-Z-a-z-0-9 ]{1,40}"  required>
+        <input type="text" name="Genre" class="form-control genre" id="validationCustomUsername" placeholder="Insert Genre" pattern="[A-Z-a-z-0-9 ]{1,40}"  required>
         
       </div>
     </div>
@@ -41,13 +41,12 @@
       
     </div>
   </div>
-  <button id="regitration" class="btn btn-primary btn-lg" tabindex="-1" type="submit">Add</button>
-  </form>
+  <button id="registration" class="btn btn-primary btn-lg" tabindex="-1" type="submit">Add</button>
   <div>
       {% with messages = get_flashed_messages() %}
             {% if messages %}
                 {% for message in messages %}
-                    <div style="position: relative; left:3rem; bottom: 35.5rem;" class="row flashes">
+                    <div style="bottom: -0.5rem; flex-shrink: 0;;" class="flashes">
                         <h4 >{{ message }}</h4>
                     </div>
                 {% endfor %}
@@ -56,6 +55,8 @@
             
         {% endwith %}
   </div>
+  </form>
+  
 
 
 </div>
