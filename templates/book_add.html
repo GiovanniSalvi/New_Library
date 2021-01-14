@@ -1,33 +1,32 @@
-{% extends "base.html" %}
-{% block body %}
+{% extends "base.html" %} {% block body %}
 <div class="container">
-<div class="book_display">
-    <ul>
-        <li>Title: {{ new_book.Title }}</li><br>
-        <li>Author: {{ new_book.Author }}</li><br>
-        <li>Genre: {{ new_book.Genre }}</li><br>
-        <li>Year: {{ new_book.Year }}</li><br>
-        <li>Country: {{ new_book.Country }}</li><br>
-        <li>Location: {{ new_book.Location }}</li><br>
-        <li>Status: <span style="color:greenyellow" id="status_color">{{ new_book.Status }}</span></li><br>
-        <li>Price: {{ new_book.Price }}</li>
-
-    </ul>
+    <div class="book_display">
+        <ul>
+            <li>Title: {{ new_book.Title }}</li>
+            <br />
+            <li>Author: {{ new_book.Author }}</li>
+            <br />
+            <li>Genre: {{ new_book.Genre }}</li>
+            <br />
+            <li>Year: {{ new_book.Year }}</li>
+            <br />
+            <li>Country: {{ new_book.Country }}</li>
+            <br />
+            <li>Location: {{ new_book.Location }}</li>
+            <br />
+            <li>Status: <span style="color: greenyellow;" id="status_color">{{ new_book.Status }}</span></li>
+            <br />
+            <li>Price: {{ new_book.Price }}</li>
+        </ul>
     </div>
 
     <div>
-     <!-- flash messages -->
-        {% with messages = get_flashed_messages() %}
-            {% if messages %}
-                {% for message in messages %}
-                    <div style="position: relative;top: -0.3em;" class="row flashes">
-                        <h3 >{{ message }}</h3>
-                    </div>
-                {% endfor %}
-                
-            {% endif %}
-            
-        {% endwith %}
+        <!-- flash messages -->
+        {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
+        <div style="position: relative; top: -0.3em;" class="row flashes">
+            <h3>{{ message }}</h3>
+        </div>
+        {% endfor %} {% endif %} {% endwith %}
     </div>
 </div>
 

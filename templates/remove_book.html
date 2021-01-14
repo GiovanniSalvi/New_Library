@@ -1,42 +1,39 @@
-{% extends "base.html" %}
-{% block body %}
+{% extends "base.html" %} {% block body %}
 
 <div class="container">
-<div class="book_display">
-    <ul>
-        <li>Title: {{ archive.Title }}</li><br>
-        <li>Author: {{ archive.Author }}</li><br>
-        <li>Genre: {{ archive.Genre }}</li><br>
-        <li>Year: {{ archive.Year }}</li><br>
-        <li>Country: {{ archive.Country }}</li><br>
-        <li>Location: {{ archive.Location }}</li><br>
-        <li>Status: <spam style="color:greenyellow" id="status_color">{{ archive.Status }}</spam></li><br>
-        <li>Price: {{ archive.Price }}</li><br>
-
-
-    </ul>
+    <div class="book_display">
+        <ul>
+            <li>Title: {{ archive.Title }}</li>
+            <br />
+            <li>Author: {{ archive.Author }}</li>
+            <br />
+            <li>Genre: {{ archive.Genre }}</li>
+            <br />
+            <li>Year: {{ archive.Year }}</li>
+            <br />
+            <li>Country: {{ archive.Country }}</li>
+            <br />
+            <li>Location: {{ archive.Location }}</li>
+            <br />
+            <li>Status: <spam style="color: greenyellow;" id="status_color">{{ archive.Status }}</spam></li>
+            <br />
+            <li>Price: {{ archive.Price }}</li>
+            <br />
+        </ul>
+    </div>
+    <div>
+        {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
+        <div style="position: relative; bottom: 17.5rem;" class="row flashes">
+            <h4>{{ message }}</h4>
+        </div>
+        {% endfor %} {% endif %} {% endwith %}
+    </div>
+    <div style="width: 25%; background-color: unset;" class="container delete_button">
+        <form method="POST" action="{{url_for('remove_book', archive=archive._id)}}">
+            <button name="delete" type="submit" class="btn btn-danger">Delete</button>
+            <button style="box-shadow: none;" class="btn btn-link" type="submit"><a href="{{ url_for('remove') }}">Back</a></button>
+        </form>
+    </div>
 </div>
-<div>
-      {% with messages = get_flashed_messages() %}
-            {% if messages %}
-                {% for message in messages %}
-                    <div style="position: relative;bottom: 17.5rem; " class="row flashes">
-                        <h4>{{ message }}</h4>
-                    </div>
-                {% endfor %}
-                
-            {% endif %}
-            
-        {% endwith %}
-  </div>
-   <div style="width:25%; background-color:unset;"  class="container delete_button">
-   <form method="POST" action="{{url_for('remove_book', archive=archive._id)}}">
-      <button  name="delete"  type="submit" class="btn btn-danger">Delete</button>
-      <button style="box-shadow: none" class="btn btn-link" type="submit"><a href="{{ url_for('remove') }}">Back</a></button>
-   </form>
-   </div>
-</div>
-
-  
 
 {% endblock %}
