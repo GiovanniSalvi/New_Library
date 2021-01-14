@@ -9,7 +9,8 @@
         <li>Year: {{ new_book.Year }}</li><br>
         <li>Country: {{ new_book.Country }}</li><br>
         <li>Location: {{ new_book.Location }}</li><br>
-        <li>Status: <span style="color:greenyellow" id="status_color">{{ new_book.Status }}</span></li>
+        <li>Status: <span style="color:greenyellow" id="status_color">{{ new_book.Status }}</span></li><br>
+        <li>Price: {{ new_book.Price }}</li>
 
     </ul>
     </div>
@@ -19,7 +20,7 @@
         {% with messages = get_flashed_messages() %}
             {% if messages %}
                 {% for message in messages %}
-                    <div class="row flashes">
+                    <div style="position: relative;top: -0.3em;" class="row flashes">
                         <h3 >{{ message }}</h3>
                     </div>
                 {% endfor %}

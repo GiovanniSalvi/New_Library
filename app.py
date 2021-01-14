@@ -32,9 +32,9 @@ def book_add(new_book):
 def search_task():
     if request.method == "POST":
         existing_book = mongo.db.BooksData.find_one(
-            {"Title": request.form.get("search_title")})
+            {"Title": request.form.get("search_title").lower()})
         if existing_book:
-            return redirect(url_for("rent_book", archive=existing_book.get('_id')))
+            return redirect(url_for("sell_book", archive=existing_book.get('_id')))
         
         else:
             flash("Book does not exist in the database")
@@ -43,39 +43,64 @@ def search_task():
     return render_template("search_task.html")
 
 
-@app.route("/rent_book/<archive>", methods=["GET", "POST"])
+@app.route("/sell_book/<archive>", methods=["GET", "POST"])
 def rent_book(archive):
     if request.method == "POST":
-        existing_tel = mongo.db.UsersData.find_one({
-            "Tel": request.form.get("Tel")})
-        if existing_tel:
-            flash("tel exists")
-            return redirect(url_for("remove", archive=existing_tel.get('_id')))
+        existing_email = mongo.db.UsersData.find_one({
+            "Email": request.form.get("Email")})
+        book = mongo.db.BooksData.find_one({"_id": ObjectId(archive)})
+        status = book.get("Status")
+        print(status)
+        if status == "Available":
+            if existing_email:
+                print(existing_email)
+                book_update = {"$Status": "Sold"}
+                print(book_update)
+                mongo.db.tasks.update_one({"_id": ObjectId(archive)}, book_update)
+                print(mongo.db.BooksData.find_one({"_id": ObjectId(archive)}).get("Status"))
+                return redirect(url_for("book_selling", existing_email=existing_email))
+            else:
+                print("User not registered")
+                flash("User not registered")
+                return redirect(url_for("sell_book", archive=archive))
         else:
-            flash("User not registered")
-            return redirect(url_for("rent_book", ))
+            print("Print not available")
+            flash("Book is temporary not available for borrow")
+            return redirect(url_for("sell_book", archive=archive))
+
     archive = mongo.db.BooksData.find_one({"_id": ObjectId(archive)})
-    return render_template("rent_book.html", archive=archive)
+    return render_template("sell_book.html", archive=archive)
+
+@app.route("/book_selling/<existing_email>", methods=["GET"])
+def book_lending(existing_email):
+    existing_email = mongo.db.BooksData.find_one({"_id": ObjectId(existing_email)})
+    return render_template("sell_book.html", existing_email=existing_email)
+
 
 
 @app.route("/add_task", methods=["GET", "POST"])
 def add_task():
     if request.method == "POST":
         existing_title = mongo.db.BooksData.find_one(
-            {"Title": request.form.get("Title")})
+            {"Title": request.form.get("Title").lower(),
+                "Author": request.form.get("Author").lower(),
+                "Year": request.form.get("Year")})
         if existing_title:
             flash("Book already in the database")
             return redirect(url_for("add_task"))
         else:
 
             add = {
-            "Title": request.form.get("Title"),
-            "Author": request.form.get("Author"),
+
+            "Title": request.form.get("Title").lower(),
+            "Author": request.form.get("Author").lower(),
             "Genre": request.form.get("Genre"),
             "Year": request.form.get("Year"),
             "Country": request.form.get("Country"),
             "Location": request.form.get("Location"),
-            "Status": "Available"
+            "Status": "Available",
+            "Price": request.form.get("Price")
+
             }
             new_book = mongo.db.BooksData.insert_one(add)
 

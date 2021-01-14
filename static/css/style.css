@@ -76,7 +76,7 @@ body{
     
     #footer{   
         position: relative;
-        top:70%;
+        top:80%;
         opacity: 0.8;
         height:80px;
         text-align: center;
@@ -90,7 +90,7 @@ body{
         max-width: 40%;
         margin:5px;
         position:relative;
-        left:35px;
+        left:10px;
     }
     .catalogue{
         color:#051d40;
@@ -274,11 +274,6 @@ li span{
     .flashes{
         bottom:0.5rem!important;
         letter-spacing: unset;
-        text-align: unset!important;
     }    
 }
-@media screen and (max-width: 1025px) {
-    .delete_button {
-        background-color: unset!important;
-    }
-}
+
