@@ -133,14 +133,6 @@ RegisterUser:
 
 * Mobile:
 
-## Bugs discovered:
-
-### Solved Bugs
-
-1. 
-
-2. 
-
 ---
 
 ## Deployment
@@ -192,31 +184,25 @@ RegisterUser:
 
 ## Media
 
-* 
+* Social-media icons were provided from:
 
-### Images
+    [fontawesome.com](https://fontawesome.com/v4.7.0/icons/)
 
-* 
 
-* 
+### Image
 
-   1. 
+* Hero Image provide from:
 
-   2. 
+    [Hero Image](https://cdn.wallpapersafari.com/62/74/WigTJs.jpg)
 
-* 
-
-   1. 
-
-   2. 
-
-* 
 
 ---
 
 ## Code  
 
-* 
+* Add_task, Register forms and JS form validation were taken  from [getbootstrap.com](https://getbootstrap.com/docs/5.0/forms/validation/)and then modified to fit with the web page need.
+
+
 
 ## Ackwoledgements
 
