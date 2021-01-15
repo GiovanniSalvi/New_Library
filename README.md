@@ -27,15 +27,15 @@ Welcome! [github.com](https://github.com/GiovanniSalvi/New_Library)
 
 ## Project's Mockup screenshots
 
-Home: [Homepage]()
+Home: [Homepage](https://github.com/GiovanniSalvi/New_Library/blob/master/static/mockups/Mockups%20Home.png)
 
-Search: [Searc_book]()
+Search: [Searc_book](https://github.com/GiovanniSalvi/New_Library/blob/master/static/mockups/Mockups%20Search%20task.png)
 
-AddBook: [Add_book]()
+AddBook: [Add_book](https://github.com/GiovanniSalvi/New_Library/blob/master/static/mockups/Mockups%20Add%20task.png)
 
-RemoveBook: [Remove_book]()
+RemoveBook: [Remove_book](https://github.com/GiovanniSalvi/New_Library/blob/master/static/mockups/Mockups%20Remove%20task%20.png)
 
-Register: [Register_user]()
+Register: [Register_user](https://github.com/GiovanniSalvi/New_Library/blob/master/static/mockups/Mockups%20registration.png)
 
 ---
 
