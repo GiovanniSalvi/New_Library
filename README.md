@@ -121,7 +121,7 @@ RegisterUser:
 
 2. As a User I want to have a quick access to the page which allows me to register new customer/users in the library database.
 
-  * Register link which leads to the form to fill(all fields are required) in order to register new users  to the database is at the top right in the Homepage.
+  * Register link which leads to the form to fill(all fields are required) in order to register new potential customer  to the database is at the top right in the Homepage.
 
 3. As a User I want to find a simple way to check the status, location and others details of the books in the library.
 
@@ -139,7 +139,7 @@ RegisterUser:
  
   * In the search_book page navigabile by search_book link from the Homepage,a search tab allows me to find any book in the library, if the book which I am looking for is Available, that makes possible to sell it clicking the Sell button at the bottom of the section.
   
- 7.As a user I want to access to the social networks in order to advertise or share new info,updates about Library catalog.
+ 7. As a user I want to access to the social networks in order to advertise or share new info,updates about Library catalog.
  
   * The footer is  at the bottom of any pages linked in the Homepage navbar and provides few links to the most popular social networks across the worls(Facebook,Twitter)and other links to important platforms like Linkedin and Youtube.
   
