@@ -4,11 +4,11 @@ Welcome! [github.com](https://github.com/GiovanniSalvi/New_Library)
 
 ## I realized this project as part of the Data centric development module that I am completing at "code academy" training course.
 
-### The App is built for a librarian or whoever is in charge to run,create or manipulate books and users databases for a library.
+### The App is built for a librarian or whoever is in charge to run,create or manipulate data for a library.
 
-### I tried to make the app interface as simple and easy to navigate as possible,the homepage provides a nav-bar menu to explore the app's functionalities which I will look into more in deep further on,and a footer which provides social networks links.
+### I tried to make the app interface as simple and easy to navigate as possible,the homepage provides a nav-bar menu to explore the app's functionalities which I will look into more in deep further on,and a footer which provides social media links.
 
-### The nav menu, the footer, home-button and background image are repeated in all website pages to make the app having a consistent style.
+### The nav menu, footer, home-button and background image are repeated in all website pages to make the app having a consistent style.
 
 
 ---
