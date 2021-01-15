@@ -197,15 +197,15 @@ Register: [Register_user](https://github.com/GiovanniSalvi/New_Library/blob/mast
 
     1. You need to create a heroku application which will provide a link to be accessed.
 
-    2. 
+    2. Add heroku git repository replacing with the name of the app.
 
-    3. 
+    3. Create a requirenments.txt file in order heroku can identify the project as a python project and insert in the root folder.
 
-    4. 
+    4. Create a procfile which contains  the name of the python file that runs your application and the name of the app.
 
-    5. 
+    5. Add and commit using git add. and git commit -m "message" commands.
 
-    6. 
+    6. Finally push the app using git push commend.
 
 ---
 
