@@ -205,7 +205,7 @@ Register: [Register_user](https://github.com/GiovanniSalvi/New_Library/blob/mast
 
     5. Add and commit using git add. and git commit -m "message" commands.
 
-    6. Finally push the app using git push commend.
+    6. Finally push the app using git push command.
 
 ---
 
