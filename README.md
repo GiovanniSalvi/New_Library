@@ -35,7 +35,7 @@ AddBook:
 
 RemoveBook:
 
-RegisterUser:
+Register:
 
 ---
 
@@ -77,7 +77,7 @@ RegisterUser:
 
 * JAVASCRIPT
 
-* PYTHON/FLASK
+* PYTHON3/FLASK
 
 ### Libraries
 
