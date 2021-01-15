@@ -27,7 +27,7 @@
 </div>--->
 <div style="margin-top: 1em;" class="container">
     <h2 class="user_details">User's Details</h2>
-    <form class="needs-validation" action="{{ url_for('rent_book', archive=archive._id) }}" novalidate method="POST">
+    <form class="needs-validation" action="{{ url_for('sell_book', archive=archive._id) }}" novalidate method="POST">
         <div class="form-row">
             <div class="col-md-6 mb-6">
                 <input type="text" class="form-control" name="First" id="validationCustom01" pattern="(?=.*[a-z])(?=.*[A-Z]).{2,}$" placeholder="First name" required />
@@ -44,7 +44,7 @@
             </div>
         </div>
         <div style="background-color: unset;" class="container">
-            <button style="box-shadow: none;" method="POST" tabindex="1" value="rent_book" action="{{ url_for('rent_book', archive=archive._id) }}" type="submit" class="btn btn-success">Borrow</button>
+            <button style="box-shadow: none;" method="POST" tabindex="1" value="sell_book" action="{{ url_for('sell_book', archive=archive._id) }}" type="submit" class="btn btn-success">Buy</button>
         </div>
         <div>
             {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}

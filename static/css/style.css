@@ -73,7 +73,7 @@ main {
 
 #footer {
     position: relative;
-    top: 80%;
+    top: 90%;
     opacity: 0.8;
     height: 80px;
     text-align: center;
@@ -187,6 +187,23 @@ li span {
     float: right;
 }
 
+.search{
+    position: relative; 
+    right: 3rem; 
+    box-shadow: unset; 
+}
+.remove{
+    position: relative; 
+    right: 3rem; 
+    box-shadow: unset;
+}
+.back{
+    border: 1px #0d6efd solid;
+    text-decoration: none;
+    background-color: #ffe8e8e6;
+    position: relative;
+}
+
 @media screen and (max-width: 420px) {
     .btn.btn-primary {
         float: unset !important;
@@ -265,5 +282,11 @@ li span {
     .flashes {
         bottom: 0.5rem !important;
         letter-spacing: unset;
+    }
+}
+@media screen and (max-width: 780px) {
+    .search {
+        position:relative;
+        right:11%;
     }
 }

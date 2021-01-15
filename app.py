@@ -44,37 +44,45 @@ def search_task():
 
 
 @app.route("/sell_book/<archive>", methods=["GET", "POST"])
-def rent_book(archive):
+def sell_book(archive):
     if request.method == "POST":
         existing_email = mongo.db.UsersData.find_one({
             "Email": request.form.get("Email")})
         book = mongo.db.BooksData.find_one({"_id": ObjectId(archive)})
         status = book.get("Status")
-        print(status)
         if status == "Available":
             if existing_email:
-                print(existing_email)
-                book_update = {"$Status": "Sold"}
-                print(book_update)
-                mongo.db.tasks.update_one({"_id": ObjectId(archive)}, book_update)
-                print(mongo.db.BooksData.find_one({"_id": ObjectId(archive)}).get("Status"))
-                return redirect(url_for("book_selling", existing_email=existing_email))
+
+                new_status = "Sold"
+                submit = {
+                    "Title": book.get("Title"),
+                    "Author": book.get("Author"),
+                    "Genre": book.get("Genre"),
+                    "Year": book.get("Year"),
+                    "Country": book.get("Country"),
+                    "Location": book.get("Location"),
+                    "Status": new_status,
+                    "Price": book.get("Price")
+                }
+                
+                mongo.db.BooksData.update({"_id": ObjectId(archive)}, submit)
+                return redirect(url_for("book_selling", existing_email=existing_email.get('_id')))
             else:
-                print("User not registered")
                 flash("User not registered")
                 return redirect(url_for("sell_book", archive=archive))
         else:
-            print("Print not available")
             flash("Book is temporary not available for borrow")
             return redirect(url_for("sell_book", archive=archive))
 
     archive = mongo.db.BooksData.find_one({"_id": ObjectId(archive)})
     return render_template("sell_book.html", archive=archive)
 
+
 @app.route("/book_selling/<existing_email>", methods=["GET"])
-def book_lending(existing_email):
-    existing_email = mongo.db.BooksData.find_one({"_id": ObjectId(existing_email)})
-    return render_template("sell_book.html", existing_email=existing_email)
+def book_selling(existing_email):
+    existing_email = mongo.db.UsersData.find_one({"_id": ObjectId(existing_email)})
+    flash("Book bought by:")
+    return render_template("book_selling.html", existing_email=existing_email)
 
 
 
@@ -92,14 +100,14 @@ def add_task():
 
             add = {
 
-            "Title": request.form.get("Title").lower(),
-            "Author": request.form.get("Author").lower(),
-            "Genre": request.form.get("Genre"),
-            "Year": request.form.get("Year"),
-            "Country": request.form.get("Country"),
-            "Location": request.form.get("Location"),
-            "Status": "Available",
-            "Price": request.form.get("Price")
+                "Title": request.form.get("Title").lower(),
+                "Author": request.form.get("Author").lower(),
+                "Genre": request.form.get("Genre"),
+                "Year": request.form.get("Year"),
+                "Country": request.form.get("Country"),
+                "Location": request.form.get("Location"),
+                "Status": "Available",
+                "Price": request.form.get("Price")
 
             }
             new_book = mongo.db.BooksData.insert_one(add)
@@ -115,12 +123,9 @@ def remove():
     if request.method == "POST":
         existing_book = mongo.db.BooksData.find_one(
             {"Title": request.form.get("remove_title").lower()})
-        print(existing_book)
-        print(existing_book.get('_id'))
         if existing_book:
             return redirect(url_for("remove_book", archive=existing_book.get('_id')))
         else:
-            print("flash message")
             flash("Book does not exist in the database")
             return redirect(url_for("remove"))
     return render_template("remove.html")
@@ -131,19 +136,14 @@ def remove_book(archive):
     print("First attempt")
     print(archive)
     if request.method == "POST":
-        print("check1")
         try:
             mongo.db.BooksData.remove({"_id": ObjectId(archive)})
             flash("Book successful removed")
-            print("check2")
         except ValueError:
             flash("Removing book failed, try again")
-            print("check3")
             return redirect(url_for("home"))
            
     archive = mongo.db.BooksData.find_one({"_id": ObjectId(archive)})
-    print("Second attempt")
-    print(archive)
     return render_template("remove_book.html", archive=archive)
 
     
