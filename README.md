@@ -29,7 +29,7 @@ Welcome! [github.com](https://github.com/GiovanniSalvi/New_Library)
 
 Home: [Homepage](https://github.com/GiovanniSalvi/New_Library/blob/master/static/mockups/Mockups%20Home.png)
 
-Search: [Searc_book](https://github.com/GiovanniSalvi/New_Library/blob/master/static/mockups/Mockups%20Search%20task.png)
+Search: [Search_book](https://github.com/GiovanniSalvi/New_Library/blob/master/static/mockups/Mockups%20Search%20task.png)
 
 AddBook: [Add_book](https://github.com/GiovanniSalvi/New_Library/blob/master/static/mockups/Mockups%20Add%20task.png)
 
