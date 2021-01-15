@@ -8,18 +8,11 @@ Welcome! [github.com](https://github.com/GiovanniSalvi/New_Library)
 
 ### I tried to make the app interface as simple and easy to navigate as possible,the homepage provides a nav-bar menu to explore the app's functionalities which I will look into more in deep further on,and a footer which provides social networks links.
 
-### The nav menu, the footer, home button and background image are repeated in all website page to make the app having a consistent style.
+### The nav menu, the footer, home-button and background image are repeated in all website pages to make the app having a consistent style.
 
 
 ---
 
-## User Stories
-
-* as 
-* as
-* as
-
----
 
 ## Project's Wireframes
 * [Home Desktop](https://github.com/GiovanniSalvi/New_Library/blob/master/static/wireframes/New%20Wireframe%20Desktop%20home.png)
@@ -92,9 +85,9 @@ RegisterUser:
 
 ---
 
-## Testing
+## Testing
 
-  ### The project has been validated and beautified using:
+### The project has been validated and beautified using:
 
 * HTML: [https://validator.w3.org/nu/](https://validator.w3.org/nu/?doc=https%3A%2F%2Fgiovannisalvi.github.io%2FNew_Library%2F)
 
@@ -118,24 +111,39 @@ RegisterUser:
 
 ---
 
-### Testing client stories from UX section of README.md file:
+### User stories from UX section of README.md file:
 
-1. 
+1. As a User I want navigate the site to find what I need, easily.
 
-  * 
+  * In every page of the site it's possible to navigate through easily, action Home button leads back from every pages on the site to the Homepage.
+  
+  * Navigation bar is easily to find  at the top of the Homepage.
 
-2. 
+2. As a User I want to have a quick access to the page which allows me to register new customer/users in the library database.
 
-  * 
+  * Register link which leads to the form to fill(all fields are required) in order to register new users  to the database is at the top right in the Homepage.
 
-3. 
+3. As a User I want to find a simple way to check the status, location and others details of the books in the library.
 
-  * 
+  * Search_book link leads me to the form which allows me to find any books currently in the library, typing the title on the searching tab, is at the top left of the Homepage.
 
-4. 
+4. As a user I want to find a clear way to add a new book in the library's database.
 
-  *
+  * Add_book link lead me to the form(all fields are required) which allows me to add new books, inserting few important details of the book, is straight at the top of the Homepage.
 
+5. As a user I want to find an easy way to remove a book from the database.
+
+  * Remove link is at the top of the page, clicking on remove link leads user to a search tab which allows to find the book by its title and if the  book status is available, so item is currently in the library, is possible to delete the book by remove button at the bottom of the section.
+  
+ 6. As a user I want to find a quick way to sell a book requested by a potential customer.
+ 
+  * In the search_book page navigabile by search_book link from the Homepage,a search tab allows me to find any book in the library, if the book which I am looking for is Available, that makes possible to sell it clicking the Sell button at the bottom of the section.
+  
+ 7.As a user I want to access to the social networks in order to advertise or share new info,updates about Library catalog.
+ 
+  * The footer is  at the bottom of any pages linked in the Homepage navbar and provides few links to the most popular social networks across the worls(Facebook,Twitter)and other links to important platforms like Linkedin and Youtube.
+  
+  
 ### The project has beeen designed to make pages render well on a variety of devices and window or screen sizes such as:
 
 * Desktop: (1600x992px) Responsivness tested using ChromeDev inspector tool, as shown in the screenshot below:
@@ -206,7 +214,6 @@ RegisterUser:
 ## Credits
 
 
-
 ## Media
 
 * Social-media icons were provided from:
@@ -220,18 +227,15 @@ RegisterUser:
 
     [Hero Image](https://cdn.wallpapersafari.com/62/74/WigTJs.jpg)
 
-
 ---
 
-## Code  
+### Code  
 
 * Add_task, Register forms and JS form validation were taken  from [getbootstrap.com](https://getbootstrap.com/docs/5.0/forms/validation/) and then modified to fit with the web page needs.
 
 
 
-## Ackwoledgements
 
-* []()
 
 
 
