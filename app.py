@@ -71,7 +71,7 @@ def sell_book(archive):
                 flash("User not registered")
                 return redirect(url_for("sell_book", archive=archive))
         else:
-            flash("Book is temporary not available for borrow")
+            flash("Not possible to complete this operation Book is temporary ran out")
             return redirect(url_for("sell_book", archive=archive))
 
     archive = mongo.db.BooksData.find_one({"_id": ObjectId(archive)})

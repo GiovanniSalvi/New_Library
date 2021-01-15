@@ -197,12 +197,14 @@ li span {
 .search{
     position: relative; 
     right: 3rem; 
-    box-shadow: unset; 
+    box-shadow: unset;
+    outline:0; 
 }
 .remove{
     position: relative; 
     right: 3rem; 
     box-shadow: unset;
+    outline:0;
 }
 .back{
     border: 1px #0d6efd solid;

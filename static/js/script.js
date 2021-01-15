@@ -27,3 +27,4 @@
 })();
 
 
+                        // This piece of code was taken from bootstrap js as specified in the readme.md file //

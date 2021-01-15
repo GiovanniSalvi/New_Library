@@ -9,17 +9,18 @@
             <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="insert book title" name="remove_title" aria-label="Search" required/>
             <button type="submit" class="btn remove"><i class="fa fa-search"></i></button>
         </form>
-    </div>
-</div>
+                                  <!----remove flash message-->
 
-                          <!----remove flash message-->
-
-<div>
+      <div>
     {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
-    <div style="position: relative; left: 3rem; bottom: 35.5rem;" class="row flashes">
-        <h4>{{ message }}</h4>
-    </div>
+        <div style="position: unset;" class= "row flashes">
+            <h4>{{ message }}</h4>
+        </div>
     {% endfor %} {% endif %} {% endwith %}
+      </div>
+    </div>
 </div>
+
+
 
 {% endblock %}
