@@ -23,9 +23,7 @@ Welcome! [github.com](https://github.com/GiovanniSalvi/New_Library)
 
 ## Project's Wireframes
 
-![Home Desktop](https://user-images.githubusercontent.com/61980577/104667135-ac14d000-56d5-11eb-8999-902029b45b5a.png)
-![Home ipad](https://user-images.githubusercontent.com/61980577/104667120-a7501c00-56d5-11eb-8dbb-c3d2ba1666ec.png)
-![SearchBook Desktop](https://user-images.githubusercontent.com/61980577/104667131-aae3a300-56d5-11eb-80ab-a1dc9cde26ed.png)
+* [Home Desktop](https://github.com/GiovanniSalvi/New_Library/blob/master/static/wireframes/Home%20iphone.png)
 
 
 ## Project's Mockup screenshots
