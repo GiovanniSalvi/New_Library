@@ -188,14 +188,14 @@ Register: [Register_user](https://github.com/GiovanniSalvi/New_Library/blob/mast
 
 ## Deployment
 
-* 
+* Installing Heroku CLI
 
-* 
+* Create a Heroku Account
 
 
 ### In order to deploy the project, you need to perform some steps:
 
-    1. 
+    1. You need to create a heroku application which will provide a link to be accessed.
 
     2. 
 
