@@ -108,7 +108,9 @@ RegisterUser:
 
 * JAVASCRIPT: [https://webformatter.com/](https://webformatter.com/javascript)
 
-* PYTHON/FLASK: [https://codebeautify.org/](https://codebeautify.org/python-formatter-beautifier)
+* PYTHON: [http://pep8online.com/]()
+
+* PYTHON: [https://codebeautify.org/](https://codebeautify.org/python-formatter-beautifier)
 
 ### The quality of the website was measured using Google Lighthouse:
 
