@@ -201,13 +201,11 @@ Register:
 
     3. 
 
- ### In order to clone the project, you need to perform some steps:
+    4. 
 
-    1. 
+    5. 
 
-    2. 
-
-    3. 
+    6. 
 
 ---
 
