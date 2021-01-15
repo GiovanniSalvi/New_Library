@@ -22,9 +22,15 @@ Welcome! [github.com](https://github.com/GiovanniSalvi/New_Library)
 ---
 
 ## Project's Wireframes
-
-* [Home Desktop](https://github.com/GiovanniSalvi/New_Library/blob/master/static/wireframes/Home%20iphone.png)
-
+* [Home Desktop](https://github.com/GiovanniSalvi/New_Library/blob/master/static/wireframes/New%20Wireframe%20Desktop%20home.png)
+* [Home iPad](https://github.com/GiovanniSalvi/New_Library/blob/master/static/wireframes/Home%20ipad.png)
+* [Home iPhone](https://github.com/GiovanniSalvi/New_Library/blob/master/static/wireframes/Home%20iphone.png)
+* [SearchBook Desktop](https://github.com/GiovanniSalvi/New_Library/blob/master/static/wireframes/SearchBook%20desktop.png)
+* [SearchBook iPad](https://github.com/GiovanniSalvi/New_Library/blob/master/static/wireframes/Search_task%20ipad.png)
+* [SearchBook iPhone](https://github.com/GiovanniSalvi/New_Library/blob/master/static/wireframes/Search%20task%20iphone.png)
+* [AddBook Desktop](https://github.com/GiovanniSalvi/New_Library/blob/master/static/wireframes/AddBook%20desktop.png)
+* [Registration iPad](https://github.com/GiovanniSalvi/New_Library/blob/master/static/wireframes/Registration%20ipad.png)
+* [AddBook iPhone](https://github.com/GiovanniSalvi/New_Library/blob/master/static/wireframes/Addbook%20iphone.png)
 
 ## Project's Mockup screenshots
 
