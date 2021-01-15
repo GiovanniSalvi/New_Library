@@ -1,5 +1,7 @@
 {% extends "base.html" %} {% block body %}
 
+                              <!---flash message--->
+
 <div>
     {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
     <div style="position: relative; bottom:-2.5rem; color: #14cc14;" class="row flashes">
@@ -7,6 +9,9 @@
     </div>
     {% endfor %} {% endif %} {% endwith %}
 </div>
+
+                       <!-----This will show the details of the user which is supposed to buy the book--->---->
+
 <div class="container">
     <div class="book_display">
         <ul>
@@ -24,6 +29,8 @@
         </ul>
     </div>
 </div>
+
+                       <!------back button--->
 
 <div style="background-color: unset; margin-top: 5px;" class="container">
     <button style="box-shadow: none;" class="btn btn-link back" type="submit"><a href="{{ url_for('home') }}">Back</a></button>

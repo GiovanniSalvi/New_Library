@@ -17,24 +17,22 @@
                 </div>
                 {% block menu %} {% endblock %}
 
-                <!---<div class="menu-list row">
-         <div class="col">Search</div>
-         <div class="col">Add Book</div>
-         <div class="col">Remove Book</div>
-         <div class="col">Register User</div>
-      </div>--->
             </div>
         </div>
         <main class="section-container">
             {% block body %} {% endblock %}
         </main>
         <section>
-            <!-- flash messages -->
+
+                        <!-- flash messages -->
+
             {% with messages = get_flashed_messages() %} {% endwith %}
         </section>
 
         <footer class="container" id="footer">
-            <!---social media bar-->
+
+                       <!---social media bar-->
+                       
             <div class="icon-bar row">
                 <a href="https://www.facebook.com/" target="blank_" style="color: #061833;"><i class="fa fa-facebook"></i></a>
                 <a href="https://twitter.com/" target="blank_" style="color: #061833;"><i class="fa fa-twitter"></i></a>

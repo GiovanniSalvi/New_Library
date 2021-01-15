@@ -1,4 +1,7 @@
 {% extends "base.html" %} {% block body %}
+
+                        <!-----This will show the details of the book which is just added to the library---->
+
 <div class="container">
     <div class="book_display">
         <ul>
@@ -21,7 +24,8 @@
     </div>
 
     <div>
-        <!-- flash messages -->
+                          <!-- flash messages -->
+
         {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
         <div style="position: relative; top: -0.3em;" class="row flashes">
             <h3>{{ message }}</h3>

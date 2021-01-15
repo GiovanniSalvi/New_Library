@@ -1,4 +1,7 @@
 {% extends "base.html" %} {% block body %}
+
+                       <!------Add book form--->
+
 <h2 class="adding">Add<strong>Book</strong></h2>
 <div class="container">
     <form class="needs-validation" novalidate method="POST" action="{{ url_for('add_task') }}">
@@ -38,7 +41,13 @@
                 <input type="text" name="Price" class="form-control" id="validationCustom06" placeholder="Insert Price" pattern=".{6,}"" required/>
             </div>
         </div>
+
+                       <!-----add button--->
+
         <button id="registration" class="btn btn-primary btn-lg" tabindex="-1" type="submit">Add</button>
+
+                        <!----flash message--->
+
         <div>
             {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
             <div style="text-align: center; bottom: -0.5rem; flex-shrink: 0;" class="flashes">

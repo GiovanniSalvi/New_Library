@@ -1,14 +1,19 @@
 {% extends "base.html" %} {% block body %}
+ 
+                        <!---remove.html template-->
 
 <div class="container">
     <div class="search-form row">
         <h2 class="catalogue">Remove<strong>Book</strong></h2>
         <form class="form-inline d-flex justify-content-center md-form form-sm" style="padding-bottom: 5px;" method="POST" action="{{ url_for('remove') }}">
-            <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="insert book title" name="remove_title" aria-label="Search"/>
+            <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="insert book title" name="remove_title" aria-label="Search" required/>
             <button type="submit" class="btn remove"><i class="fa fa-search"></i></button>
         </form>
     </div>
 </div>
+
+                          <!----remove flash message-->
+
 <div>
     {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
     <div style="position: relative; left: 3rem; bottom: 35.5rem;" class="row flashes">

@@ -1,4 +1,6 @@
 {% extends "base.html" %} {% block body %}
+  
+                  <!-----This will show the details of the book which is meant to be removed-->
 
 <div class="container">
     <div class="book_display">
@@ -21,6 +23,9 @@
             <br />
         </ul>
     </div>
+
+                         <!-----remove book flash message-->
+
     <div>
         {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
         <div style="position: relative; bottom: 17.5rem;" class="row flashes">

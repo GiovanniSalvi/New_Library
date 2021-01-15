@@ -1,5 +1,7 @@
 {% extends "base.html" %} {% block menu %}
 
+                           <!---Homepage----> 
+
 <div class="menu-list row">
     <ul>
         <li class="col"><a href="{{ url_for('search_task') }}" style="text-decoration: none; color: black;">Search</a></li>
@@ -9,7 +11,9 @@
     </ul>
 </div>
 <section>
-    <!-- flash messages -->
+                           
+                          <!-- flash messages -->
+                          
     {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
     <div class="row flashes">
         <h4>{{ message }}</h4>

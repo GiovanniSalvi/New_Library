@@ -1,5 +1,7 @@
 {% extends "base.html" %} {% block body %}
 
+                                    <!----This will show the details of the book which is supposed to buy--->
+
 <div class="container">
     <div class="book_display">
         <ul>
@@ -21,10 +23,9 @@
         </ul>
     </div>
 </div>
+   
+                                 <!------user details form-->
 
-<!--<div style="background-color: unset;" class="container">
-       <button style="box-shadow: none;"   type="button" class="btn btn-secondary">Edit</button>
-</div>--->
 <div style="margin-top: 1em;" class="container">
     <h2 class="user_details">User's Details</h2>
     <form class="needs-validation" action="{{ url_for('sell_book', archive=archive._id) }}" novalidate method="POST">
@@ -46,6 +47,9 @@
         <div style="background-color: unset;" class="container">
             <button style="box-shadow: none;" method="POST" tabindex="1" value="sell_book" action="{{ url_for('sell_book', archive=archive._id) }}" type="submit" class="btn btn-success">Buy</button>
         </div>
+
+                         <!----flash message-->
+
         <div>
             {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
             <div style="bottom: -0.5rem; flex-shrink: 0;" class="flashes">
