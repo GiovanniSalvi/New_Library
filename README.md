@@ -27,15 +27,15 @@ Welcome! [github.com](https://github.com/GiovanniSalvi/New_Library)
 
 ## Project's Mockup screenshots
 
-Home:
+Home: [Homepage]()
 
-Search:
+Search: [Searc_book]()
 
-AddBook:
+AddBook: [Add_book]()
 
-RemoveBook:
+RemoveBook: [Remove_book]()
 
-Register:
+Register: [Register_user]()
 
 ---
 
