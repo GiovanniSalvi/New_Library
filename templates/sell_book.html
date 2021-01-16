@@ -45,14 +45,14 @@
             </div>
         </div>
         <div style="background-color: unset;" class="container">
-            <button style="box-shadow: none;" method="POST" tabindex="1" value="sell_book" action="{{ url_for('sell_book', archive=archive._id) }}" type="submit" class="btn btn-success">Buy</button>
+            <button style="box-shadow: none;" method="POST" tabindex="1" value="sell_book" action="{{ url_for('sell_book', archive=archive._id) }}" type="submit" class="btn btn-success">Sell Book!</button>
         </div>
 
                          <!----flash message-->
 
         <div>
             {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
-            <div style="bottom: -0.5rem; flex-shrink: 0;" class="flashes">
+            <div style="bottom: -0.5rem; flex-shrink: 0;background-color: unset;" class="flashes">
                 <h4>{{ message }}</h4>
             </div>
             {% endfor %} {% endif %} {% endwith %}

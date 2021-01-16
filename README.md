@@ -43,27 +43,33 @@ Register: [Register_user](https://github.com/GiovanniSalvi/New_Library/blob/mast
 
 ### Existing features
 
-*
+* Feature1: Menu-bar provides a fluid navigation through the site.
 
-*
+* Feature2: Homepage's body a background image an home button and a footer with social media links.
 
-*
+* Feature3: Search link leads to search tab input.Typing the title it'll give access to all books in the library.Click button "Sell Book" to purchase the book selected if status is Available.
 
-*
+* Feature4: Add_book link leads to form for adding new books to the database inserting all required fields.Clicking Add button will add a new book on the libray database.
 
-*
+* Feature5: Remove_book link leads to search tab input.Typing the title it'll give access to all books in the library.Click button "remove" to delete the book selected
 
-*
+* Feature6: Registration link leads to form for adding new guest to the database inserting all required fields.Clicking Submit button will add a new guest on the libray database.
 
 ### Features left to implement
 
-*
+* Implement the app, adding a login functionality for users(Librarians) in the Homepage.
 
-*
+* Implement the app, adding search tab and input form to search remove or modify users/clients from the library database.
 
-*
+* Implement the app, adding editable tab and a functionality to modify or edut  books features.
 
-*
+* Implement the app, adding E-Commerce functionality.
+
+* Implement the app, adding on mongo.db a new database collection with users who are supposed to run the website,a librarian or anyone working in a library, which is the reason why this app is built.
+
+* Implement the app, adding a functionality which allows to calculate the monthly library revenue.
+
+* Implement the app, adding an Authentication and Security functionality.
 
 ---
 
@@ -115,33 +121,33 @@ Register: [Register_user](https://github.com/GiovanniSalvi/New_Library/blob/mast
 
 1. As a User I want navigate the site to find what I need, easily.
 
-  * In every page of the site it's possible to navigate through easily, action Home button leads back from every pages on the site to the Homepage.
+  • In every page of the site it's possible to navigate through easily, action Home button leads back from every pages on the site to the Homepage.
   
-  * Navigation bar is easily to find  at the top of the Homepage.
+  • Navigation bar is easily to find  at the top of the Homepage.
 
 2. As a User I want to have a quick access to the page which allows me to register new customer/users in the library database.
 
-  * Register link which leads to the form to fill(all fields are required) in order to register new potential customer  to the database is at the top right in the Homepage.
+  • Register link which leads to the form to fill(all fields are required) in order to register new potential customer  to the database is at the top right in the Homepage.
 
 3. As a User I want to find a simple way to check the status, location and others details of the books in the library.
 
-  * Search_book link leads me to the form which allows me to find any books currently in the library, typing the title on the searching tab, is at the top left of the Homepage.
+  • Search_book link leads me to the form which allows me to find any books currently in the library, typing the title on the searching tab, is at the top left of the Homepage.
 
 4. As a user I want to find a clear way to add a new book in the library's database.
 
-  * Add_book link lead me to the form(all fields are required) which allows me to add new books, inserting few important details of the book, is straight at the top of the Homepage.
+  • Add_book link lead me to the form(all fields are required) which allows me to add new books, inserting few important details of the book, is straight at the top of the Homepage.
 
 5. As a user I want to find an easy way to remove a book from the database.
 
-  * Remove link is at the top of the page, clicking on remove link leads user to a search tab which allows to find the book by its title and if the  book status is available, so item is currently in the library, is possible to delete the book by remove button at the bottom of the section.
+  • Remove link is at the top of the page, clicking on remove link leads user to a search tab which allows to find the book by its title and if the  book status is available, so item is currently in the library, is possible to delete the book by remove button at the bottom of the section.
   
  6. As a user I want to find a quick way to sell a book requested by a potential customer.
  
-  * In the search_book page navigabile by search_book link from the Homepage,a search tab allows me to find any book in the library, if the book which I am looking for is Available, that makes possible to sell it clicking the Sell button at the bottom of the section.
+  • In the search_book page navigabile by search_book link from the Homepage,a search tab allows me to find any book in the library, if the book which I am looking for is Available, that makes possible to sell it clicking the "Sell Book" button at the bottom of the section.
   
  7. As a user I want to access to the social networks in order to advertise or share new info,updates about Library catalog.
  
-  * The footer is  at the bottom of any pages linked in the Homepage navbar and provides few links to the most popular social networks across the worls(Facebook,Twitter)and other links to important platforms like Linkedin and Youtube.
+  • The footer is  at the bottom of any pages linked in the Homepage navbar and provides few links to the most popular social networks across the worls(Facebook,Twitter)and other links to important platforms like Linkedin and Youtube.
   
   
 ### The project has beeen designed to make pages render well on a variety of devices and window or screen sizes such as:

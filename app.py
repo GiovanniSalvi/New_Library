@@ -146,7 +146,6 @@ def remove_book(archive):
     archive = mongo.db.BooksData.find_one({"_id": ObjectId(archive)})
     return render_template("remove_book.html", archive=archive)
 
-    
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
