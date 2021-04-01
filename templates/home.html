@@ -1,24 +1,23 @@
-{% extends "base.html" %} {% block menu %}
+{% extends "base.html" %} 
+{% block menu %}
 
-                           <!---Homepage----> 
+<!---Homepage---->
 
-<div class="menu-list row">
-    <ul>
-        <li class="col"><a href="{{ url_for('search_task') }}" style="text-decoration: none; color: black;">Search</a></li>
-        <li class="col"><a href="{{ url_for('add_task') }}" style="text-decoration: none; color: black;">AddBook</a></li>
-        <li class="col"><a href="{{ url_for('remove') }}" style="text-decoration: none; color: black;">RemoveBook</a></li>
-        <li class="col"><a href="{{ url_for('register') }}" style="text-decoration: none; color: black;">RegisterUser</a></li>
-    </ul>
+<!-- flash messages -->
+
+{% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
+<div class="row flashes">
+    <h6>{{ message }}</h6>
 </div>
-<section>
-                           
-                          <!-- flash messages -->
-                          
-    {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
-    <div class="row flashes">
-        <h4>{{ message }}</h4>
-    </div>
-    {% endfor %} {% endif %} {% endwith %}
-</section>
+{% endfor %} {% endif %} {% endwith %}
+   
+{% for book in register %}
+<tr>
+   <td>{{ book.register }}</td>
+   
+</tr>
+{% endfor %}
 
 {% endblock %}
+<!--flash messages--->
+

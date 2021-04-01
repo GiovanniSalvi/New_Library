@@ -1,7 +1,7 @@
 import os
 from flask import (
     Flask, flash, render_template,
-    redirect, request, session, url_for)
+    redirect, request, url_for)
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 if os.path.exists("env.py"):
@@ -19,6 +19,7 @@ mongo = PyMongo(app)
 
 @app.route("/")
 def home():
+    register = mongo.db.BooksData.find()
     return render_template("home.html", register=register)
 
 
@@ -34,12 +35,14 @@ def search_task():
         existing_book = mongo.db.BooksData.find_one(
             {"Title": request.form.get("search_title").lower()})
         if existing_book:
-            return redirect(url_for("sell_book", archive=existing_book.get('_id')))
-        
+            return redirect(url_for(
+                "sell_book", archive=existing_book.get(
+                    '_id')))
+
         else:
             flash("Book does not exist in the database")
             return redirect(url_for("search_task"))
-        
+
     return render_template("search_task.html")
 
 
@@ -64,14 +67,18 @@ def sell_book(archive):
                     "Status": new_status,
                     "Price": book.get("Price")
                 }
-                
+
                 mongo.db.BooksData.update({"_id": ObjectId(archive)}, submit)
-                return redirect(url_for("book_selling", existing_email=existing_email.get('_id')))
+                return redirect(url_for(
+                    "book_selling", existing_email=existing_email.get(
+                        '_id')))
             else:
                 flash("User not registered")
                 return redirect(url_for("sell_book", archive=archive))
         else:
-            flash("Not possible to complete this operation Book is temporary ran out")
+            flash(
+                "Not possible to complete this operation,Book is temporary ran out"
+                )
             return redirect(url_for("sell_book", archive=archive))
 
     archive = mongo.db.BooksData.find_one({"_id": ObjectId(archive)})
@@ -80,10 +87,10 @@ def sell_book(archive):
 
 @app.route("/book_selling/<existing_email>", methods=["GET"])
 def book_selling(existing_email):
-    existing_email = mongo.db.UsersData.find_one({"_id": ObjectId(existing_email)})
+    existing_email = mongo.db.UsersData.find_one(
+        {"_id": ObjectId(existing_email)})
     flash("Book bought by:")
     return render_template("book_selling.html", existing_email=existing_email)
-
 
 
 @app.route("/add_task", methods=["GET", "POST"])
@@ -124,7 +131,9 @@ def remove():
         existing_book = mongo.db.BooksData.find_one(
             {"Title": request.form.get("remove_title").lower()})
         if existing_book:
-            return redirect(url_for("remove_book", archive=existing_book.get('_id')))
+            return redirect(url_for(
+                "remove_book", archive=existing_book.get(
+                    '_id')))
         else:
             flash("Book does not exist in the database")
             return redirect(url_for("remove"))
@@ -142,7 +151,7 @@ def remove_book(archive):
         except ValueError:
             flash("Removing book failed, try again")
             return redirect(url_for("home"))
-           
+
     archive = mongo.db.BooksData.find_one({"_id": ObjectId(archive)})
     return render_template("remove_book.html", archive=archive)
 
@@ -152,7 +161,7 @@ def register():
     if request.method == "POST":
         existing_user = mongo.db.UsersData.find_one(
             {"Email": request.form.get("Email").lower()})
-        
+
         if existing_user:
             flash("User already exists")
             return redirect(url_for("register"))
@@ -164,13 +173,13 @@ def register():
             "Tel": request.form.get("Tel").lower(),
             "Postcode": request.form.get("Postcode").lower(),
             "Email": request.form.get("Email").lower()
-            
+
         }
         mongo.db.UsersData.insert_one(register)
-        
+
         flash("Registration Successful!")
         return redirect(url_for("home", register=register))
-            
+
     return render_template("register.html")
 
 
@@ -178,8 +187,3 @@ if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
             debug=True)
-
-
-
-
-
