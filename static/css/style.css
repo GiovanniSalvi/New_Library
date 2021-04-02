@@ -87,9 +87,8 @@ main {
 
 .form-control {
     max-width: 40%;
-    margin: 5px;
+    margin:  5px 0 20px;
     position: relative;
-    left: 51%;;
 }
 .catalogue {
     color: #ca0013;
@@ -218,14 +217,15 @@ li span {
     position: relative;
 }
 .box{
-    background-color: #9ea7af;
-    margin: 15px;
-    max-width: 42%;
+    background-color: #d9e3ec;
+    margin: 25px 15px;
+    width: 47%;
     border: 1px black solid;
     padding: 51px;
     line-height: 15px;
     font-size: larger;
     border-radius: 23px;
+    display: inline-table;
 }
 
                                       /*----responsive design------*/
