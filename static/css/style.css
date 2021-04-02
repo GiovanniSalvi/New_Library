@@ -50,9 +50,10 @@ div span {
     opacity: 0.6;
     transition: 0.5s;
     border: none;
-    float: right;
-    font-size: 20px;
+    font-size: 16px;
     color: white;
+    right:50%;
+    top:2%;
 }
 .menu-list {
     position: relative;
@@ -60,7 +61,6 @@ div span {
     word-spacing: 5em;
 }
 main {
-    max-height: 300px;
     position: relative;
     bottom: 40px;
 }
@@ -76,7 +76,6 @@ main {
 
 #footer {
     position: relative;
-    top: 100%;
     opacity: 0.8;                               /*--footer styling--*/
     height: 80px;
     text-align: center;
@@ -90,10 +89,10 @@ main {
     max-width: 40%;
     margin: 5px;
     position: relative;
-    left: 10px;
+    left: 51%;;
 }
 .catalogue {
-    color: #051d40;
+    color: #ca0013;
     text-align: center;
     padding-bottom: 10px;
     font-size: 30px;
@@ -123,6 +122,7 @@ label {
     font-weight: 400;
     padding: 10px;
     color: black;
+    left:51%;
 }
 
 .register {
@@ -216,6 +216,16 @@ li span {
     text-decoration: none;
     background-color: #ffe8e8e6;
     position: relative;
+}
+.box{
+    background-color: #9ea7af;
+    margin: 15px;
+    max-width: 42%;
+    border: 1px black solid;
+    padding: 51px;
+    line-height: 15px;
+    font-size: larger;
+    border-radius: 23px;
 }
 
                                       /*----responsive design------*/

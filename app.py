@@ -17,10 +17,21 @@ app.secret_key = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 
 
-@app.route("/")
+@app.route("/", methods=["GET", "POST"])
 def home():
+
     register = mongo.db.BooksData.find()
     return render_template("home.html", register=register)
+
+
+@app.route("/", methods=["GET", "POST"])
+def edit_book(book_id):
+    print("works")
+    finding_book = mongo.db.BooksData.find_one(
+        {"_id": ObjectId(book_id)})
+    return redirect(url_for(
+            "sell_book", archive=finding_book.get(
+                    '_id')))
 
 
 @app.route("/book_add/<new_book>", methods=["GET"])

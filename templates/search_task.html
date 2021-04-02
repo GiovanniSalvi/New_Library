@@ -2,17 +2,17 @@
 
                          <!---Search_task.html template--->
 
-<div class="container">
+<!---<div class="container">
     <div class="search-form row">
         <h2 class="catalogue">Library<strong>Search</strong></h2>
         <form class="form-inline d-flex justify-content-center md-form form-sm" style="padding-bottom: 5px;" method="POST" action="{{ url_for('search_task') }}">
             <input class="form-control form-control-sm mr-3 w-75" name="search_title" type="text" placeholder="insert book title " aria-label="Search" required/>
             <button style="box-shadow: none;" class="btn search"><i class="fa fa-search"></i></button>
         </form>
-
+ <div>--->
                            <!----flash message--->
 
-        <div>
+       
             {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
             <div style="position: unset;" class="row flashes">
                 <h6>{{ message }}</h6>

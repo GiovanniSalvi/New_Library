@@ -24,7 +24,7 @@
 
         </div>
     
-        <div class="container">
+        
         <div class="row">
         <div class="menu-list row">
             <ul style="margin-top: -5em;">
@@ -40,35 +40,13 @@
         </div>
        </div>
        </div>
-       </div>
+
     </header>
     <main class="section-container">
         {% block body %} {% endblock %}
     </main>
     <section>
-<!--<table>-->
-<!--<div class="">
-    <div class="">
-        <ul>
-            <li>Title: {{ register.Title }}</li>
-            <br />
-            <li>Author: {{ register.Author }}</li>
-            <br />
-            <li>Genre: {{ register.Genre }}</li>
-            <br />
-            <li>Year: {{ register.Year }}</li>
-            <br />
-            <li>Country: {{ register.Country }}</li>
-            <br />
-            <li>Location: {{ register.Location }}</li>
-            <br />
-            <li>Status: <span style="color: greenyellow;" id="status_color">{{ register.Status }}</span></li>
-            <br />
-            <li>Price: {{ register.Price }}</li>
-        </ul>
-    </div>
-    <div>
-</table>--->
+
         <!-- flash messages -->
     </section>
         {% with messages = get_flashed_messages() %} {% endwith %}
