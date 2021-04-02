@@ -4,23 +4,25 @@
 
 <!-- flash messages -->
 
+
+
+
+ {% block body %} 
+    <div class="search-form row">
+        <h2 class="catalogue">Library<strong>Search</strong></h2>
+        <form class="form-inline d-flex justify-content-center md-form form-sm" style="padding-bottom: 5px;" method="POST" action="{{ url_for('search_book') }}">
+            <input class="form-control form-control-sm mr-3 w-75" name="search_book" type="text" placeholder="insert book title " aria-label="Search" required/>
+            <button style="box-shadow: none;" class="btn search"><i class="fa fa-search"></i></button>
+        </form>
+ <div>
+
 {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
 <div class="row flashes">
     <h6>{{ message }}</h6>
 </div>
 {% endfor %} {% endif %} {% endwith %}
 
-
- {% block body %} 
-    <div class="search-form row">
-        <h2 class="catalogue">Library<strong>Search</strong></h2>
-        <form class="form-inline d-flex justify-content-center md-form form-sm" style="padding-bottom: 5px;" method="POST" action="{{ url_for('search_task') }}">
-            <input class="form-control form-control-sm mr-3 w-75" name="search_title" type="text" placeholder="insert book title " aria-label="Search" required/>
-            <button style="box-shadow: none;" class="btn search"><i class="fa fa-search"></i></button>
-        </form>
- <div>
-
-<div class="container" style="display:table;">
+<div class="container box-container" style="display:table;">
     {% for book in register %}
     <div class="box" href="{{ url_for('edit_book'), book_id}}">
     <p>Title: {{ book.Title }}</p>
@@ -29,7 +31,7 @@
     <p>Year: {{ book.Year }}</p>
     <p>Country: {{ book.Country }}</p>
     <p>Location: {{ book.Location }}</p>
-    <p style="color:red">Status: {{ book.Status }}</p>
+    <p style="color: rgb(255, 47, 47);" id="status_color"> {{ book.Status }}</p>
     <p>Price: {{ book.Price }}</p>
     </div>
     {% endfor %}

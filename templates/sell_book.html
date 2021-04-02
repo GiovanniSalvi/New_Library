@@ -4,7 +4,7 @@
 
 <div class="container">
     <div class="book_display">
-        <ul>
+        <ul class="book-details">
             <li>Title: {{ archive.Title }}</li>
             <br />
             <li>Author: {{ archive.Author }}</li>
@@ -23,10 +23,13 @@
         </ul>
     </div>
 </div>
+<div style="background-color: unset;" class="container">
+            <button style="box-shadow: none;" method="POST" tabindex="1" value="sell_book" action="" type="submit" class="btn btn-dark">Edit</button>
+        </div>
    
                                  <!------user details form-->
 
-<div style="margin-top: 1em;" class="container">
+<div class="container user-details">
     <h2 class="user_details">User's Details</h2>
     <form class="needs-validation" action="{{ url_for('sell_book', archive=archive._id) }}" novalidate method="POST">
         <div class="form-row">

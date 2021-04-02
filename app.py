@@ -40,11 +40,11 @@ def book_add(new_book):
     return render_template("book_add.html", new_book=new_book)
 
 
-@app.route("/search_task", methods=["GET", "POST"])
-def search_task():
+@app.route("/home", methods=["GET", "POST"])
+def search_book():
     if request.method == "POST":
         existing_book = mongo.db.BooksData.find_one(
-            {"Title": request.form.get("search_title").lower()})
+            {"Title": request.form.get("search_book").lower()})
         if existing_book:
             return redirect(url_for(
                 "sell_book", archive=existing_book.get(
@@ -52,9 +52,9 @@ def search_task():
 
         else:
             flash("Book does not exist in the database")
-            return redirect(url_for("search_task"))
+            return redirect(url_for("home"))
 
-    return render_template("search_task.html")
+    return render_template("home.html")
 
 
 @app.route("/sell_book/<archive>", methods=["GET", "POST"])
