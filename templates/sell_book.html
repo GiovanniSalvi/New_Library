@@ -1,6 +1,7 @@
 {% extends "base.html" %} {% block body %}
 
                                     <!----This will show the details of the book which is supposed to buy--->
+            
 
 <div class="container box-container" style="display:table;">
     <div class="book_display">
@@ -22,12 +23,14 @@
             <li>Price: {{ archive.Price }}</li>
         </ul>
     </div>
+  
+  
     <div style="background-color: unset;" class="container edit">
            <a href="{{ url_for('edit_task') }}"><button style="box-shadow: none;" method="POST" tabindex="1" value="sell_book" action="" type="submit" class="btn btn-dark">Edit</button></a>
            <button style="box-shadow: none;" class="btn btn-link" type="submit"><a href="{{ url_for('home') }}">Back</a></button>
     </div>
 </div>
-
+ 
    
                                  <!------user details form-->
 

@@ -1,5 +1,17 @@
 {% extends "base.html" %} {% block body %}
 
+
+               <!----flash message-->
+
+        <div>
+            {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
+            <div style="position: relative; left: 3rem; bottom: 36.5rem;" class="row flashes">
+                <h6>{{ message }}</h6>
+            </div>
+            {% endfor %} {% endif %} {% endwith %}
+        </div>
+
+
                          <!-----registration form---->
 
 <h2 class="register">Registration</h2>
@@ -8,12 +20,12 @@
         <div class="row">
             <div class="col-mb-4 form-row">
                 <label for="validationCustom01">First name</label>
-                <input type="text" class="form-control" name="First" id="validationCustom01" pattern="(?=.*[a-z])(?=.*[A-Z]).{2,}$" placeholder="First name" required />
+                <input type="text" class="form-control" name="First" id="validationCustom01" pattern="(?=.*[a-z])(?=.*[A-Z]).{2,}$" placeholder="First name(format:alphabetical characters only)" required />
                 <div class="valid-feedback"></div>
             </div>
             <div class="col-mb-4 form-row">
                 <label for="validationCustom02">Last name</label>
-                <input type="text" class="form-control" name="Last" id="validationCustom02" pattern="(?=.*[a-z])(?=.*[A-Z]).{2,}$" placeholder="Last name" required />
+                <input type="text" class="form-control" name="Last" id="validationCustom02" pattern="(?=.*[a-z])(?=.*[A-Z]).{2,}$" placeholder="Last name(format:alphabetical characters only)" required />
             </div>
         <div>
             <div class="col-mb-4 form-row">
@@ -53,15 +65,7 @@
             <button id="registration" class="btn" tabindex="-1" type="submit">Submit</button>
         </div>
 
-                       <!----flash message-->
-
-        <div>
-            {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
-            <div style="position: relative; left: 3rem; bottom: 36.5rem;" class="row flashes">
-                <h6>{{ message }}</h6>
-            </div>
-            {% endfor %} {% endif %} {% endwith %}
-        </div>
+        
     </form>
 </div>
 

@@ -28,3 +28,7 @@
 
 
                         // This piece of code was taken from bootstrap js as specified in the readme.md file //
+    
+window.setTimeout(function() {
+    $(".alert").fadeTo(500, 0) 
+}, 5000);

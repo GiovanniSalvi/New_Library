@@ -86,7 +86,7 @@ main {
     height: 80px;
     width: 100%;
     text-align: center;
-    top:40%
+    top:50%
 }
 .icon-bar {
     display: inline-block;
@@ -169,7 +169,7 @@ label {
 
 .book_display {
     color: #031023;
-    height: 50vw;
+    height: 60vw;
     text-align: center;
 }
 ul {
@@ -221,7 +221,14 @@ li span {
     border: 1px #0d6efd solid;
     text-decoration: none;
     background-color: #ffe8e8e6;
+    margin-top: -15%;
+    font-size: 1rem;
 }
+.btn.btn-danger{
+    margin-top: -15%;
+    font-size: 1rem;
+}
+
 
 .search{
     position: relative; 

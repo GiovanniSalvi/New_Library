@@ -104,8 +104,8 @@ def book_selling(existing_email):
 def add_task():
     if request.method == "POST":
         existing_title = mongo.db.BooksData.find_one(
-            {"Title": request.form.get("Title").lower(),
-                "Author": request.form.get("Author").lower(),
+            {"Title": request.form.get("Title"),
+                "Author": request.form.get("Author"),
                 "Location": request.form.get("Location")})
         if existing_title:
             flash("Book already in the database")
@@ -114,8 +114,8 @@ def add_task():
 
             add = {
 
-                "Title": request.form.get("Title").lower(),
-                "Author": request.form.get("Author").lower(),
+                "Title": request.form.get("Title"),
+                "Author": request.form.get("Author"),
                 "Genre": request.form.get("Genre"),
                 "Year": request.form.get("Year"),
                 "Country": request.form.get("Country"),
@@ -136,7 +136,7 @@ def add_task():
 def remove():
     if request.method == "POST":
         existing_book = mongo.db.BooksData.find_one(
-            {"Title": request.form.get("remove_title").lower()})
+            {"Location": request.form.get("remove_book")})
         if existing_book:
             return redirect(url_for(
                 "remove_book", archive=existing_book.get(
