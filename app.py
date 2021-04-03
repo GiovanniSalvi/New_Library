@@ -24,14 +24,10 @@ def home():
     return render_template("home.html", register=register)
 
 
-@app.route("/", methods=["GET", "POST"])
-def edit_book(book_id):
-    print("works")
-    finding_book = mongo.db.BooksData.find_one(
-        {"_id": ObjectId(book_id)})
-    return redirect(url_for(
-            "sell_book", archive=finding_book.get(
-                    '_id')))
+@app.route("/edit_task", methods=["GET", "POST"])
+def edit_task():
+
+    return render_template("edit_task.html")
 
 
 @app.route("/book_add/<new_book>", methods=["GET"])
@@ -153,8 +149,6 @@ def remove():
 
 @app.route("/remove_book/<archive>", methods=["GET", "POST"])
 def remove_book(archive):
-    print("First attempt")
-    print(archive)
     if request.method == "POST":
         try:
             mongo.db.BooksData.remove({"_id": ObjectId(archive)})

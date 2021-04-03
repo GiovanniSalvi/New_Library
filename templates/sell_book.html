@@ -2,9 +2,9 @@
 
                                     <!----This will show the details of the book which is supposed to buy--->
 
-<div class="container">
+<div class="container box-container" style="display:table;">
     <div class="book_display">
-        <ul class="book-details">
+        <ul class="box">
             <li>Title: {{ archive.Title }}</li>
             <br />
             <li>Author: {{ archive.Author }}</li>
@@ -17,20 +17,22 @@
             <br />
             <li>Location: {{ archive.Location }}</li>
             <br />
-            <li>Status: <spam style="color: greenyellow;" id="status_color">{{ archive.Status }}</spam></li>
+            <li>Status: <spam style="color: rgb(255, 47, 47);">{{ archive.Status }}</spam></li>
             <br />
             <li>Price: {{ archive.Price }}</li>
         </ul>
     </div>
+    <div style="background-color: unset;" class="container edit">
+           <a href="{{ url_for('edit_task') }}"><button style="box-shadow: none;" method="POST" tabindex="1" value="sell_book" action="" type="submit" class="btn btn-dark">Edit</button></a>
+           <button style="box-shadow: none;" class="btn btn-link" type="submit"><a href="{{ url_for('home') }}">Back</a></button>
+    </div>
 </div>
-<div style="background-color: unset;" class="container">
-            <button style="box-shadow: none;" method="POST" tabindex="1" value="sell_book" action="" type="submit" class="btn btn-dark">Edit</button>
-        </div>
+
    
                                  <!------user details form-->
 
 <div class="container user-details">
-    <h2 class="user_details">User's Details</h2>
+    <h2 class="user_details">Users Details</h2>
     <form class="needs-validation" action="{{ url_for('sell_book', archive=archive._id) }}" novalidate method="POST">
         <div class="form-row">
             <div class="col-md-6 mb-6">
@@ -48,7 +50,7 @@
             </div>
         </div>
         <div style="background-color: unset;" class="container">
-            <button style="box-shadow: none;" method="POST" tabindex="1" value="sell_book" action="{{ url_for('sell_book', archive=archive._id) }}" type="submit" class="btn btn-success">Sell Book!</button>
+            <button style="box-shadow: none;" method="POST" tabindex="1" value="sell_book" action="{{ url_for('sell_book',  archive=archive._id) }}" type="submit" class="btn btn-success">Sell Book!</button>
         </div>
 
                          <!----flash message-->

@@ -1,0 +1,93 @@
+{% extends "base.html" %} {% block body %}
+<!-- Editable table -->
+<div class="container">
+  <h3 class="card-header text-center font-weight-bold text-uppercase py-4">
+    Editable table
+  </h3>
+  <div class="card-body">
+    <div id="table" class="table-editable">
+      <table class="table table-bordered table-responsive-md table-striped text-center">
+        <thead>
+          <tr>
+            <th class="text-center">Title</th>
+            <th class="text-center">Author</th>
+            <th class="text-center">Genre</th>
+            <th class="text-center">Year</th>
+            <th class="text-center">Country</th>
+            <th class="text-center">Location</th>
+            <th class="text-center">Price</th>
+            <th class="text-center"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="pt-3-half" contenteditable="true"></td>
+            <td class="pt-3-half" contenteditable="true"></td>
+            <td class="pt-3-half" contenteditable="true"></td>
+            <td class="pt-3-half" contenteditable="true"></td>
+            <td class="pt-3-half" contenteditable="true"></td>
+            <td class="pt-3-half" contenteditable="true"></td>
+            <td class="pt-3-half">
+              <span class="table-up"
+                ><a href="#!" class="indigo-text"
+                  ><i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i></a
+              ></span>
+              <span class="table-down"
+                ><a href="#!" class="indigo-text"
+                  ><i class="fas fa-long-arrow-alt-down" aria-hidden="true"></i></a
+              ></span>
+            </td>
+            <td>
+              <span class="table-remove"
+                ><button type="button" class="btn btn-danger btn-rounded btn-sm my-0">
+                  Edit
+                </button></span
+              >
+            </td>
+          </tr>
+          <!-- This is our clonable table line -->
+          <tr>
+            <td class="pt-3-half" contenteditable="true"></td>
+            <td class="pt-3-half" contenteditable="true"></td>
+            <td class="pt-3-half" contenteditable="true"></td>
+            <td class="pt-3-half" contenteditable="true"></td>
+            <td class="pt-3-half" contenteditable="true"></td>
+            <td class="pt-3-half" contenteditable="true"></td>
+            <td class="pt-3-half">
+              <span class="table-up"
+                ><a href="#!" class="indigo-text"
+                  ><i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i></a
+              ></span>
+              <span class="table-down"
+                ><a href="#!" class="indigo-text"
+                  ><i class="fas fa-long-arrow-alt-down" aria-hidden="true"></i></a
+              ></span>
+            </td>
+            <td>
+              <span class="table-remove"
+                ><button type="button" class="btn btn-danger btn-rounded btn-sm my-0">
+                  Edit
+                </button></span
+              >
+            </td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<!-- Editable table -->
+
+                       <!----flash message-->
+
+    <div>
+        {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
+            <div style="position: relative; left: 3rem; bottom: 36.5rem;" class="row flashes">
+                <h6>{{ message }}</h6>
+            </div>
+            {% endfor %} {% endif %} {% endwith %}
+        </div>
+
+
+{% endblock %}
