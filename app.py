@@ -40,7 +40,7 @@ def book_add(new_book):
 def search_book():
     if request.method == "POST":
         existing_book = mongo.db.BooksData.find_one(
-            {"Title": request.form.get("search_book").lower()})
+            {"Location": request.form.get("search_book")})
         if existing_book:
             return redirect(url_for(
                 "sell_book", archive=existing_book.get(
@@ -106,7 +106,7 @@ def add_task():
         existing_title = mongo.db.BooksData.find_one(
             {"Title": request.form.get("Title").lower(),
                 "Author": request.form.get("Author").lower(),
-                "Year": request.form.get("Year")})
+                "Location": request.form.get("Location")})
         if existing_title:
             flash("Book already in the database")
             return redirect(url_for("add_task"))

@@ -1,14 +1,14 @@
 {% extends "base.html" %} {% block body %}
 <!-- Editable table -->
 <div class="container">
-  <h3 class="card-header text-center font-weight-bold text-uppercase py-4">
+  <h3 class="card-header text-center font-weight-bold text-uppercase  py-4" style="color:black;">
     Editable table
   </h3>
   <div class="card-body">
     <div id="table" class="table-editable">
       <table class="table table-bordered table-responsive-md table-striped text-center">
         <thead>
-          <tr>
+          <tr style="color:black;">
             <th class="text-center">Title</th>
             <th class="text-center">Author</th>
             <th class="text-center">Genre</th>
@@ -20,7 +20,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
+          <tr class="content-table">
             <td class="pt-3-half" contenteditable="true"></td>
             <td class="pt-3-half" contenteditable="true"></td>
             <td class="pt-3-half" contenteditable="true"></td>

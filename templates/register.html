@@ -15,9 +15,10 @@
                 <label for="validationCustom02">Last name</label>
                 <input type="text" class="form-control" name="Last" id="validationCustom02" pattern="(?=.*[a-z])(?=.*[A-Z]).{2,}$" placeholder="Last name" required />
             </div>
+        <div>
             <div class="col-mb-4 form-row">
                 <label for="validationCustomEmailAddress">Email</label>
-                <div class="input-group">
+                <div class="input-group" style="justify-content: center;">
                     <input
                         type="text"
                         class="form-control email-control"
@@ -28,12 +29,13 @@
                         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                         required
                     />
+                </div>
+                </div>
                     <div class="invalid-feedback"></div>
                 </div>
             </div>
-        </div>
-        <div class="row" style="height: 25em;">
-            <div class="col-mb-4 form-row">
+        <div class="row">
+            <div class="col-mb-4 form-row" style="margin-top: -35px;">
                 <label for="validationCustom03">Phone Number</label>
                 <input type="text" class="form-control" name="Tel" id="validationCustom03" placeholder="format:07405572XXX" pattern="[0-9]{6,18}$" minlenght="5" maxlength="15" required />
                 <div class="invalid-feedback"></div>

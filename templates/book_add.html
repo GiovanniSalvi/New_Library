@@ -2,8 +2,8 @@
 
                         <!-----This will show the details of the book which is just added to the library---->
 
-<div class="container">
-    <div class="book_display">
+<div class="container box-container" style="display:table;">
+    <div class="book_display row">
         <ul>
             <li>Title: {{ new_book.Title }}</li>
             <br />
@@ -21,8 +21,8 @@
             <br />
             <li>Price: {{ new_book.Price }}</li>
         </ul>
+       </div>
     </div>
-
     <div>
                           <!-- flash messages -->
 

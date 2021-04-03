@@ -10,7 +10,6 @@ body {
     background-color: #6f6868;
     border-radius: 15px;
     opacity: 0.8;
-    max-height: 750px;
 }
 .row {
     line-height: 2.5;
@@ -59,6 +58,7 @@ div span {
     width: fit-content;
     font-size: 16px;
     color: white;
+    position: relative;
     left: 48%;
 }
 .menu-list {
@@ -94,7 +94,7 @@ main {
 }
 
 .form-control {
-    max-width: 50%;
+    max-width: 70%;
     margin:  5px 0 20px;
     position: relative;
 }
@@ -221,7 +221,6 @@ li span {
     border: 1px #0d6efd solid;
     text-decoration: none;
     background-color: #ffe8e8e6;
-    float: right;
 }
 
 .search{
@@ -246,7 +245,7 @@ li span {
     width: 47%;
     border: 1px black solid;
     padding: 51px;
-    line-height: 15px;
+    line-height: 23px;
     font-size: larger;
     border-radius: 23px;
     display: inline-table;
@@ -260,11 +259,13 @@ li span {
     text-align:center ;
 }
 .btn.btn-dark{
-    font-size: 20px;
     background-color: #020202!important;
+    margin-top: 5%;
 }
-.pt-3-half { 
-    padding-top: 1.4rem; 
+.content-table{
+    font-size: 25px;
+    color:black
+    ;
 }
 
                                       /*----responsive design------*/
@@ -293,9 +294,10 @@ li span {
         font-size: 0.7rem;
     }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 980px) {
     .btn.btn-link {
         font-size: 0.7rem;
+        margin-right: 10%;
     }
 }
 @media screen and (max-width: 480px) {
@@ -372,7 +374,13 @@ li span {
 }
 @media screen and (max-width: 980px) {
     .box {
-        display: table-caption;
         width:unset;
+    }
+}
+@media screen and (max-width: 1080px) {
+    .btn.btn-dark {
+        font-size: 0.7em;
+        margin-top: 12%; 
+        float: left;
     }
 }

@@ -4,7 +4,7 @@
 
 <div class="container box-container" style="display:table;">
     <div class="book_display">
-        <ul class="box">
+        <ul class="box" style="width:70%">
             <li>Title: {{ archive.Title }}</li>
             <br />
             <li>Author: {{ archive.Author }}</li>
@@ -34,16 +34,14 @@
 <div class="container user-details">
     <h2 class="user_details">Users Details</h2>
     <form class="needs-validation" action="{{ url_for('sell_book', archive=archive._id) }}" novalidate method="POST">
-        <div class="form-row">
+    <div class="form-row"style="align-items:start!important">
             <div class="col-md-6 mb-6">
                 <input type="text" class="form-control" name="First" id="validationCustom01" pattern="(?=.*[a-z])(?=.*[A-Z]).{2,}$" placeholder="First name" required />
                 <div class="valid-feedback"></div>
             </div>
-        </div>
         <div class="col-md-6 mb-6">
             <input type="text" class="form-control" name="Last" id="validationCustom02" pattern="(?=.*[a-z])(?=.*[A-Z]).{2,}$" placeholder="Last name" required />
         </div>
-        <div class="form-row">
             <div class="col-md-6 mb-6">
                 <input type="text" class="form-control" name="Email" id="validationCustom03" placeholder="Email Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required />
                 <div class="invalid-feedback"></div>
@@ -55,7 +53,7 @@
 
                          <!----flash message-->
 
-        <div>
+    <div>
             {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
             <div style="bottom: -0.5rem; flex-shrink: 0;background-color: unset;" class="flashes">
                 <h6>{{ message }}</h6>
