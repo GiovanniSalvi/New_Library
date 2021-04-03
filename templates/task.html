@@ -1,20 +1,4 @@
-{% extends "base.html" %} {% block menu %}  {% endblock %}
-
-<!---Homepage---->
-
-<!-- flash messages -->
-
-
-
-
- {% block body %} 
-    <div class="search-form row">
-        <h2 class="catalogue">Library<strong>Search</strong></h2>
-        <form class="form-inline d-flex justify-content-center md-form form-sm" style="padding-bottom: 5%; padding-left: 5%;" method="POST" action="{{ url_for('search_book') }}">
-            <input class="form-control form-control-sm mr-3" style="max-width:40%;" name="search_book" type="text" placeholder="insert books location (format:A8) " aria-label="Search" required/>
-            <button style="box-shadow: none;" class="btn search"><i class="fa fa-search"></i></button>
-        </form>
- <div>
+{% extends "base.html" %} {% block body %}
 
 {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
 <div class="row flashes">
@@ -23,7 +7,7 @@
 {% endfor %} {% endif %} {% endwith %}
 
 <div class="container box-container" style="display:table;">
-    {% for book in register %}
+    {% for book in books %}
     <div class="box">
     <p>Title: {{ book.Title }}</p>
     <p>Author: {{ book.Author }}</p>
@@ -41,11 +25,8 @@
    
 </div> 
 
+
+
+
+
 {% endblock %}
-    
-
-
-
-
-<!--flash messages--->
-

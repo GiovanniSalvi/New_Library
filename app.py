@@ -24,10 +24,25 @@ def home():
     return render_template("home.html", register=register)
 
 
-@app.route("/edit_task", methods=["GET", "POST"])
-def edit_task():
+@app.route("/edit_task/<archive>", methods=["GET", "POST"])
+def edit_task(archive):
+    if request.method == "POST":
+        book = mongo.db.BooksData.find_one({"_id": ObjectId(archive)})
+        update = {
+                    "Title": request.form.get("Title"),
+                    "Author": request.form.get("Author"),
+                    "Genre": request.form.get("Genre"),
+                    "Year": request.form.get("Year"),
+                    "Country": request.form.get("Country"),
+                    "Location": request.form.get("Location"),
+                    "Status": book.get("Status"),
+                    "Price": request.form.get("Price")
+                }
 
-    return render_template("edit_task.html")
+        mongo.db.BooksData.update({"_id": ObjectId(archive)}, update)
+
+    archive = mongo.db.BooksData.find_one({"_id": ObjectId(archive)})
+    return render_template("edit_task.html", archive=archive)
 
 
 @app.route("/book_add/<new_book>", methods=["GET"])
@@ -41,16 +56,21 @@ def search_book():
     if request.method == "POST":
         existing_book = mongo.db.BooksData.find_one(
             {"Location": request.form.get("search_book")})
+
         if existing_book:
             return redirect(url_for(
-                "sell_book", archive=existing_book.get(
-                    '_id')))
-
+                "task", books=existing_book.get("_id")))
         else:
             flash("Book does not exist in the database")
             return redirect(url_for("home"))
 
     return render_template("home.html")
+
+
+@app.route("/task/<books>", methods=["GET"])
+def task(books):
+    book = mongo.db.BooksData.find({"_id": ObjectId(books)})
+    return render_template("task.html", books=book)
 
 
 @app.route("/sell_book/<archive>", methods=["GET", "POST"])
@@ -104,9 +124,7 @@ def book_selling(existing_email):
 def add_task():
     if request.method == "POST":
         existing_title = mongo.db.BooksData.find_one(
-            {"Title": request.form.get("Title"),
-                "Author": request.form.get("Author"),
-                "Location": request.form.get("Location")})
+            {"Location": request.form.get("Location")})
         if existing_title:
             flash("Book already in the database")
             return redirect(url_for("add_task"))

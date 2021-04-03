@@ -60,6 +60,8 @@ div span {
     color: white;
     position: relative;
     left: 48%;
+    top: 5%;
+
 }
 .menu-list {
     position: relative;
@@ -99,7 +101,7 @@ main {
     position: relative;
 }
 .catalogue {
-    color: #ca0013;
+    color: #051d40;
     text-align: center;
     padding-bottom: 10px;
     font-size: 30px;
@@ -154,7 +156,7 @@ label {
 .adding {
     text-align: center;
     position: relative;
-    bottom: 2.8rem;
+    bottom: 4.8rem;
     color: #091d3a;
     padding-bottom: 10px;
     font-size: 30px;
@@ -169,7 +171,7 @@ label {
 
 .book_display {
     color: #031023;
-    height: 60vw;
+    height: 40vw;
     text-align: center;
 }
 ul {
@@ -195,6 +197,7 @@ li span {
 }
 .user-details{
     margin-top: 5em;
+    color:black;
 }
 
                            /*Buttons styling*/
@@ -204,7 +207,7 @@ li span {
     left: 37%;
 }                        
 
-.btn.btn-success.btn.btn-dark {
+.btn.btn-dark {
     position: relative;
     left: 48%;
     margin-top: 10px;
@@ -213,8 +216,8 @@ li span {
 }
 .btn.btn-success{
     position: relative;
-    bottom: 5px;
-    right: 10px;
+    bottom: -10px;
+    font-size: 1rem;
 }
 
 .btn.btn-link {
@@ -262,9 +265,6 @@ li span {
     min-width: inherit;
     text-align: center;
 }
-.edit{
-    text-align:center ;
-}
 .btn.btn-dark{
     background-color: #020202!important;
     margin-top: 5%;
@@ -273,6 +273,18 @@ li span {
     font-size: 25px;
     color:black
     ;
+}
+.card-header{
+    color: black;
+    position: relative;
+    font-size: 30px;
+    font-weight: normal;
+}
+.sell-button{
+    position: relative;
+    right: 1%;
+    float: left;
+    font-size: 1em;
 }
 
                                       /*----responsive design------*/
@@ -296,9 +308,13 @@ li span {
         font-size: 15px;
     }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 980px) {
     .btn.btn-success {
         font-size: 0.7rem;
+        position: relative;
+        top: 20px;
+        float: right;
+
     }
 }
 @media screen and (max-width: 980px) {
@@ -389,5 +405,10 @@ li span {
         font-size: 0.7em;
         margin-top: 12%; 
         float: left;
+    }
+}
+@media screen and (max-width: 980px) {
+    .remove {
+        position:unset;
     }
 }

@@ -5,16 +5,17 @@
 <div>
     {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
     <div style="position: relative; bottom:-2.5rem; color: #14cc14;" class="row flashes">
-        <h6>{{ message }}</h6>
+        <h5>{{ message }}</h5>
     </div>
     {% endfor %} {% endif %} {% endwith %}
 </div>
 
                        <!-----This will show the details of the user which is supposed to buy the book--->
 
-<div class="container">
-    <div class="book_display">
-        <ul>
+<div class="container box-container" style="display:table;">
+   <div class="book_display">
+    <div class="box">
+        <ul style="margin:unset; padding-left:0;">
             <li>First: {{ existing_email.First }}</li>
             <br />
             <li>Last: {{ existing_email.Last }}</li>
@@ -27,13 +28,14 @@
             <br />
             <li>Email: {{ existing_email.Email }}</li>
         </ul>
+                               <!------back button--->
     </div>
+        <div style="background-color: unset; margin-top: 5px; height: 5em;" class="container">
+         <button style="box-shadow: none;" class="btn btn-link back" type="submit"><a href="{{ url_for('home') }}">Back</a></button>
+        </div>
+  </div>
 </div>
 
-                       <!------back button--->
 
-<div style="background-color: unset; margin-top: 5px;" class="container">
-    <button style="box-shadow: none;" class="btn btn-link back" type="submit"><a href="{{ url_for('home') }}">Back</a></button>
-</div>
 
 {% endblock %}

@@ -1,11 +1,12 @@
 {% extends "base.html" %} {% block body %}
 <!-- Editable table -->
 <div class="container">
-  <h3 class="card-header text-center font-weight-bold text-uppercase  py-4" style="color:black;">
-    Editable table
+  <h3 class="card-header text-center text-uppercase  py-4" style="color:black;">
+    Book<strong>Edit</strong>
   </h3>
   <div class="card-body">
     <div id="table" class="table-editable">
+    <form novalidate method="POST">
       <table class="table table-bordered table-responsive-md table-striped text-center">
         <thead>
           <tr style="color:black;">
@@ -21,13 +22,13 @@
         </thead>
         <tbody>
           <tr class="content-table">
-            <td class="pt-3-half" contenteditable="true"></td>
-            <td class="pt-3-half" contenteditable="true"></td>
-            <td class="pt-3-half" contenteditable="true"></td>
-            <td class="pt-3-half" contenteditable="true"></td>
-            <td class="pt-3-half" contenteditable="true"></td>
-            <td class="pt-3-half" contenteditable="true"></td>
-            <td class="pt-3-half">
+            <td class="pt-3-half" contenteditable="true"><input type="text" name="Title" pattern="[A-Z-a-z-0-9 ]{1,40}" required />{{ archive.Title }}</td>
+            <td class="pt-3-half" name="Author" contenteditable="true"><input type="text" name="Author" pattern="[A-Z-a-z .]{1,40}" required />{{ archive.Author }}</td>
+            <td class="pt-3-half" name="Genre" contenteditable="true"> <input type="text" name="Genre" pattern="[A-Z-a-z-0-9 ]{1,40}" required />{{ archive.Genre }}</td>
+            <td class="pt-3-half" name="Year" contenteditable="true"><input type="text" name="Year" pattern="[a-z .0-9]{1,4}" required />{{ archive.Year }}</td>
+            <td class="pt-3-half" name="Country" contenteditable="true"><input type="text" name="Country" pattern="[A-Z a-z .]{1,40}" required />{{ archive.Country }}</td>
+            <td class="pt-3-half" name="Location" contenteditable="true"> <input type="text" name="Location" pattern="[A-Z0-9]{2}$" required />{{ archive.Location }}</td>
+            <td class="pt-3-half" name="Price" contenteditable="true"><input type="text" name="Price" pattern=".{6,}" required/>{{ archive.Price }}</td>
               <span class="table-up"
                 ><a href="#!" class="indigo-text"
                   ><i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i></a
@@ -36,44 +37,17 @@
                 ><a href="#!" class="indigo-text"
                   ><i class="fas fa-long-arrow-alt-down" aria-hidden="true"></i></a
               ></span>
-            </td>
             <td>
-              <span class="table-remove"
-                ><button type="button" class="btn btn-danger btn-rounded btn-sm my-0">
-                  Edit
-                </button></span
-              >
+              <span class="table-remove">
+    <button type="submit" class="btn btn-danger btn-rounded btn-sm my-0" tabindex="-1" >
+                  Update
+                </button>
+            </span>
             </td>
           </tr>
-          <!-- This is our clonable table line -->
-          <tr>
-            <td class="pt-3-half" contenteditable="true"></td>
-            <td class="pt-3-half" contenteditable="true"></td>
-            <td class="pt-3-half" contenteditable="true"></td>
-            <td class="pt-3-half" contenteditable="true"></td>
-            <td class="pt-3-half" contenteditable="true"></td>
-            <td class="pt-3-half" contenteditable="true"></td>
-            <td class="pt-3-half">
-              <span class="table-up"
-                ><a href="#!" class="indigo-text"
-                  ><i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i></a
-              ></span>
-              <span class="table-down"
-                ><a href="#!" class="indigo-text"
-                  ><i class="fas fa-long-arrow-alt-down" aria-hidden="true"></i></a
-              ></span>
-            </td>
-            <td>
-              <span class="table-remove"
-                ><button type="button" class="btn btn-danger btn-rounded btn-sm my-0">
-                  Edit
-                </button></span
-              >
-            </td>
-          </tr>
-          
         </tbody>
       </table>
+    </form>
     </div>
   </div>
 </div>

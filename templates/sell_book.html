@@ -23,21 +23,15 @@
             <li>Price: {{ archive.Price }}</li>
         </ul>
     </div>
-  
-  
-    <div style="background-color: unset;" class="container edit">
-           <a href="{{ url_for('edit_task') }}"><button style="box-shadow: none;" method="POST" tabindex="1" value="sell_book" action="" type="submit" class="btn btn-dark">Edit</button></a>
-           <button style="box-shadow: none;" class="btn btn-link" type="submit"><a href="{{ url_for('home') }}">Back</a></button>
-    </div>
-</div>
+
  
    
                                  <!------user details form-->
 
 <div class="container user-details">
-    <h2 class="user_details">Users Details</h2>
+    <h3 class="user_details">Users Details</h3>
     <form class="needs-validation" action="{{ url_for('sell_book', archive=archive._id) }}" novalidate method="POST">
-    <div class="form-row"style="align-items:start!important">
+    <div class="form-row" style="align-items:start!important">
             <div class="col-md-6 mb-6">
                 <input type="text" class="form-control" name="First" id="validationCustom01" pattern="(?=.*[a-z])(?=.*[A-Z]).{2,}$" placeholder="First name" required />
                 <div class="valid-feedback"></div>
@@ -49,8 +43,7 @@
                 <input type="text" class="form-control" name="Email" id="validationCustom03" placeholder="Email Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required />
                 <div class="invalid-feedback"></div>
             </div>
-        </div>
-        <div style="background-color: unset;" class="container">
+        <div style="background-color: unset;" class="container sell-button">
             <button style="box-shadow: none;" method="POST" tabindex="1" value="sell_book" action="{{ url_for('sell_book',  archive=archive._id) }}" type="submit" class="btn btn-success">Sell Book!</button>
         </div>
 
