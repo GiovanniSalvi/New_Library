@@ -198,8 +198,6 @@ li span {
     float:right;
 }
 
-                           /*Buttons styling*/
-
 .btn.btn-secondary {
     position: relative;
     left: 37%;
@@ -274,12 +272,6 @@ li span {
     float: left;
     font-size: 1em;
 }
-#success{
-    position: relative;
-    font-size: 1rem;
-    width: 15em;
-    float: left;
-}
 
                                       /*----responsive design------*/
 
@@ -304,7 +296,6 @@ li span {
 }
 @media screen and (max-width: 980px) {
     .btn.btn-success {
-        font-size: 0.7rem;
         position: relative;
         bottom:0;
     }
@@ -368,7 +359,7 @@ li span {
 @media screen and (max-width: 780px) {
     .search {
         position:relative;
-        right:11%;
+        right:0%;
     }
 }
 @media screen and (max-width: 480px) {
@@ -389,7 +380,6 @@ li span {
 }
 @media screen and (max-width: 980px) {
     .btn.btn-dark {
-        font-size: 0.7em;
         margin-top: 10%;
     }
 }
