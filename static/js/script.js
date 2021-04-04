@@ -27,17 +27,15 @@
 })();
 
 
-                        // This piece of code was taken from bootstrap js as specified in the readme.md file //
-    
-//window.setTimeout(function() {
-    //$(".alert").fadeTo(500, 0) 
-//}, 5000);//
+                        // This piece of code above was taken from bootstrap js as specified in the readme.md file //
+
 
 //function success() {
 
 	//if(document.querySelector("#status").value === Sold) { 
-           // document.getElementById('success').disabled = true; 
+            //document.getElementById('success').disabled = true; 
         //} else { 
             //document.getElementById('success').disabled = false;
-       // }
+        //}
     //}
+

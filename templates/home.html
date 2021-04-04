@@ -31,11 +31,24 @@
     <p>Year: {{ book.Year }}</p>
     <p>Country: {{ book.Country }}</p>
     <p>Location: {{ book.Location }}</p>
-    <p style="color: rgb(255, 47, 47);" id="status"> {{ book.Status }}</p>
+    <p style="color: rgb(255, 47, 47);" id="status" onmouseover="s(this)">{{ book.Status }}</p>
     <p>Price: {{ book.Price }}</p>
+    <span>
     <a href="{{ url_for('edit_task', archive=book._id) }}"><button style="box-shadow: none;" method="POST" tabindex="1" value="sell_book" action="" type="submit" class="btn btn-dark">Edit</button></a>
-    <a href="{{ url_for('sell_book', archive=book._id) }}"><button style="box-shadow: none;" method="POST" tabindex="1" value="sell_book" action="" type="submit" id="success" class="btn btn-success">Sell Book!</button></a>
+    <a href="{{ url_for('sell_book', archive=book._id) }}"><button style="box-shadow: none;" method="POST" tabindex="1" value="sell_book" action="" type="submit" id="success" class="btn btn-success">Sell!</button></a>
+    </span>
     </div>
+    <script>
+        function s(status){
+        if(status.value=="Sold")
+            {
+            document.getElementById("success").disabled=true;
+            }
+        else{
+            document.getElementById("success").disabled=false;
+        }
+    }
+    </script>
  
    {% endfor %}
    

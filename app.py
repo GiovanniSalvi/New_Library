@@ -40,6 +40,8 @@ def edit_task(archive):
                 }
 
         mongo.db.BooksData.update({"_id": ObjectId(archive)}, update)
+        flash("Book updated")
+        return redirect(url_for("home"))
 
     archive = mongo.db.BooksData.find_one({"_id": ObjectId(archive)})
     return render_template("edit_task.html", archive=archive)
@@ -132,7 +134,7 @@ def add_task():
 
             add = {
 
-                "Title": request.form.get("Title"),
+                "Title": request.form.get("Title").title(),
                 "Author": request.form.get("Author"),
                 "Genre": request.form.get("Genre"),
                 "Year": request.form.get("Year"),

@@ -37,8 +37,10 @@
     </div>
     <div style="width: 25%; background-color: unset;" class="container delete_button">
         <form method="POST" action="{{url_for('remove_book', archive=archive._id)}}">
+            <span style="font-size: 2em; text-align: center;">
             <button name="delete" type="submit" class="btn btn-danger">Delete</button>
             <button style="box-shadow: none;" class="btn btn-link" type="submit"><a href="{{ url_for('remove') }}">Back</a></button>
+            </span>
         </form>
     </div>
 </div>

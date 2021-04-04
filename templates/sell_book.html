@@ -13,7 +13,7 @@
 <!----This will show the details of the book which is supposed to buy--->
 
 
-<div class="container box-container" style="display:table;">
+<div class="box-container" style="display:table;">
     <div class="book_display">
         <ul class="box" style="width:70%">
             <li>Title: {{ archive.Title }}</li>
@@ -39,7 +39,7 @@
 
     <!------user details form-->
 
-    <div class="container user-details">
+    <div class="user-details">
         <h4 class="user_details">Users Details</h4>
         <form class="needs-validation" action="{{ url_for('sell_book', archive=archive._id) }}" novalidate
             method="POST">
@@ -61,10 +61,11 @@
                 <div style="background-color: unset;" class="container sell-button">
                     <button style="box-shadow: none;" method="POST" tabindex="1" value="sell_book"
                         action="{{ url_for('sell_book',  archive=archive._id) }}" type="submit"
-                        class="btn btn-success">Sell Book!</button>
+                        class="btn btn-success" id="success">Sell!</button>
                 </div>
             </div>
         </form>
-
-        {% endblock %}
     </div>
+</div>
+        {% endblock %}
+ 
