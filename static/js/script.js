@@ -29,15 +29,15 @@
 
                         // This piece of code was taken from bootstrap js as specified in the readme.md file //
     
-window.setTimeout(function() {
-    $(".alert").fadeTo(500, 0) 
-}, 5000);
+//window.setTimeout(function() {
+    //$(".alert").fadeTo(500, 0) 
+//}, 5000);//
 
-function success() {
+//function success() {
 
-	if(document.querySelector("#status").value === Sold) { 
-            document.getElementById('success').disabled = true; 
-        } else { 
-            document.getElementById('success').disabled = false;
-        }
-    }
+	//if(document.querySelector("#status").value === Sold) { 
+           // document.getElementById('success').disabled = true; 
+        //} else { 
+            //document.getElementById('success').disabled = false;
+       // }
+    //}
