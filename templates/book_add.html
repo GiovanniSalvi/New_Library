@@ -5,7 +5,7 @@
 
     {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
         <div style="position: relative; top: -0.3em;" class="row flashes">
-            <h5 class="alert">{{ message }}</h5>
+            <h5>{{ message }}</h5>
         </div>
     {% endfor %} {% endif %} {% endwith %}
 </div>
@@ -14,7 +14,7 @@
                         <!-----This will show the details of the book which is just added to the library---->
 
 <div class="container box-container" style="display:table;">
-    <div class="book_display row">
+    <div class="book_display row" style="line-height: 2;">
         <ul>
             <li>Title: {{ new_book.Title }}</li>
             <br />

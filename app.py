@@ -126,7 +126,7 @@ def add_task():
         existing_title = mongo.db.BooksData.find_one(
             {"Location": request.form.get("Location")})
         if existing_title:
-            flash("Book already in the database")
+            flash("Book already exists")
             return redirect(url_for("add_task"))
         else:
 
@@ -160,7 +160,7 @@ def remove():
                 "remove_book", archive=existing_book.get(
                     '_id')))
         else:
-            flash("Book does not exist in the database")
+            flash("Book not in stock")
             return redirect(url_for("remove"))
     return render_template("remove.html")
 

@@ -12,17 +12,18 @@
             <button style="box-shadow: none;" type="submit" class="btn remove"><i class="fa fa-search"></i></button>
         </form>
                                   <!----remove flash message-->
-
+    <div class="space"></div>
+    
     <div>
     {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
         <div style="position: unset;" class= "row flashes">
-            <h6>{{ message }}</h6>
+            <h5>{{ message }}</h5>
     </div>
     {% endfor %} {% endif %} {% endwith %}
     </div>
     </div>
 </div>
-
+<div class="space"></div>
 
 
 {% endblock %}

@@ -18,7 +18,7 @@
 
 {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
 <div class="row flashes">
-    <h6>{{ message }}</h6>
+    <h5>{{ message }}</h5>
 </div>
 {% endfor %} {% endif %} {% endwith %}
 
@@ -31,10 +31,10 @@
     <p>Year: {{ book.Year }}</p>
     <p>Country: {{ book.Country }}</p>
     <p>Location: {{ book.Location }}</p>
-    <p style="color: rgb(255, 47, 47);" id="status_color"> {{ book.Status }}</p>
+    <p style="color: rgb(255, 47, 47);" id="status"> {{ book.Status }}</p>
     <p>Price: {{ book.Price }}</p>
     <a href="{{ url_for('edit_task', archive=book._id) }}"><button style="box-shadow: none;" method="POST" tabindex="1" value="sell_book" action="" type="submit" class="btn btn-dark">Edit</button></a>
-    <a href="{{ url_for('sell_book', archive=book._id) }}"><button style="box-shadow: none;" method="POST" tabindex="1" value="sell_book" action="" type="submit" class="btn btn-success">Sell Book!</button></a>
+    <a href="{{ url_for('sell_book', archive=book._id) }}"><button style="box-shadow: none;" method="POST" tabindex="1" value="sell_book" action="" type="submit" id="success" class="btn btn-success">Sell Book!</button></a>
     </div>
  
    {% endfor %}

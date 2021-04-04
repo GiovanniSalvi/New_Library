@@ -5,7 +5,7 @@
 <div>
         {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
             <div style="text-align: center; bottom: -0.5rem; flex-shrink: 0;" class="flashes">
-                <h6>{{ message }}</h6>
+                <h5>{{ message }}</h5>
             </div>
         {% endfor %} {% endif %} {% endwith %}
 </div>

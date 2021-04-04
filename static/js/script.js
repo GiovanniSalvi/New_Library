@@ -33,27 +33,11 @@ window.setTimeout(function() {
     $(".alert").fadeTo(500, 0) 
 }, 5000);
 
-$(function(){
-  $("td").click(function(event){
-    if($(this).children("input").length > 0)
-          return false;
+function success() {
 
-    var tdObj = $(this);
-    var preText = tdObj.html();
-    var inputObj = $("<input type='text' />");
-    tdObj.html("");
-    inputObj.keyup(function(event){
-      if(13 == event.which) { // press ENTER-key
-        var text = $(this).val();
-        tdObj.html(text);
-      }
-      else if(27 == event.which) {  // press ESC-key
-        tdObj.html(preText);
-      }
-    });
-
-    inputObj.click(function(){
-      return false;
-    });
-  });
-});
+	if(document.querySelector("#status").value === Sold) { 
+            document.getElementById('success').disabled = true; 
+        } else { 
+            document.getElementById('success').disabled = false;
+        }
+    }

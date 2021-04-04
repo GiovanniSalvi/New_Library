@@ -88,7 +88,6 @@ main {
     height: 80px;
     width: 100%;
     text-align: center;
-    top:50%
 }
 .icon-bar {
     display: inline-block;
@@ -113,7 +112,7 @@ main {
 }
 .fa.fa-search {
     font-size: 20px;
-    color: #141619;
+    color: #dc3545;
     position: relative;
     bottom: 5px;
 }
@@ -198,6 +197,7 @@ li span {
 .user-details{
     margin-top: 5em;
     color:black;
+    float:right;
 }
 
                            /*Buttons styling*/
@@ -207,13 +207,6 @@ li span {
     left: 37%;
 }                        
 
-.btn.btn-dark {
-    position: relative;
-    left: 48%;
-    margin-top: 10px;
-    margin-bottom: 5px;
-
-}
 .btn.btn-success{
     position: relative;
     bottom: -10px;
@@ -255,7 +248,7 @@ li span {
     width: 47%;
     border: 1px black solid;
     padding: 51px;
-    line-height: 23px;
+    line-height: 24px;
     font-size: larger;
     border-radius: 23px;
     display: inline-table;
@@ -268,6 +261,7 @@ li span {
 .btn.btn-dark{
     background-color: #020202!important;
     margin-top: 5%;
+    margin-bottom: 1%;
 }
 .content-table{
     font-size: 25px;
@@ -312,8 +306,7 @@ li span {
     .btn.btn-success {
         font-size: 0.7rem;
         position: relative;
-        top: 20px;
-        float: right;
+        float: left;
 
     }
 }
@@ -402,11 +395,11 @@ li span {
 }
 @media screen and (max-width: 1080px) {
     .btn.btn-dark {
-        font-size: 0.7em;
-        margin-top: 12%; 
-        float: left;
+        font-size: 0.6em;
+        margin-top: 10%;
     }
 }
+
 @media screen and (max-width: 980px) {
     .remove {
         position:unset;

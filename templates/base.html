@@ -41,16 +41,18 @@
 
     </header>
     <main class="section-container">
-        {% block body %} {% endblock %}
+        {% block body %} 
     </main>
     <section>
     </section>
+        {% endblock %}
+
         <!-- flash messages -->
     
         {% with messages = get_flashed_messages() %} {% endwith %}
     
 
-    <footer class="container" id="footer">
+    <footer class="container" id="footer" style="margin-top: 30em;">
 
         <!---social media bar-->
 

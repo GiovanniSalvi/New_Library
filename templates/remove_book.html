@@ -5,7 +5,7 @@
     <div>
         {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
         <div class="row flashes">
-            <h4>{{ message }}</h4>
+            <h5>{{ message }}</h5>
         </div>
         {% endfor %} {% endif %} {% endwith %}
     </div>
@@ -15,7 +15,7 @@
 
 
 <div class="container box-container" style="display:table;">
-    <div class="book_display">
+    <div class="book_display" style="height:60vh">
         <ul class="box">
             <li>Title: {{ archive.Title }}</li>
             <br />
@@ -29,7 +29,7 @@
             <br />
             <li>Location: {{ archive.Location }}</li>
             <br />
-            <li>Status: <spam style="color: greenyellow;" id="status_color">{{ archive.Status }}</spam></li>
+            <li>Status: <spam style="color: #dc3545;" id="status_color">{{ archive.Status }}</spam></li>
             <br />
             <li>Price: {{ archive.Price }}</li>
             <br />

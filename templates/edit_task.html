@@ -4,7 +4,7 @@
   <h3 class="card-header text-center text-uppercase  py-4" style="color:black;">
     Book<strong>Edit</strong>
   </h3>
-  <div class="card-body">
+  <div class="card-body row">
     <div id="table" class="table-editable">
     <form novalidate method="POST">
       <table class="table table-bordered table-responsive-md table-striped text-center">
@@ -58,7 +58,7 @@
     <div>
         {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
             <div style="position: relative; left: 3rem; bottom: 36.5rem;" class="row flashes">
-                <h6>{{ message }}</h6>
+                <h5>{{ message }}</h5>
             </div>
             {% endfor %} {% endif %} {% endwith %}
         </div>
