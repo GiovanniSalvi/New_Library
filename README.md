@@ -8,7 +8,7 @@ Welcome! [github.com](https://github.com/GiovanniSalvi/New_Library)
 
 ### I tried to make the app interface as simple and easy to navigate as possible,the homepage provides a nav-bar menu to explore the app's functionalities which I will look into more in deep further on,and a footer which provides social media links.
 
-### The nav menu, footer, home-button and background image are repeated in all website pages to make the app having a consistent style.
+### The nav menu, footer, home-button and background image are repeated in all website pages to get app style consistent.
 
 
 ---
@@ -16,26 +16,30 @@ Welcome! [github.com](https://github.com/GiovanniSalvi/New_Library)
 
 ## Project's Wireframes
 * [Home Desktop](https://github.com/GiovanniSalvi/New_Library/blob/master/static/wireframes/New%20Wireframe%20Desktop%20home.png)
+
 * [Home iPad](https://github.com/GiovanniSalvi/New_Library/blob/master/static/wireframes/Home%20ipad.png)
+
 * [Home iPhone](https://github.com/GiovanniSalvi/New_Library/blob/master/static/wireframes/Home%20iphone.png)
-* [SearchBook Desktop](https://github.com/GiovanniSalvi/New_Library/blob/master/static/wireframes/SearchBook%20desktop.png)
-* [SearchBook iPad](https://github.com/GiovanniSalvi/New_Library/blob/master/static/wireframes/Search_task%20ipad.png)
-* [SearchBook iPhone](https://github.com/GiovanniSalvi/New_Library/blob/master/static/wireframes/Search%20task%20iphone.png)
+
 * [AddBook Desktop](https://github.com/GiovanniSalvi/New_Library/blob/master/static/wireframes/AddBook%20desktop.png)
+
 * [Registration iPad](https://github.com/GiovanniSalvi/New_Library/blob/master/static/wireframes/Registration%20ipad.png)
+
 * [AddBook iPhone](https://github.com/GiovanniSalvi/New_Library/blob/master/static/wireframes/Addbook%20iphone.png)
 
-## Project's Mockup screenshots
+## Project's Mockup screenshots:
 
-Home: [Homepage](https://github.com/GiovanniSalvi/New_Library/blob/master/static/mockups/Mockups%20Home.png)
+Home: [Homepage](<img width="641" alt="Homepage" src="https://user-images.githubusercontent.com/61980577/113729286-26faef00-96f7-11eb-998d-d9455a513083.png">)
 
-Search: [Search_book](https://github.com/GiovanniSalvi/New_Library/blob/master/static/mockups/Mockups%20Search%20task.png)
+AddBook: [Add_book] (<img width="641" alt="Addbook" src="https://user-images.githubusercontent.com/61980577/113729123-00d54f00-96f7-11eb-993e-eaaef5fc4c2c.png">)
 
-AddBook: [Add_book](https://github.com/GiovanniSalvi/New_Library/blob/master/static/mockups/Mockups%20Add%20task.png)
+RemoveBook: [Remove_book](<img width="641" alt="Removebook" src="https://user-images.githubusercontent.com/61980577/113728952-d5eafb00-96f6-11eb-8463-08eded4cb8b0.png">)
 
-RemoveBook: [Remove_book](https://github.com/GiovanniSalvi/New_Library/blob/master/static/mockups/Mockups%20Remove%20task%20.png)
+Register: [Register_user](<img width="641" alt="Registration" src="https://user-images.githubusercontent.com/61980577/113728780-ab00a700-96f6-11eb-9f8d-bf65a38c8566.png">)
 
-Register: [Register_user](https://github.com/GiovanniSalvi/New_Library/blob/master/static/mockups/Mockups%20registration.png)
+SellBook: [Sell_book](<img width="641" alt="Sellbook" src="https://user-images.githubusercontent.com/61980577/113728600-860c3400-96f6-11eb-838b-bf762ddd12f4.png">)
+
+EditBook: [Edit_book](<img width="641" alt="Editbook" src="https://user-images.githubusercontent.com/61980577/113728660-92908c80-96f6-11eb-975e-2cd0ee3914b0.png">)
 
 ---
 
@@ -45,23 +49,23 @@ Register: [Register_user](https://github.com/GiovanniSalvi/New_Library/blob/mast
 
 * Feature1: Menu-bar provides a fluid navigation through the site.
 
-* Feature2: Homepage's body a background image an home button and a footer with social media links.
+* Feature2: Homepage's body provides a background hero-image, an home-button  which redirects users to the homepage, a complete list of book titles in the database, both "available" and "sold"(whom thay are supposed to be removed)and a social media links footer.
 
-* Feature3: Search link leads to search tab input.Typing the title it'll give access to all books in the library.Click button "Sell Book" to purchase the book selected if status is Available.
+* Feature3: Homepage provides any books in the library, wrapped in a box.Click button "Sell" inside the box to purchase the item selected if books status is Available.
 
-* Feature4: Add_book link leads to form for adding new books to the database inserting all required fields.Clicking Add button will add a new book on the libray database.
+* Feature4: Add_book nav link leads to form for adding new books to the database filling all required fields.Clicking Add button at the bottom page will add a new book title in the libray.
 
-* Feature5: Remove_book link leads to search tab input.Typing the title it'll give access to all books in the library.Click button "remove" to delete the book selected
+* Feature5: Remove_book link leads to search tab input.Typing the title it'll give access to the book title requested.Click button "remove" to delete the book selected.
 
-* Feature6: Registration link leads to form for adding new guest to the database inserting all required fields.Clicking Submit button will add a new guest on the libray database.
+* Feature6: Registration link leads to form for adding new users to the database filling all required fields.Clicking Submit button will add a new user on the libray database.
+
+* Feature7: Homepage provides any books in the library, wrapped in a box.Click button "Edit" inside the box leads user to a form to edit the item.
 
 ### Features left to implement
 
 * Implement the app, adding a login functionality for users(Librarians) in the Homepage.
 
-* Implement the app, adding search tab and input form to search remove or modify users/clients from the library database.
-
-* Implement the app, adding editable tab and a functionality to modify or edut  books features.
+* Implement the app, adding search tab and input form to search remove or modify users from the library database.
 
 * Implement the app, adding E-Commerce functionality.
 
@@ -95,59 +99,92 @@ Register: [Register_user](https://github.com/GiovanniSalvi/New_Library/blob/mast
 
 ### The project has been validated and beautified using:
 
-* HTML: [https://validator.w3.org/nu/](https://validator.w3.org/nu/?doc=https%3A%2F%2Fgiovannisalvi.github.io%2FNew_Library%2F)
+* HTML: 
 
-* HTML: [https://webformatter.com/](https://webformatter.com/html)
+    • Homepage: [https://validator.w3.org/nu/]()
 
-* CSS: [https://jigsaw.w3.org/css-validator/](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fgiovannisalvi.github.io%2FNew_Library%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+    • SearchBook: [https://validator.w3.org/nu/]()
 
-* CSS: [https://webformatter.com/](https://webformatter.com/css)
+    • AddBook: [https://validator.w3.org/nu/]()
 
-* JAVASCRIPT: [https://jshint.com/](https://jshint.com/)
+    • RemoveBook: [https://validator.w3.org/nu/]()
 
-* JAVASCRIPT: [https://webformatter.com/](https://webformatter.com/javascript)
+    • Register: [https://validator.w3.org/nu/]()
 
-* PYTHON: [http://pep8online.com/](http://pep8online.com/checkresult)
+    • SellBook: [https://validator.w3.org/nu/]()
 
-* PYTHON: [https://codebeautify.org/](https://codebeautify.org/python-formatter-beautifier)
+    • EditBook: [https://validator.w3.org/nu/]()
+
+* HTML: 
+
+    • Homepage: [https://webformatter.com/]()
+
+    • SearchBook: [https://webformatter.com/]()
+
+    • AddBook: [https://webformatter.com/]()
+
+    • RemoveBook: [https://webformatter.com/]()
+
+    • Register: [https://webformatter.com/]()
+
+    • SellBook: [https://webformatter.com/]()
+
+    • EditBook: [https://webformatter.com/]()
+
+
+* CSS: [https://jigsaw.w3.org/css-validator/]()
+
+* CSS: [https://webformatter.com/]()
+
+* JAVASCRIPT: [https://jshint.com/]()
+
+* JAVASCRIPT: [https://webformatter.com/]()
+
+* PYTHON: [http://pep8online.com/]()
+
+* PYTHON: [https://codebeautify.org/]()
 
 ### The quality of the website was measured using Google Lighthouse:
 
-* Chrome lighthouse Tool:<img width="972" alt="Lighthouse " src="https://user-images.githubusercontent.com/61980577/104638079-fa11df80-56a5-11eb-974b-2b3fd0ced585.png">
+* Chrome lighthouse Tool:
 
 ---
 
 ### User stories from UX section of README.md file:
 
-1. As a User I want navigate the site to find what I need, easily.
+1. As a User I want navigate the site to find what I need easily.
 
-  • In every page of the site it's possible to navigate through easily, action Home button leads back from every pages on the site to the Homepage.
+  • In every page of the site it's possible to navigate through easily, Home button displayed at the top right leads back from every pages of the site to the Homepage.
   
   • Navigation bar is easily to find  at the top of the Homepage.
 
 2. As a User I want to have a quick access to the page which allows me to register new customer/users in the library database.
 
-  • Register link which leads to the form to fill(all fields are required) in order to register new potential customer  to the database is at the top right in the Homepage.
+  • Register link which leads to the form to fill(all fields are required) in order to register new potential customer to the database is in the nav-bar of the Homepage , clicking button "submit" at the bottom of the form in order to complete the operation.A flash message shows if operation is successful.
 
 3. As a User I want to find a simple way to check the status, location and others details of the books in the library.
 
-  • Search_book link leads me to the form which allows me to find any books currently in the library, typing the title on the searching tab, is at the top left of the Homepage.
+  • In the Homepage users can find displayed any books currently in stock.
 
 4. As a user I want to find a clear way to add a new book in the library's database.
 
-  • Add_book link lead me to the form(all fields are required) which allows me to add new books, inserting few important details of the book, is straight at the top of the Homepage.
+  • Add_book link leads users to the form(all fields are required) which allows to add new books, filling the required details of the new item,than click the button "add" at the end of the form.A flash message shows if operation is successful.
 
 5. As a user I want to find an easy way to remove a book from the database.
 
-  • Remove link is at the top of the page, clicking on remove link leads user to a search tab which allows to find the book by its title and if the  book status is available, so item is currently in the library, is possible to delete the book by remove button at the bottom of the section.
+  • Remove link is at the top of the page, clicking on remove navbar-link leads user to a search tab which allows to find the book by its title, if the  book status is available, so item is currently in the library, click remove button at the bottom of the box to complete the operation.A flash message shows if operation is successful.
   
  6. As a user I want to find a quick way to sell a book requested by a potential customer.
  
-  • In the search_book page navigabile by search_book link from the Homepage,a search tab allows me to find any book in the library, if the book which I am looking for is Available, that makes possible to sell it clicking the "Sell Book" button at the bottom of the section.
+  • In the search_book page navigabile by search_book navbar-link from the Homepage,a search tab allows to find any book in the library, if the book selected has a status of "Available" it makes possible the item saleable, clicking the "Sell Book" button at the bottom of the box leads to a users details form to complete the purchase.A flash message shows if operation is successful.
   
- 7. As a user I want to access to the social networks in order to advertise or share new info,updates about Library catalog.
+ 7. As a user I want to access to the social networks in order to advertise or share new info about Library catalogue.
  
-  • The footer is  at the bottom of any pages linked in the Homepage navbar and provides few links to the most popular social networks across the worls(Facebook,Twitter)and other links to important platforms like Linkedin and Youtube.
+  • The footer is  at the bottom of any pages and provides few links to the most popular social networks across the worls(Facebook,Twitter)and other links to important platforms like Linkedin and Youtube.
+
+  8. As a user I want to find a quick way to edit a book-title selected.
+
+  • Onthe Homepage are displayed all books wrappedd in a box,clicking on the button "edit" at the boottom of the box leads user to the editable form to complete the operation.Updates the desirabled input fields then click button "update at the bottom of the form.A flash message shows if operation is successful.
   
   
 ### The project has beeen designed to make pages render well on a variety of devices and window or screen sizes such as:
@@ -230,6 +267,11 @@ Register: [Register_user](https://github.com/GiovanniSalvi/New_Library/blob/mast
 * Hero Image provide from:
 
     [Hero Image](https://cdn.wallpapersafari.com/62/74/WigTJs.jpg)
+
+---
+
+### Bugs 
+
 
 ---
 

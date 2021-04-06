@@ -129,10 +129,6 @@ input:focus::placeholder {
     height: 300px;
     display: none;
 }
-.needs-validation {
-    overflow: hidden;
-    line-height: 10px;
-}
 label {
     font-size: 20px;
     font-weight: 400;
@@ -195,7 +191,6 @@ li span {
 .user-details{
     margin-top: 5em;
     color:black;
-    float:right;
 }
 
 .btn.btn-secondary {
@@ -205,7 +200,7 @@ li span {
 
 .btn.btn-success{
     position: relative;
-    bottom: -10px;
+    margin-bottom: -5%;
     font-size: 1rem;
 }
 
@@ -253,7 +248,7 @@ li span {
 .btn.btn-dark{
     background-color: #020202!important;
     margin-top: 5%;
-    margin-bottom: 1%;
+    margin-bottom: auto;
 }
 .content-table{
     font-size: 25px;
