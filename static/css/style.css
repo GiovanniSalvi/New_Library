@@ -69,7 +69,7 @@ div span {
 }
 main {
     position: relative;
-    bottom: 40px;
+    top:2%;
 }
 
 .col {
@@ -94,7 +94,7 @@ main {
 }
 
 .form-control {
-    max-width: 70%;
+    max-width: 40%;
     margin:  5px 0 20px;
     position: relative;
 }
@@ -267,6 +267,11 @@ li span {
     float: left;
     font-size: 1em;
 }
+#Search::-webkit-search-cancel-button{
+    position:relative;
+    right:20%;    
+}
+
 
                                       /*----responsive design------*/
 
@@ -277,9 +282,9 @@ li span {
         top: -30px;
     }
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 680px) {
     .form-control {
-        max-width: unset;
+        max-width: 65%;
         position: unset;
     }
 }
@@ -371,11 +376,6 @@ li span {
 @media screen and (max-width: 1020px) {
     .book_display {
         height: unset;
-    }
-}
-@media screen and (max-width: 980px) {
-    .btn.btn-dark {
-        margin-top: 10%;
     }
 }
 

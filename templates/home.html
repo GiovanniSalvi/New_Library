@@ -11,7 +11,7 @@
     <div class="search-form row">
         <h2 class="catalogue">Library<strong>Search</strong></h2>
         <form class="form-inline d-flex justify-content-center md-form form-sm" style="padding-bottom: 5%; padding-left: 5%;" method="POST" action="{{ url_for('search_book') }}">
-            <input class="form-control form-control-sm mr-3" style="max-width:40%;" name="search_book" type="text" placeholder="insert books location (format:A8) " aria-label="Search" required/>
+            <input class="form-control form-control-sm mr-3" id="search" name="search_book" type="search" placeholder="insert books title  " aria-label="Search" required/>
             <button style="box-shadow: none;" class="btn search"><i class="fa fa-search"></i></button>
         </form>
  <div>
@@ -31,24 +31,13 @@
     <p>Year: {{ book.Year }}</p>
     <p>Country: {{ book.Country }}</p>
     <p>Location: {{ book.Location }}</p>
-    <p style="color: rgb(255, 47, 47);" id="status" onmouseover="s(this)">{{ book.Status }}</p>
+    <p  onload="success()" style="color: rgb(255, 47, 47);" id="status">{{ book.Status }}</p>
     <p>Price: {{ book.Price }}</p>
     <span>
-    <a href="{{ url_for('edit_task', archive=book._id) }}"><button style="box-shadow: none;" method="POST" tabindex="1" value="sell_book" action="" type="submit" class="btn btn-dark">Edit</button></a>
-    <a href="{{ url_for('sell_book', archive=book._id) }}"><button style="box-shadow: none;" method="POST" tabindex="1" value="sell_book" action="" type="submit" id="success" class="btn btn-success">Sell!</button></a>
+    <a href="{{ url_for('edit_task', archive=book._id) }}"><button style="box-shadow: none;" method="POST" tabindex="1" value="sell_book"  type="submit" class="btn btn-dark">Edit</button></a>
+    <a href="{{ url_for('sell_book', archive=book._id) }}"><button style="box-shadow: none;" method="POST" tabindex="1" value="sell_book"  type="submit" id="success" class="btn btn-success">Sell!</button></a>
     </span>
     </div>
-    <script>
-        function s(status){
-        if(status.value=="Sold")
-            {
-            document.getElementById("success").disabled=true;
-            }
-        else{
-            document.getElementById("success").disabled=false;
-        }
-    }
-    </script>
  
    {% endfor %}
    

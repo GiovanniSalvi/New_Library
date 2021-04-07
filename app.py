@@ -29,11 +29,11 @@ def edit_task(archive):
     if request.method == "POST":
         book = mongo.db.BooksData.find_one({"_id": ObjectId(archive)})
         update = {
-                    "Title": request.form.get("Title"),
-                    "Author": request.form.get("Author"),
-                    "Genre": request.form.get("Genre"),
+                    "Title": request.form.get("Title").title,
+                    "Author": request.form.get("Author").title,
+                    "Genre": request.form.get("Genre").title,
                     "Year": request.form.get("Year"),
-                    "Country": request.form.get("Country"),
+                    "Country": request.form.get("Country").title,
                     "Location": request.form.get("Location"),
                     "Status": book.get("Status"),
                     "Price": request.form.get("Price")
@@ -57,7 +57,7 @@ def book_add(new_book):
 def search_book():
     if request.method == "POST":
         existing_book = mongo.db.BooksData.find_one(
-            {"Location": request.form.get("search_book")})
+            {"Title": request.form.get("search_book").title()})
 
         if existing_book:
             return redirect(url_for(
@@ -126,7 +126,7 @@ def book_selling(existing_email):
 def add_task():
     if request.method == "POST":
         existing_title = mongo.db.BooksData.find_one(
-            {"Location": request.form.get("Location")})
+            {"Title": request.form.get("Title")})
         if existing_title:
             flash("Book already exists")
             return redirect(url_for("add_task"))
@@ -135,11 +135,11 @@ def add_task():
             add = {
 
                 "Title": request.form.get("Title").title(),
-                "Author": request.form.get("Author"),
-                "Genre": request.form.get("Genre"),
+                "Author": request.form.get("Author").title(),
+                "Genre": request.form.get("Genre").title(),
                 "Year": request.form.get("Year"),
-                "Country": request.form.get("Country"),
-                "Location": request.form.get("Location"),
+                "Country": request.form.get("Country").title(),
+                "Location": request.form.get("Location").title(),
                 "Status": "Available",
                 "Price": request.form.get("Price")
 
@@ -156,7 +156,7 @@ def add_task():
 def remove():
     if request.method == "POST":
         existing_book = mongo.db.BooksData.find_one(
-            {"Location": request.form.get("remove_book")})
+            {"Title": request.form.get("remove_book")})
         if existing_book:
             return redirect(url_for(
                 "remove_book", archive=existing_book.get(

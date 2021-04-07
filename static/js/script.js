@@ -30,12 +30,12 @@
                         // This piece of code above was taken from bootstrap js as specified in the readme.md file //
 
 
-//function success() {
-
-	//if(document.querySelector("#status").value === Sold) { 
-            //document.getElementById('success').disabled = true; 
-        //} else { 
-            //document.getElementById('success').disabled = false;
-        //}
-    //}
+function success() {
+    var status = document.getElementById("status").value
+	if (status === "Sold") {  
+            document.getElementById("success").disabled = true;
+        } else { 
+            document.getElementById("success").disabled = false;
+        }
+    }
 
