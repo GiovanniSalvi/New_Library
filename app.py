@@ -156,7 +156,7 @@ def add_task():
 def remove():
     if request.method == "POST":
         existing_book = mongo.db.BooksData.find_one(
-            {"Title": request.form.get("remove_book")})
+            {"Title": request.form.get("remove_book").title()})
         if existing_book:
             return redirect(url_for(
                 "remove_book", archive=existing_book.get(

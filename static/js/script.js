@@ -30,12 +30,13 @@
                         // This piece of code above was taken from bootstrap js as specified in the readme.md file //
 
 
-function success() {
-    var status = document.getElementById("status").value
+function s() {
+    var status = document.getElementById("status")
+    var success = document.querySelector(".hyde")
 	if (status === "Sold") {  
-            document.getElementById("success").disabled = true;
+            success.classList.add(hyde);
         } else { 
-            document.getElementById("success").disabled = false;
+            success.classList.remove(hyde);
         }
     }
-
+    console.log("sold")
