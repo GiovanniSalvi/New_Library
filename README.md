@@ -29,17 +29,17 @@ Welcome! [github.com](https://github.com/GiovanniSalvi/New_Library)
 
 ## Project's Mockup screenshots:
 
-Home: [Homepage](<img width="641" alt="Homepage" src="https://user-images.githubusercontent.com/61980577/113729286-26faef00-96f7-11eb-998d-d9455a513083.png">)
+* Home: [Homepage](<img width="641" alt="Homepage" src="https://user-images.githubusercontent.com/61980577/113729286-26faef00-96f7-11eb-998d-d9455a513083.png">)
 
-AddBook: [Add_book] (<img width="641" alt="Addbook" src="https://user-images.githubusercontent.com/61980577/113729123-00d54f00-96f7-11eb-993e-eaaef5fc4c2c.png">)
+* AddBook:[Add_book](<img width="641" alt="Addbook" src="https://user-images.githubusercontent.com/61980577/113729123-00d54f00-96f7-11eb-993e-eaaef5fc4c2c.png">)
 
-RemoveBook: [Remove_book](<img width="641" alt="Removebook" src="https://user-images.githubusercontent.com/61980577/113728952-d5eafb00-96f6-11eb-8463-08eded4cb8b0.png">)
+* RemoveBook:[Remove_book](<img width="641" alt="Removebook" src="https://user-images.githubusercontent.com/61980577/113728952-d5eafb00-96f6-11eb-8463-08eded4cb8b0.png">)
 
-Register: [Register_user](<img width="641" alt="Registration" src="https://user-images.githubusercontent.com/61980577/113728780-ab00a700-96f6-11eb-9f8d-bf65a38c8566.png">)
+* Register:[Register_user](<img width="641" alt="Registration" src="https://user-images.githubusercontent.com/61980577/113728780-ab00a700-96f6-11eb-9f8d-bf65a38c8566.png">)
 
-SellBook: [Sell_book](<img width="641" alt="Sellbook" src="https://user-images.githubusercontent.com/61980577/113728600-860c3400-96f6-11eb-838b-bf762ddd12f4.png">)
+* SellBook:[Sell_book](<img width="641" alt="Sellbook" src="https://user-images.githubusercontent.com/61980577/113728600-860c3400-96f6-11eb-838b-bf762ddd12f4.png">)
 
-EditBook: [Edit_book](<img width="641" alt="Editbook" src="https://user-images.githubusercontent.com/61980577/113728660-92908c80-96f6-11eb-975e-2cd0ee3914b0.png">)
+* EditBook:[Edit_book](<img width="641" alt="Editbook" src="https://user-images.githubusercontent.com/61980577/113728660-92908c80-96f6-11eb-975e-2cd0ee3914b0.png">)
 
 ---
 
@@ -96,6 +96,20 @@ EditBook: [Edit_book](<img width="641" alt="Editbook" src="https://user-images.g
 ---
 
 ## Testing
+
+### In order to navigate easily through the site:
+* In the homepage users can find all books title in the archive[],at the top of the page are displayed navbar links to navigate through the app[] and a search tab to explore site contents just below[]
+
+* Add_book link leads to the form to adding new books to the archive[]
+
+* Remove_book link leads to a search tab to find the book title users are supposed to remove clicking delete button below the book features[]
+
+* Register_user link leads to the form to adding new users to the database[]
+
+* Every box in the homepage contains a single product;'edit'[] button positioned at the bottom of the box allows users to update a book.
+'Sell!'button next to edit button leads to a form to fill with users/buyer details in order to complete purchase operation.
+
+* The footer provides social links[].
 
 ### The project has been validated and beautified using:
 
@@ -184,48 +198,43 @@ EditBook: [Edit_book](<img width="641" alt="Editbook" src="https://user-images.g
 
   8. As a user I want to find a quick way to edit a book-title selected.
 
-  • Onthe Homepage are displayed all books wrappedd in a box,clicking on the button "edit" at the boottom of the box leads user to the editable form to complete the operation.Updates the desirabled input fields then click button "update at the bottom of the form.A flash message shows if operation is successful.
+  • On the Homepage are displayed all books wrappedd in a box,clicking on the button "edit" at the boottom of the box leads user to the editable form to complete the operation.Updates the desirabled input fields then click button "update at the bottom of the form.A flash message shows if operation is successful.
   
   
 ### The project has beeen designed to make pages render well on a variety of devices and window or screen sizes such as:
 
 * Desktop: (1600x992px) Responsivness tested using ChromeDev inspector tool, as shown in the screenshot below:
-<img width="811" alt="Desktop" src="https://user-images.githubusercontent.com/61980577/104639539-d2237b80-56a7-11eb-8724-885f76549160.png">
+<img width="1280" alt="Desktop " src="https://user-images.githubusercontent.com/61980577/114227010-aea16180-9974-11eb-95b0-3550fe140c36.png">
 
 * Laptop: (1280x802px) Responsivness tested using ChromeDev inspector tool, as shown in the screenshot below:
+<img width="778" alt="Tablet" src="https://user-images.githubusercontent.com/61980577/114227748-aeee2c80-9975-11eb-8598-fea1fe8b83fd.png">
 
-
- * Tablet
+* Tablet
  1. ipad Pro: (1024x1366px) Responsivness tested using ChromeDev inspector tool, as shown in the screenshot below:
- <img width="981" alt="ipad pro" src="https://user-images.githubusercontent.com/61980577/104646500-cee0bd80-56b0-11eb-8a18-0b1b08fa9d6f.png">
+ <img width="778" alt="iPad pro" src="https://user-images.githubusercontent.com/61980577/114226984-a6492680-9974-11eb-940d-24226f31976f.png">
 
  2. iPad: (768x1024px) Responsivness tested using ChromeDev inspector tool, as shown in the screenshot below:
-<img width="981" alt="ipad" src="https://user-images.githubusercontent.com/61980577/104646532-da33e900-56b0-11eb-8fe2-0f86281e28a4.png">
+<img width="778" alt="iPad" src="https://user-images.githubusercontent.com/61980577/114227038-ba8d2380-9974-11eb-9410-0911269a9352.png">
 
 * Mobile
  1. Moto G4 (360x640px) Responsivness tested using ChromeDev inspector tool, as shown in the screenshot below:
- <img width="1023" alt="Moto G4" src="https://user-images.githubusercontent.com/61980577/104646621-f9327b00-56b0-11eb-85b1-bd97eb3956cf.png">
+ <img width="778" alt="motog4" src="https://user-images.githubusercontent.com/61980577/114226958-9fbaaf00-9974-11eb-89f8-b7d05862f566.png">
 
  2. Galaxy S5 (360x640px) Responsivness tested using ChromeDev inspector tool, as shown in the screenshot below:
- <img width="981" alt="Galaxy" src="https://user-images.githubusercontent.com/61980577/104646970-7b22a400-56b1-11eb-8b04-4f0825de227c.png">
+ <img width="778" alt="Galaxy s5" src="https://user-images.githubusercontent.com/61980577/114226927-9598b080-9974-11eb-8e92-b0513b1a1ca5.png">
+ 
+ 3. Iphone 6/7/8 Plus (414x736px) Responsivness tested using ChromeDev inspector tool, as shown in the screenshot below:
+ <img width="778" alt="iPhone6:7 plus" src="https://user-images.githubusercontent.com/61980577/114227118-d98bb580-9974-11eb-862f-dfa4e3cf1ca8.png">
 
- 2. Pixel 2 (411x731px) Responsivness tested using ChromeDev inspector tool, as shown in the screenshot below:
- <img width="981" alt="Pixel2" src="https://user-images.githubusercontent.com/61980577/104646603-f2a40380-56b0-11eb-87c8-e2e81507a3d5.png">
+ 4. Iphone 6/7/8 (375x667px) Responsivness tested using ChromeDev inspector tool, as shown in the screenshot below:
+ <img width="778" alt="iPhone 6:7" src="https://user-images.githubusercontent.com/61980577/114226911-8f0a3900-9974-11eb-9f2e-3a32f4cc0646.png">
+ 
+ 5. Iphone X (375x812px) Responsivness tested using ChromeDev inspector tool, as shown in the screenshot below:
+ <img width="778" alt="iPhone x" src="https://user-images.githubusercontent.com/61980577/114227081-c8db3f80-9974-11eb-9408-d72a5b271333.png">
 
- 3. Pixel 2 XL (411x823px) Responsivness tested using ChromeDev inspector tool, as shown in the screenshot below:
- <img width="981" alt="Pixel3 lg" src="https://user-images.githubusercontent.com/61980577/104646587-ec158c00-56b0-11eb-883c-802ae6c62ed4.png">
+ 6. Surface Duo (540x720px) Responsivness tested using ChromeDev inspector tool, as shown in the screenshot below:
+ <img width="778" alt="surface duo" src="https://user-images.githubusercontent.com/61980577/114226917-92052980-9974-11eb-8423-20f1d81445f4.png">
 
- 4. Iphone 6/7/8 (375x677px) Responsivness tested using ChromeDev inspector tool, as shown in the screenshot below:
- <img width="981" alt="Iphone 5:6:7" src="https://user-images.githubusercontent.com/61980577/104646578-e7e96e80-56b0-11eb-9532-02e00ec4987f.png">
-
- 5. Iphone 6/7/8 Plus (414x736px) Responsivness tested using ChromeDev inspector tool, as shown in the screenshot below:
- <img width="981" alt="iphone plus" src="https://user-images.githubusercontent.com/61980577/104646978-7d84fe00-56b1-11eb-9e5b-e6923e055fb7.png">
-
- 6. Iphone X (375x812px) Responsivness tested using ChromeDev inspector tool, as shown in the screenshot below:
-<img width="981" alt="iphone x" src="https://user-images.githubusercontent.com/61980577/104646563-e324ba80-56b0-11eb-888d-cc6090e0f746.png">
-
- 7. Surface Duo (540x720px) Responsivness tested using ChromeDev inspector tool, as shown in the screenshot below:
-<img width="981" alt="Surface duo" src="https://user-images.githubusercontent.com/61980577/104646477-c4bebf00-56b0-11eb-88a9-8edbab33c677.png">
 
 ---
 
@@ -242,13 +251,15 @@ EditBook: [Edit_book](<img width="641" alt="Editbook" src="https://user-images.g
 
     2. Add heroku git repository replacing with the name of the app.
 
-    3. Create a requirenments.txt file in order heroku can identify the project as a python project and insert in the root folder.
+    3. Edit config vars from  app’s Settings tab in the Heroku Dashboard such as:MONGO_DBNAME,MONGO_URI,SECRET_KEY.
 
-    4. Create a procfile which contains  the name of the python file that runs your application and the name of the app.
+    4. Create a requirenments.txt file in order heroku can identify the project as a python project and insert in the root folder.
 
-    5. Add and commit using git add. and git commit -m "message" commands.
+    5. Create a procfile which contains  the name of the python file that runs your application and the name of the app.
 
-    6. Finally push the app using git push command.
+    6. Add and commit using git add. and git commit -m "message" commands.
+
+    7. Finally push the app using git push command.
 
 ---
 
@@ -272,7 +283,7 @@ EditBook: [Edit_book](<img width="641" alt="Editbook" src="https://user-images.g
 
 ### Bugs 
 
-
+  1. Not significant bugs.
 ---
 
 ### Code  

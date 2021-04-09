@@ -113,7 +113,7 @@ main {
     font-size: 20px;
     color: #dc3545;
     position: relative;
-    bottom: 5px;
+    bottom: 7px;
 }
 input:focus::placeholder {
     color: transparent;
@@ -267,9 +267,7 @@ li span {
     position:relative;
     right:20%;    
 }
-.hyde{
-    display:none;
-}
+
 
                                       /*----responsive design------*/
 
@@ -380,5 +378,10 @@ li span {
 @media screen and (max-width: 980px) {
     .remove {
         position:unset;
+    }
+}
+@media screen and (max-width: 680px) {
+    .box {
+        width:unset;
     }
 }

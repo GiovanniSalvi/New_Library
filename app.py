@@ -29,11 +29,11 @@ def edit_task(archive):
     if request.method == "POST":
         book = mongo.db.BooksData.find_one({"_id": ObjectId(archive)})
         update = {
-                    "Title": request.form.get("Title").title,
-                    "Author": request.form.get("Author").title,
-                    "Genre": request.form.get("Genre").title,
+                    "Title": request.form.get("Title").title(),
+                    "Author": request.form.get("Author").title(),
+                    "Genre": request.form.get("Genre").title(),
                     "Year": request.form.get("Year"),
-                    "Country": request.form.get("Country").title,
+                    "Country": request.form.get("Country").title(),
                     "Location": request.form.get("Location"),
                     "Status": book.get("Status"),
                     "Price": request.form.get("Price")
@@ -63,7 +63,7 @@ def search_book():
             return redirect(url_for(
                 "task", books=existing_book.get("_id")))
         else:
-            flash("Book does not exist in the database")
+            flash("Book does not exist in the archive")
             return redirect(url_for("home"))
 
     return render_template("home.html")

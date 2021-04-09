@@ -34,9 +34,8 @@ function s() {
     var status = document.getElementById("status")
     var success = document.querySelector(".hyde")
 	if (status === "Sold") {  
-            success.classList.add(hyde);
+            success.classList.add("hyde");
         } else { 
-            success.classList.remove(hyde);
+            success.classList.remove("hyde");
         }
     }
-    console.log("sold")

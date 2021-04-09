@@ -35,7 +35,9 @@
     <p>Price: {{ book.Price }}</p>
     <span>
     <a href="{{ url_for('edit_task', archive=book._id) }}"><button style="box-shadow: none;" method="POST" tabindex="1" value="sell_book"  type="submit" class="btn btn-dark">Edit</button></a>
-    <a href="{{ url_for('sell_book', archive=book._id) }}"><button style="box-shadow: none;" method="POST" tabindex="1" value="sell_book"  type="submit" id="success" class="btn btn-success hyde" onload="s()" >Sell!</button></a>
+    <!--{% if book.Status == 'Available' %}-->
+    <a href="{{ url_for('sell_book', archive=book._id) }}"><button style="box-shadow: none;" method="POST" tabindex="1" value="sell_book"  type="submit" id="success" class="btn btn-success hyde">Sell!</button></a>
+    <!--{% endif %}-->
     </span>
     </div>
  
