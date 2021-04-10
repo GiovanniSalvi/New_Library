@@ -123,9 +123,10 @@ and a search tab to explore site contents just below:[searchtab](https://indigo-
 
 * CSS: [https://webformatter.com/](https://webformatter.com/)
 
+* JAVASCRIPT:[https://jshint.com/]
 
-* JAVASCRIPT:[https://jshint.com/](<img width="1248" alt="javascript valid" src="https://user-images.githubusercontent.com/61980577/114250922-9266ea00-999f-11eb-9628-12fd7c548bcc.png">
-)
+* JAVASCRIPT:<img width="1248" alt="javascript valid" src="https://user-images.githubusercontent.com/61980577/114250922-9266ea00-999f-11eb-9628-12fd7c548bcc.png">
+
 
 * JAVASCRIPT: [https://webformatter.com/](https://webformatter.com/)
 
