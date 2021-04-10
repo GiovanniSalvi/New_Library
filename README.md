@@ -27,7 +27,15 @@ Welcome! [github.com](https://github.com/GiovanniSalvi/New_Library)
 
 * [AddBook iPhone](https://github.com/GiovanniSalvi/New_Library/blob/master/static/wireframes/Addbook%20iphone.png)
 
-## Project's Mockup screenshots:
+## Project's Mockup screenshots
+
+* [Homepage](https://indigo-spider-ttgwug91.ws-eu03.gitpod.io/#/workspace/New_Library)
+
+* [Add_book](https://indigo-spider-ttgwug91.ws-eu03.gitpod.io/#/workspace/New_Library)
+
+* [Register](https://indigo-spider-ttgwug91.ws-eu03.gitpod.io/#/workspace/New_Library)
+
+* [Remove](https://indigo-spider-ttgwug91.ws-eu03.gitpod.io/#/workspace/New_Library)
 
 
 ---
@@ -38,7 +46,7 @@ Welcome! [github.com](https://github.com/GiovanniSalvi/New_Library)
 
 * Feature1: Menu-bar provides a fluid navigation through the site.
 
-* Feature2: Homepage's body provides a background hero-image, an home-button  which redirects users to the homepage, a complete list of book titles in the database, both "available" and "sold"(whom thay are supposed to be removed)and a social media links footer.
+* Feature2: Homepage's body provides a background hero-image, an home-button  which redirects users to the homepage, a complete list of book titles in the database, both "available" and "sold"(whom are supposed to be removed)and a social media links footer.
 
 * Feature3: Homepage provides any books in the library, wrapped in a box.Click button "Sell" inside the box to purchase the item selected if books status is Available.
 
@@ -48,7 +56,7 @@ Welcome! [github.com](https://github.com/GiovanniSalvi/New_Library)
 
 * Feature6: Registration link leads to form for adding new users to the database filling all required fields.Clicking Submit button will add a new user on the libray database.
 
-* Feature7: Homepage provides any books in the library, wrapped in a box.Click button "Edit" inside the box leads user to a form to edit the item.
+* Feature7: Clicking button "Edit" inside the boxes in the homepage, which contain books titles in stock, leads users to a form to edit the item.
 
 ### Features left to implement
 
@@ -87,19 +95,19 @@ Welcome! [github.com](https://github.com/GiovanniSalvi/New_Library)
 ## Testing
 
 ### In order to navigate easily through the site:
-* In the homepage, users can find all books title in the archive[homepage](<img width="998" alt="test home page" src="https://user-images.githubusercontent.com/61980577/114252047-aca2c700-99a3-11eb-9c5b-09c3b8177080.png">)At the top of the page are displayed navbar links to navigate through the app[navbar](<img width="733" alt="test navbar" src="https://user-images.githubusercontent.com/61980577/114252140-158a3f00-99a4-11eb-8d8f-f8e2fe0d3aca.png">)
-and a search tab to explore site contents just below[searchtab](<img width="1056" alt="test search tab" src="https://user-images.githubusercontent.com/61980577/114252243-83366b00-99a4-11eb-86e8-8e045977829c.png">)
+* In the homepage, users can find all books title in the archive:[homepage](https://indigo-spider-ttgwug91.ws-eu03.gitpod.io/#/workspace/New_Library).At the top of the page are displayed navbar links to navigate through the app:[navbar](https://indigo-spider-ttgwug91.ws-eu03.gitpod.io/#/workspace/New_Library)
+and a search tab to explore site contents just below:[searchtab](https://indigo-spider-ttgwug91.ws-eu03.gitpod.io/#/workspace/New_Library)
 
-* Add_book link leads to the form to adding new books to the archive[addBook](<img width="1279" alt="test addbook" src="https://user-images.githubusercontent.com/61980577/114252362-ffc94980-99a4-11eb-87a8-792bbd7f11e6.png">)
+* Add_book link leads to the form to adding new books to the archive:[addBook](https://indigo-spider-ttgwug91.ws-eu03.gitpod.io/#/workspace/New_Library)
 
-* Remove_book link leads to a search tab to find the book title users are supposed to remove clicking delete button below the book features[removebook](<img width="1223" alt="test removeBook" src="https://user-images.githubusercontent.com/61980577/114252502-eecd0800-99a5-11eb-949f-dfdd243e1279.png">)
+* Remove_book link leads to a search tab to find the book title users are supposed to remove clicking delete button below the book features:[removebook](https://indigo-spider-ttgwug91.ws-eu03.gitpod.io/#/workspace/New_Library)
 
-* Register_user link leads to the form to adding new users to the database[registration](<img width="1223" alt="test registration" src="https://user-images.githubusercontent.com/61980577/114252663-bf6acb00-99a6-11eb-8eb2-60a5b9ac1695.png">)
+* Register_user link leads to the form to adding new users to the database:[registration](https://indigo-spider-ttgwug91.ws-eu03.gitpod.io/#/workspace/New_Library)
 
-* Every box in the homepage contains a single product;'edit'[editbutton](<img width="304" alt="test button" src="https://user-images.githubusercontent.com/61980577/114252754-356f3200-99a7-11eb-89f8-4b76a784f574.png">) button positioned at the bottom of the box allows users to update a book.
-'Sell!'button[sellbutton](<img width="304" alt="test button" src="https://user-images.githubusercontent.com/61980577/114252754-356f3200-99a7-11eb-89f8-4b76a784f574.png">) next to edit button leads to a form to fill with users/buyer details in order to complete purchase operation.
+* Every box in the homepage contains a single product;'edit':[editbutton](https://indigo-spider-ttgwug91.ws-eu03.gitpod.io/#/workspace/New_Library) button positioned at the bottom of the box allows users to update a book.
+'Sell!'button:[sellbutton](https://indigo-spider-ttgwug91.ws-eu03.gitpod.io/#/workspace/New_Library) next to edit button leads to a form to fill with users/buyer details in order to complete purchase operation.
 
-* The footer provides social links[footer](<img width="1241" alt="test footer" src="https://user-images.githubusercontent.com/61980577/114252837-939c1500-99a7-11eb-98a3-a2709224653f.png">).
+* The footer provides social links:[footer](https://indigo-spider-ttgwug91.ws-eu03.gitpod.io/#/workspace/New_Library).
 
 ### The project has been validated and beautified using:
 
@@ -107,25 +115,6 @@ and a search tab to explore site contents just below[searchtab](<img width="1056
 
     • Base:[https://validator.w3.org/nu/](https://validator.w3.org/nu/?doc=https%3A%2F%2Fgiovannisalvi.github.io%2FNew_Library%2F)
 
-    • Homepage: [https://validator.w3.org/nu/](https://validator.w3.org/nu/?doc=https://giovannisalvi.github.io/New_Library/#textarea)
-
-    • BookSelling: [https://validator.w3.org/nu/](https://validator.w3.org/nu/?doc=https://giovannisalvi.github.io/New_Library/#textarea)
-
-    • AddBook: [https://validator.w3.org/nu/](https://validator.w3.org/nu/?doc=https://giovannisalvi.github.io/New_Library/#textarea)
-
-    • Remove: [https://validator.w3.org/nu/](https://validator.w3.org/nu/?doc=https://giovannisalvi.github.io/New_Library/#textarea)
-
-    • Register: [https://validator.w3.org/nu/](https://validator.w3.org/nu/?doc=https://giovannisalvi.github.io/New_Library/#textarea)
-
-    • SellBook: [https://validator.w3.org/nu/](https://validator.w3.org/nu/?doc=https://giovannisalvi.github.io/New_Library/#textarea)
-
-    • EditBook: [https://validator.w3.org/nu/](https://validator.w3.org/nu/?doc=https://giovannisalvi.github.io/New_Library/#textarea)
-
-    • RemoveBook:[https://validator.w3.org/nu/](https://validator.w3.org/nu/?doc=https://giovannisalvi.github.io/New_Library/#textarea)
-
-    • Task:[https://validator.w3.org/nu/](https://validator.w3.org/nu/?doc=https://giovannisalvi.github.io/New_Library/#textarea)
-
-    • BookAdded:[https://validator.w3.org/nu/](https://validator.w3.org/nu/?doc=https://giovannisalvi.github.io/New_Library/#textarea)
 
 * HTML: [https://webformatter.com/](https://webformatter.com/)
 
@@ -184,7 +173,7 @@ and a search tab to explore site contents just below[searchtab](<img width="1056
 
   8. As a user I want to find a quick way to edit a book-title selected.
 
-  • On the Homepage are displayed all books wrappedd in a box,clicking on the button "edit" at the boottom of the box leads user to the editable form to complete the operation.Updates the desirabled input fields then click button "update at the bottom of the form.A flash message shows if operation is successful.
+  • On the Homepage  all books in the archive are displayed wrapped in a box,clicking on the button "edit" at the bottom of the box leads user to an editable form to complete the operation.Updates the required input fields then clicking the button "update" at the bottom of the form.A flash message shows if operation was successful.
   
   
 ### The project has beeen designed to make pages render well on a variety of devices and window or screen sizes such as:
