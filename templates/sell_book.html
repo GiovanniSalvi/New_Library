@@ -4,18 +4,17 @@
 
 <div>
     {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
-    <div style="bottom: -0.5rem; flex-shrink: 0;background-color: unset;" class="flashes">
+    <div style="bottom: -0.5rem; flex-shrink: 0; background-color: unset;" class="flashes">
         <h5>{{ message }}</h5>
     </div>
 </div>
 {% endfor %} {% endif %} {% endwith %}
 
-<!----This will show the details of the book which is supposed to buy--->
+<!----This will show the details of the book---->
 
-
-<div class="box-container"">
-    <div class=" book_display">
-    <ul class="box" style="width:70%">
+<div class="box-container">
+<div class="book_display">
+    <ul class="box" style="width: 70%;">
         <li>Title: {{ archive.Title }}</li>
         <br />
         <li>Author: {{ archive.Author }}</li>
@@ -28,39 +27,42 @@
         <br />
         <li>Location: {{ archive.Location }}</li>
         <br />
-        <li>Status: <spam id="status" style="color: rgb(255, 47, 47);">{{ archive.Status }}</spam>
-        </li>
+        <li>Status: <spam id="status" style="color: rgb(255, 47, 47);">{{ archive.Status }}</spam></li>
         <br />
         <li>Price: {{ archive.Price }}</li>
     </ul>
 </div>
 
-
-
 <!------user details form-->
 
 <div class="user-details">
     <form class="needs-validation" action="{{ url_for('sell_book', archive=archive._id) }}" novalidate method="POST">
-        <div class="form-row box" style="align-items:start!important">
+        <div class="form-row box" style="align-items: start !important;">
             <div class="col-md-6 mb-6">
                 <h4 class="user_details">Users Details</h4>
-                <input type="text" class="form-control" name="First" id="validationCustom01"
-                    pattern="(?=.*[a-z])(?=.*[A-Z]).{2,}$" placeholder="First name" required />
+                <input type="text" class="form-control" name="First" id="validationCustom01" pattern="(?=.*[a-z])(?=.*[A-Z]).{2,}$" placeholder="First name" required />
                 <div class="valid-feedback"></div>
             </div>
             <div class="col-md-6 mb-6">
-                <input type="text" class="form-control" name="Last" id="validationCustom02"
-                    pattern="(?=.*[a-z])(?=.*[A-Z]).{2,}$" placeholder="Last name" required />
+                <input type="text" class="form-control" name="Last" id="validationCustom02" pattern="(?=.*[a-z])(?=.*[A-Z]).{2,}$" placeholder="Last name" required />
             </div>
             <div class="col-md-6 mb-6">
-                <input type="text" class="form-control" name="Email" id="validationCustom03" placeholder="Email Address"
-                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required />
+                <input type="text" class="form-control" name="Email" id="validationCustom03" placeholder="Email Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required />
                 <div class="invalid-feedback"></div>
             </div>
             <div style="background-color: unset;" class="container sell-button">
-                <button style="box-shadow: none;" method="POST" tabindex="1" value="sell_book" onclick="success(getElementById('status').value)"
-                    action="{{ url_for('sell_book',  archive=archive._id) }}" type="submit" class="btn btn-success"
-                    id="success">Sell!</button>
+                <button
+                    style="box-shadow: none;"
+                    tabindex="1"
+                    value="sell_book"
+                    onclick="success(getElementById('status').value)"
+                    action="{{ url_for('sell_book',  archive=archive._id) }}"
+                    type="submit"
+                    class="btn btn-success"
+                    id="success"
+                >
+                    Sell!
+                </button>
             </div>
         </div>
     </form>

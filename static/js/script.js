@@ -26,16 +26,14 @@
     );
 })();
 
-
-                        // This piece of code above was taken from bootstrap js as specified in the readme.md file //
-
+// This piece of code above was taken from bootstrap js as specified in the readme.md file //
 
 function s() {
-    var status = document.getElementById("status")
-    var success = document.querySelector(".hyde")
-	if (status === "Sold") {  
-            success.classList.add("hyde");
-        } else { 
-            success.classList.remove("hyde");
-        }
+    var status = document.getElementById("status");
+    var success = document.querySelector(".hyde");
+    if (status === "Sold") {
+        success.classList.add("hyde");
+    } else {
+        success.classList.remove("hyde");
     }
+}

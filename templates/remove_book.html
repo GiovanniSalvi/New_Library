@@ -1,52 +1,46 @@
 {% extends "base.html" %} {% block body %}
 
-                   <!-----remove book flash message---->
+<!-----remove_book book flash message---->
 
-    <div>
-        {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
-        <div class="row flashes">
-            <h5>{{ message }}</h5>
-        </div>
-        {% endfor %} {% endif %} {% endwith %}
+<div>
+    {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
+    <div class="row flashes">
+        <h5>{{ message }}</h5>
     </div>
+    {% endfor %} {% endif %} {% endwith %}
+</div>
 
-  
-                  <!-----This will show the details of the book which is meant to be removed-->
+<!-----This will show the details of the book which is meant to be removed-->
 
-
-<div class="container box-container" style="display:table; min-height: 60vh;">
+<div class="container box-container" style="display: table; min-height: 60vh;">
+    {% for book in archive %}
     <div class="book_display">
         <ul class="box">
-            <li>Title: {{ archive.Title }}</li>
+            <li>Title: {{ book.Title }}</li>
             <br />
-            <li>Author: {{ archive.Author }}</li>
+            <li>Author: {{ book.Author }}</li>
             <br />
-            <li>Genre: {{ archive.Genre }}</li>
+            <li>Genre: {{ book.Genre }}</li>
             <br />
-            <li>Year: {{ archive.Year }}</li>
+            <li>Year: {{ book.Year }}</li>
             <br />
-            <li>Country: {{ archive.Country }}</li>
+            <li>Country: {{ book.Country }}</li>
             <br />
-            <li>Location: {{ archive.Location }}</li>
+            <li>Location: {{ book.Location }}</li>
             <br />
-            <li>Status: <spam style="color: #dc3545;" id="status_color">{{ archive.Status }}</spam></li>
+            <li>Status: <spam style="color: #dc3545;" id="status_color">{{ book.Status }}</spam></li>
             <br />
-            <li>Price: {{ archive.Price }}</li>
+            <li>Price: {{ book.Price }}</li>
             <br />
         </ul>
     </div>
     <div style="width: 25%; background-color: unset;" class="container delete_button">
-        <form method="POST" action="{{url_for('remove_book', archive=archive._id)}}">
+        <form method="POST" action="{{url_for('remove_book', archive=book._id)}}">
             <span style="font-size: 2em; text-align: center;">
-            <button name="delete" type="submit" class="btn btn-danger">Delete</button>
-            <button style="box-shadow: none;" class="btn btn-link" type="submit"><a href="{{ url_for('home') }}">Back</a></button>
+                <button name="delete" type="submit" class="btn btn-danger">Delete</button>
+                <button style="box-shadow: none;" class="btn btn-link" type="submit"><a href="{{ url_for('home') }}">Back</a></button>
             </span>
         </form>
     </div>
+    {% endfor %}
 </div>
-
-                        
-
-    
-
-{% endblock %}

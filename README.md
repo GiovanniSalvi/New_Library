@@ -29,17 +29,17 @@ Welcome! [github.com](https://github.com/GiovanniSalvi/New_Library)
 
 ## Project's Mockup screenshots:
 
-* Home: [Homepage](<img width="641" alt="Homepage" src="https://user-images.githubusercontent.com/61980577/113729286-26faef00-96f7-11eb-998d-d9455a513083.png">)
+* Homepage:<img width="641" alt="Homepage" src="https://user-images.githubusercontent.com/61980577/113729286-26faef00-96f7-11eb-998d-d9455a513083.png">
 
-* AddBook:[Add_book](<img width="641" alt="Addbook" src="https://user-images.githubusercontent.com/61980577/113729123-00d54f00-96f7-11eb-993e-eaaef5fc4c2c.png">)
+* AddBook:(<img width="641" alt="Addbook" src="https://user-images.githubusercontent.com/61980577/113729123-00d54f00-96f7-11eb-993e-eaaef5fc4c2c.png">)
 
-* RemoveBook:[Remove_book](<img width="641" alt="Removebook" src="https://user-images.githubusercontent.com/61980577/113728952-d5eafb00-96f6-11eb-8463-08eded4cb8b0.png">)
+* RemoveBook:<img width="641" alt="Removebook" src="https://user-images.githubusercontent.com/61980577/113728952-d5eafb00-96f6-11eb-8463-08eded4cb8b0.png">
 
-* Register:[Register_user](<img width="641" alt="Registration" src="https://user-images.githubusercontent.com/61980577/113728780-ab00a700-96f6-11eb-9f8d-bf65a38c8566.png">)
+* Register:<img width="641" alt="Registration" src="https://user-images.githubusercontent.com/61980577/113728780-ab00a700-96f6-11eb-9f8d-bf65a38c8566.png">
 
-* SellBook:[Sell_book](<img width="641" alt="Sellbook" src="https://user-images.githubusercontent.com/61980577/113728600-860c3400-96f6-11eb-838b-bf762ddd12f4.png">)
+* SellBook:<img width="641" alt="Sellbook" src="https://user-images.githubusercontent.com/61980577/113728600-860c3400-96f6-11eb-838b-bf762ddd12f4.png">
 
-* EditBook:[Edit_book](<img width="641" alt="Editbook" src="https://user-images.githubusercontent.com/61980577/113728660-92908c80-96f6-11eb-975e-2cd0ee3914b0.png">)
+* EditBook:<img width="641" alt="Editbook" src="https://user-images.githubusercontent.com/61980577/113728660-92908c80-96f6-11eb-975e-2cd0ee3914b0.png">
 
 ---
 
@@ -98,73 +98,70 @@ Welcome! [github.com](https://github.com/GiovanniSalvi/New_Library)
 ## Testing
 
 ### In order to navigate easily through the site:
-* In the homepage users can find all books title in the archive[],at the top of the page are displayed navbar links to navigate through the app[] and a search tab to explore site contents just below[]
+* In the homepage, users can find all books title in the archive[homepage](<img width="998" alt="test home page" src="https://user-images.githubusercontent.com/61980577/114252047-aca2c700-99a3-11eb-9c5b-09c3b8177080.png">)At the top of the page are displayed navbar links to navigate through the app[navbar](<img width="733" alt="test navbar" src="https://user-images.githubusercontent.com/61980577/114252140-158a3f00-99a4-11eb-8d8f-f8e2fe0d3aca.png">)
+and a search tab to explore site contents just below[searchtab](<img width="1056" alt="test search tab" src="https://user-images.githubusercontent.com/61980577/114252243-83366b00-99a4-11eb-86e8-8e045977829c.png">)
 
-* Add_book link leads to the form to adding new books to the archive[]
+* Add_book link leads to the form to adding new books to the archive[addBook](<img width="1279" alt="test addbook" src="https://user-images.githubusercontent.com/61980577/114252362-ffc94980-99a4-11eb-87a8-792bbd7f11e6.png">)
 
-* Remove_book link leads to a search tab to find the book title users are supposed to remove clicking delete button below the book features[]
+* Remove_book link leads to a search tab to find the book title users are supposed to remove clicking delete button below the book features[removebook](<img width="1223" alt="test removeBook" src="https://user-images.githubusercontent.com/61980577/114252502-eecd0800-99a5-11eb-949f-dfdd243e1279.png">)
 
-* Register_user link leads to the form to adding new users to the database[]
+* Register_user link leads to the form to adding new users to the database[registration](<img width="1223" alt="test registration" src="https://user-images.githubusercontent.com/61980577/114252663-bf6acb00-99a6-11eb-8eb2-60a5b9ac1695.png">)
 
-* Every box in the homepage contains a single product;'edit'[] button positioned at the bottom of the box allows users to update a book.
-'Sell!'button next to edit button leads to a form to fill with users/buyer details in order to complete purchase operation.
+* Every box in the homepage contains a single product;'edit'[editbutton](<img width="304" alt="test button" src="https://user-images.githubusercontent.com/61980577/114252754-356f3200-99a7-11eb-89f8-4b76a784f574.png">) button positioned at the bottom of the box allows users to update a book.
+'Sell!'button[sellbutton](<img width="304" alt="test button" src="https://user-images.githubusercontent.com/61980577/114252754-356f3200-99a7-11eb-89f8-4b76a784f574.png">) next to edit button leads to a form to fill with users/buyer details in order to complete purchase operation.
 
-* The footer provides social links[].
+* The footer provides social links[footer](<img width="1241" alt="test footer" src="https://user-images.githubusercontent.com/61980577/114252837-939c1500-99a7-11eb-98a3-a2709224653f.png">).
 
 ### The project has been validated and beautified using:
 
-* HTML: 
+* HTML:
 
-    • Homepage: [https://validator.w3.org/nu/]()
+    • Base:[https://validator.w3.org/nu/](https://validator.w3.org/nu/?doc=https%3A%2F%2Fgiovannisalvi.github.io%2FNew_Library%2F)
 
-    • SearchBook: [https://validator.w3.org/nu/]()
+    • Homepage: [https://validator.w3.org/nu/](https://validator.w3.org/nu/?doc=https://giovannisalvi.github.io/New_Library/#textarea)
 
-    • AddBook: [https://validator.w3.org/nu/]()
+    • BookSelling: [https://validator.w3.org/nu/](https://validator.w3.org/nu/?doc=https://giovannisalvi.github.io/New_Library/#textarea)
 
-    • RemoveBook: [https://validator.w3.org/nu/]()
+    • AddBook: [https://validator.w3.org/nu/](https://validator.w3.org/nu/?doc=https://giovannisalvi.github.io/New_Library/#textarea)
 
-    • Register: [https://validator.w3.org/nu/]()
+    • Remove: [https://validator.w3.org/nu/](https://validator.w3.org/nu/?doc=https://giovannisalvi.github.io/New_Library/#textarea)
 
-    • SellBook: [https://validator.w3.org/nu/]()
+    • Register: [https://validator.w3.org/nu/](https://validator.w3.org/nu/?doc=https://giovannisalvi.github.io/New_Library/#textarea)
 
-    • EditBook: [https://validator.w3.org/nu/]()
+    • SellBook: [https://validator.w3.org/nu/](https://validator.w3.org/nu/?doc=https://giovannisalvi.github.io/New_Library/#textarea)
 
-* HTML: 
+    • EditBook: [https://validator.w3.org/nu/](https://validator.w3.org/nu/?doc=https://giovannisalvi.github.io/New_Library/#textarea)
 
-    • Homepage: [https://webformatter.com/]()
+    • RemoveBook:[https://validator.w3.org/nu/](https://validator.w3.org/nu/?doc=https://giovannisalvi.github.io/New_Library/#textarea)
 
-    • SearchBook: [https://webformatter.com/]()
+    • Task:[https://validator.w3.org/nu/](https://validator.w3.org/nu/?doc=https://giovannisalvi.github.io/New_Library/#textarea)
 
-    • AddBook: [https://webformatter.com/]()
+    • BookAdded:[https://validator.w3.org/nu/](https://validator.w3.org/nu/?doc=https://giovannisalvi.github.io/New_Library/#textarea)
 
-    • RemoveBook: [https://webformatter.com/]()
-
-    • Register: [https://webformatter.com/]()
-
-    • SellBook: [https://webformatter.com/]()
-
-    • EditBook: [https://webformatter.com/]()
+* HTML: [https://webformatter.com/](https://webformatter.com/)
 
 
-* CSS: [https://jigsaw.w3.org/css-validator/]()
+* CSS: [https://jigsaw.w3.org/css-validator/](https://validator.w3.org/nu/?doc=https://giovannisalvi.github.io/New_Library/#textarea)
 
-* CSS: [https://webformatter.com/]()
+* CSS: [https://webformatter.com/](https://webformatter.com/)
 
-* JAVASCRIPT: [https://jshint.com/]()
 
-* JAVASCRIPT: [https://webformatter.com/]()
+* JAVASCRIPT:[https://jshint.com/](<img width="1248" alt="javascript valid" src="https://user-images.githubusercontent.com/61980577/114250922-9266ea00-999f-11eb-9628-12fd7c548bcc.png">
+)
 
-* PYTHON: [http://pep8online.com/]()
+* JAVASCRIPT: [https://webformatter.com/](https://webformatter.com/)
 
-* PYTHON: [https://codebeautify.org/]()
+
+* PYTHON: [http://pep8online.com/](http://pep8online.com/checkresult)
+
 
 ### The quality of the website was measured using Google Lighthouse:
 
-* Chrome lighthouse Tool:
+* Chrome lighthouse Tool:(<img width="1272" alt="Google lighthouse" src="https://user-images.githubusercontent.com/61980577/114251782-9d6f4980-99a2-11eb-95e0-4448a491d57b.png">)
 
 ---
 
-### User stories from UX section of README.md file:
+### User stories :
 
 1. As a User I want navigate the site to find what I need easily.
 
@@ -251,7 +248,7 @@ Welcome! [github.com](https://github.com/GiovanniSalvi/New_Library)
 
     2. Add heroku git repository replacing with the name of the app.
 
-    3. Edit config vars from  app’s Settings tab in the Heroku Dashboard such as:MONGO_DBNAME,MONGO_URI,SECRET_KEY.
+    3. Edit config vars from  app’s Settings tab in the Heroku Dashboard such      as:MONGO_DBNAME,MONGO_URI,SECRET_KEY.
 
     4. Create a requirenments.txt file in order heroku can identify the project as a python project and insert in the root folder.
 
@@ -283,7 +280,7 @@ Welcome! [github.com](https://github.com/GiovanniSalvi/New_Library)
 
 ### Bugs 
 
-  1. Not significant bugs.
+  1. Not significant bugs found.
 ---
 
 ### Code  

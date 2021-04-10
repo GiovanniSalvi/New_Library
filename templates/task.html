@@ -1,35 +1,27 @@
-{% extends "base.html" %} {% block body %}
-
-{% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
+{% extends "base.html" %} {% block body %} {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
 <div class="row flashes">
     <h6>{{ message }}</h6>
 </div>
 {% endfor %} {% endif %} {% endwith %}
 
-<div class="container box-container" style="display:table;">
+<div class="container box-container" style="display: table;">
     {% for book in books %}
     <div class="box">
-    <p>Title: {{ book.Title }}</p>
-    <p>Author: {{ book.Author }}</p>
-    <p>Genre: {{ book.Genre }}</p>
-    <p>Year: {{ book.Year }}</p>
-    <p>Country: {{ book.Country }}</p>
-    <p>Location: {{ book.Location }}</p>
-    <p style="color: rgb(255, 47, 47);" id="status"> {{ book.Status }}</p>
-    <p>Price: {{ book.Price }}</p>
-    <span>
-    <a href="{{ url_for('edit_task', archive=book._id) }}"><button style="box-shadow: none;" method="POST" tabindex="1" value="sell_book" action="" type="submit" class="btn btn-dark">Edit</button></a>
-    <a href="{{ url_for('sell_book', archive=book._id) }}"><button style="box-shadow: none;" method="POST" tabindex="1" value="sell_book" action="" type="submit" class="btn btn-success">Sell!</button></a>
-    </span>
+        <p>Title: {{ book.Title }}</p>
+        <p>Author: {{ book.Author }}</p>
+        <p>Genre: {{ book.Genre }}</p>
+        <p>Year: {{ book.Year }}</p>
+        <p>Country: {{ book.Country }}</p>
+        <p>Location: {{ book.Location }}</p>
+        <p style="color: rgb(255, 47, 47);" id="status">{{ book.Status }}</p>
+        <p>Price: {{ book.Price }}</p>
+        <span>
+            <a href="{{ url_for('edit_task', archive=book._id) }}"><button style="box-shadow: none;"  tabindex="1" value="sell_book" action="" type="submit" class="btn btn-dark">Edit</button></a>
+            <a href="{{ url_for('sell_book', archive=book._id) }}"><button style="box-shadow: none;"  tabindex="1" value="sell_book" action="" type="submit" class="btn btn-success">Sell!</button></a>
+        </span>
     </div>
-    
- 
-   {% endfor %}
-   
-</div> 
 
-
-
-
+    {% endfor %}
+</div>
 
 {% endblock %}

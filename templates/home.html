@@ -1,55 +1,53 @@
-{% extends "base.html" %} {% block menu %}  {% endblock %}
+{% extends "base.html" %} {% block menu %} {% endblock %}
 
-<!---Homepage---->
+<!---Homepage--->
 
-<!-- flash messages -->
+{% block body %}
+<div class="search-form row">
+    <h2 class="catalogue">Library<strong>Search</strong></h2>
+    <form class="form-inline d-flex justify-content-center md-form form-sm" style="padding-bottom: 5%; padding-left: 5%;" method="POST" action="{{ url_for('search_book') }}">
+        <input class="form-control form-control-sm mr-3" id="search" type="text" name="query" placeholder="insert books title  " aria-label="Search" required />
+        <button style="box-shadow: none;" type="submit" class="btn search"><i class="fa fa-search"></i></button>
+    </form>
+    <div>
+        <!-- flash messages -->
 
+        {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
+        <div class="row flashes">
+            <h5>{{ message }}</h5>
+        </div>
+        {% endfor %} {% endif %} {% endwith %}
 
+        <div class="container box-container" style="display: table;">
+            {% for book in register %}
+            <div class="box">
+                <p>Title: {{ book.Title }}</p>
+                <p>Author: {{ book.Author }}</p>
+                <p>Genre: {{ book.Genre }}</p>
+                <p>Year: {{ book.Year }}</p>
+                <p>Country: {{ book.Country }}</p>
+                <p>Location: {{ book.Location }}</p>
+                <p style="color: rgb(255, 47, 47);" id="status">{{ book.Status }}</p>
+                <p>Price: {{ book.Price }}</p>
+                <span>
+                    <a href="{{ url_for('edit_task', archive=book._id) }}"><button style="box-shadow: none;" method="POST" tabindex="1" value="sell_book" type="submit" class="btn btn-dark">Edit</button></a>
+                    {% if book.Status == 'Available' %}
+                    <a href="{{ url_for('sell_book', archive=book._id) }}"><button style="box-shadow: none;" method="POST" tabindex="1" value="sell_book" type="submit" id="success" class="btn btn-success hyde">Sell!</button></a>
+                    {% endif %}
+                </span>
+            </div>
 
+            {% endfor %}
+        </div>
 
- {% block body %} 
-    <div class="search-form row">
-        <h2 class="catalogue">Library<strong>Search</strong></h2>
-        <form class="form-inline d-flex justify-content-center md-form form-sm" style="padding-bottom: 5%; padding-left: 5%;" method="POST" action="{{ url_for('search_book') }}">
-            <input class="form-control form-control-sm mr-3" id="search" name="search_book" type="search" placeholder="insert books title  " aria-label="Search" required/>
-            <button style="box-shadow: none;" class="btn search"><i class="fa fa-search"></i></button>
-        </form>
- <div>
-
-{% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
-<div class="row flashes">
-    <h5>{{ message }}</h5>
-</div>
-{% endfor %} {% endif %} {% endwith %}
-
-<div class="container box-container" style="display:table;">
-    {% for book in register %}
-    <div class="box">
-    <p>Title: {{ book.Title }}</p>
-    <p>Author: {{ book.Author }}</p>
-    <p>Genre: {{ book.Genre }}</p>
-    <p>Year: {{ book.Year }}</p>
-    <p>Country: {{ book.Country }}</p>
-    <p>Location: {{ book.Location }}</p>
-    <p style="color: rgb(255, 47, 47);" id="status">{{ book.Status }}</p>
-    <p>Price: {{ book.Price }}</p>
-    <span>
-    <a href="{{ url_for('edit_task', archive=book._id) }}"><button style="box-shadow: none;" method="POST" tabindex="1" value="sell_book"  type="submit" class="btn btn-dark">Edit</button></a>
-    <!--{% if book.Status == 'Available' %}-->
-    <a href="{{ url_for('sell_book', archive=book._id) }}"><button style="box-shadow: none;" method="POST" tabindex="1" value="sell_book"  type="submit" id="success" class="btn btn-success hyde">Sell!</button></a>
-    <!--{% endif %}-->
-    </span>
+        {% endblock %}
     </div>
- 
-   {% endfor %}
-   
-</div> 
+</div>
 
-{% endblock %}
     
 
 
 
 
-<!--flash messages--->
+
 
