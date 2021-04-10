@@ -29,17 +29,6 @@ Welcome! [github.com](https://github.com/GiovanniSalvi/New_Library)
 
 ## Project's Mockup screenshots:
 
-Home: [Homepage] (https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/Homepage.png)
-
-AddBook: [Add_book] (https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/Addbook.png)
-
-RemoveBook: [Remove_book] (https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/Removebook.png)
-
-Register: [Register_user] (https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/Registration.png)
-
-SellBook: [Sell_book] (https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/Sellbook.png)
-
-EditBook: [Edit_book] (https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/Editbook.png)
 
 ---
 
@@ -97,60 +86,71 @@ EditBook: [Edit_book] (https://github.com/GiovanniSalvi/New_Library/blob/master/
 
 ## Testing
 
+### In order to navigate easily through the site:
+* In the homepage, users can find all books title in the archive[homepage](<img width="998" alt="test home page" src="https://user-images.githubusercontent.com/61980577/114252047-aca2c700-99a3-11eb-9c5b-09c3b8177080.png">)At the top of the page are displayed navbar links to navigate through the app[navbar](<img width="733" alt="test navbar" src="https://user-images.githubusercontent.com/61980577/114252140-158a3f00-99a4-11eb-8d8f-f8e2fe0d3aca.png">)
+and a search tab to explore site contents just below[searchtab](<img width="1056" alt="test search tab" src="https://user-images.githubusercontent.com/61980577/114252243-83366b00-99a4-11eb-86e8-8e045977829c.png">)
+
+* Add_book link leads to the form to adding new books to the archive[addBook](<img width="1279" alt="test addbook" src="https://user-images.githubusercontent.com/61980577/114252362-ffc94980-99a4-11eb-87a8-792bbd7f11e6.png">)
+
+* Remove_book link leads to a search tab to find the book title users are supposed to remove clicking delete button below the book features[removebook](<img width="1223" alt="test removeBook" src="https://user-images.githubusercontent.com/61980577/114252502-eecd0800-99a5-11eb-949f-dfdd243e1279.png">)
+
+* Register_user link leads to the form to adding new users to the database[registration](<img width="1223" alt="test registration" src="https://user-images.githubusercontent.com/61980577/114252663-bf6acb00-99a6-11eb-8eb2-60a5b9ac1695.png">)
+
+* Every box in the homepage contains a single product;'edit'[editbutton](<img width="304" alt="test button" src="https://user-images.githubusercontent.com/61980577/114252754-356f3200-99a7-11eb-89f8-4b76a784f574.png">) button positioned at the bottom of the box allows users to update a book.
+'Sell!'button[sellbutton](<img width="304" alt="test button" src="https://user-images.githubusercontent.com/61980577/114252754-356f3200-99a7-11eb-89f8-4b76a784f574.png">) next to edit button leads to a form to fill with users/buyer details in order to complete purchase operation.
+
+* The footer provides social links[footer](<img width="1241" alt="test footer" src="https://user-images.githubusercontent.com/61980577/114252837-939c1500-99a7-11eb-98a3-a2709224653f.png">).
+
 ### The project has been validated and beautified using:
 
-* HTML: 
+* HTML:
 
-    • Homepage: [https://validator.w3.org/nu/]()
+    • Base:[https://validator.w3.org/nu/](https://validator.w3.org/nu/?doc=https%3A%2F%2Fgiovannisalvi.github.io%2FNew_Library%2F)
 
-    • SearchBook: [https://validator.w3.org/nu/]()
+    • Homepage: [https://validator.w3.org/nu/](https://validator.w3.org/nu/?doc=https://giovannisalvi.github.io/New_Library/#textarea)
 
-    • AddBook: [https://validator.w3.org/nu/]()
+    • BookSelling: [https://validator.w3.org/nu/](https://validator.w3.org/nu/?doc=https://giovannisalvi.github.io/New_Library/#textarea)
 
-    • RemoveBook: [https://validator.w3.org/nu/]()
+    • AddBook: [https://validator.w3.org/nu/](https://validator.w3.org/nu/?doc=https://giovannisalvi.github.io/New_Library/#textarea)
 
-    • Register: [https://validator.w3.org/nu/]()
+    • Remove: [https://validator.w3.org/nu/](https://validator.w3.org/nu/?doc=https://giovannisalvi.github.io/New_Library/#textarea)
 
-    • SellBook: [https://validator.w3.org/nu/]()
+    • Register: [https://validator.w3.org/nu/](https://validator.w3.org/nu/?doc=https://giovannisalvi.github.io/New_Library/#textarea)
 
-    • EditBook: [https://validator.w3.org/nu/]()
+    • SellBook: [https://validator.w3.org/nu/](https://validator.w3.org/nu/?doc=https://giovannisalvi.github.io/New_Library/#textarea)
 
-* HTML: 
+    • EditBook: [https://validator.w3.org/nu/](https://validator.w3.org/nu/?doc=https://giovannisalvi.github.io/New_Library/#textarea)
 
-    • Homepage: [https://webformatter.com/]()
+    • RemoveBook:[https://validator.w3.org/nu/](https://validator.w3.org/nu/?doc=https://giovannisalvi.github.io/New_Library/#textarea)
 
-    • SearchBook: [https://webformatter.com/]()
+    • Task:[https://validator.w3.org/nu/](https://validator.w3.org/nu/?doc=https://giovannisalvi.github.io/New_Library/#textarea)
 
-    • AddBook: [https://webformatter.com/]()
+    • BookAdded:[https://validator.w3.org/nu/](https://validator.w3.org/nu/?doc=https://giovannisalvi.github.io/New_Library/#textarea)
 
-    • RemoveBook: [https://webformatter.com/]()
-
-    • Register: [https://webformatter.com/]()
-
-    • SellBook: [https://webformatter.com/]()
-
-    • EditBook: [https://webformatter.com/]()
+* HTML: [https://webformatter.com/](https://webformatter.com/)
 
 
-* CSS: [https://jigsaw.w3.org/css-validator/]()
+* CSS: [https://jigsaw.w3.org/css-validator/](https://validator.w3.org/nu/?doc=https://giovannisalvi.github.io/New_Library/#textarea)
 
-* CSS: [https://webformatter.com/]()
+* CSS: [https://webformatter.com/](https://webformatter.com/)
 
-* JAVASCRIPT: [https://jshint.com/]()
 
-* JAVASCRIPT: [https://webformatter.com/]()
+* JAVASCRIPT:[https://jshint.com/](<img width="1248" alt="javascript valid" src="https://user-images.githubusercontent.com/61980577/114250922-9266ea00-999f-11eb-9628-12fd7c548bcc.png">
+)
 
-* PYTHON: [http://pep8online.com/]()
+* JAVASCRIPT: [https://webformatter.com/](https://webformatter.com/)
 
-* PYTHON: [https://codebeautify.org/]()
+
+* PYTHON: [http://pep8online.com/](http://pep8online.com/checkresult)
+
 
 ### The quality of the website was measured using Google Lighthouse:
 
-* Chrome lighthouse Tool:
+* Chrome lighthouse Tool:(<img width="1272" alt="Google lighthouse" src="https://user-images.githubusercontent.com/61980577/114251782-9d6f4980-99a2-11eb-95e0-4448a491d57b.png">)
 
 ---
 
-### User stories from UX section of README.md file:
+### User stories :
 
 1. As a User I want navigate the site to find what I need easily.
 
@@ -184,48 +184,43 @@ EditBook: [Edit_book] (https://github.com/GiovanniSalvi/New_Library/blob/master/
 
   8. As a user I want to find a quick way to edit a book-title selected.
 
-  • Onthe Homepage are displayed all books wrappedd in a box,clicking on the button "edit" at the boottom of the box leads user to the editable form to complete the operation.Updates the desirabled input fields then click button "update at the bottom of the form.A flash message shows if operation is successful.
+  • On the Homepage are displayed all books wrappedd in a box,clicking on the button "edit" at the boottom of the box leads user to the editable form to complete the operation.Updates the desirabled input fields then click button "update at the bottom of the form.A flash message shows if operation is successful.
   
   
 ### The project has beeen designed to make pages render well on a variety of devices and window or screen sizes such as:
 
 * Desktop: (1600x992px) Responsivness tested using ChromeDev inspector tool, as shown in the screenshot below:
-<img width="811" alt="Desktop" src="https://user-images.githubusercontent.com/61980577/104639539-d2237b80-56a7-11eb-8724-885f76549160.png">
+<img width="1280" alt="Desktop " src="https://user-images.githubusercontent.com/61980577/114227010-aea16180-9974-11eb-95b0-3550fe140c36.png">
 
 * Laptop: (1280x802px) Responsivness tested using ChromeDev inspector tool, as shown in the screenshot below:
+<img width="778" alt="Tablet" src="https://user-images.githubusercontent.com/61980577/114227748-aeee2c80-9975-11eb-8598-fea1fe8b83fd.png">
 
-
- * Tablet
+* Tablet
  1. ipad Pro: (1024x1366px) Responsivness tested using ChromeDev inspector tool, as shown in the screenshot below:
- <img width="981" alt="ipad pro" src="https://user-images.githubusercontent.com/61980577/104646500-cee0bd80-56b0-11eb-8a18-0b1b08fa9d6f.png">
+ <img width="778" alt="iPad pro" src="https://user-images.githubusercontent.com/61980577/114226984-a6492680-9974-11eb-940d-24226f31976f.png">
 
  2. iPad: (768x1024px) Responsivness tested using ChromeDev inspector tool, as shown in the screenshot below:
-<img width="981" alt="ipad" src="https://user-images.githubusercontent.com/61980577/104646532-da33e900-56b0-11eb-8fe2-0f86281e28a4.png">
+<img width="778" alt="iPad" src="https://user-images.githubusercontent.com/61980577/114227038-ba8d2380-9974-11eb-9410-0911269a9352.png">
 
 * Mobile
  1. Moto G4 (360x640px) Responsivness tested using ChromeDev inspector tool, as shown in the screenshot below:
- <img width="1023" alt="Moto G4" src="https://user-images.githubusercontent.com/61980577/104646621-f9327b00-56b0-11eb-85b1-bd97eb3956cf.png">
+ <img width="778" alt="motog4" src="https://user-images.githubusercontent.com/61980577/114226958-9fbaaf00-9974-11eb-89f8-b7d05862f566.png">
 
  2. Galaxy S5 (360x640px) Responsivness tested using ChromeDev inspector tool, as shown in the screenshot below:
- <img width="981" alt="Galaxy" src="https://user-images.githubusercontent.com/61980577/104646970-7b22a400-56b1-11eb-8b04-4f0825de227c.png">
+ <img width="778" alt="Galaxy s5" src="https://user-images.githubusercontent.com/61980577/114226927-9598b080-9974-11eb-8e92-b0513b1a1ca5.png">
+ 
+ 3. Iphone 6/7/8 Plus (414x736px) Responsivness tested using ChromeDev inspector tool, as shown in the screenshot below:
+ <img width="778" alt="iPhone6:7 plus" src="https://user-images.githubusercontent.com/61980577/114227118-d98bb580-9974-11eb-862f-dfa4e3cf1ca8.png">
 
- 2. Pixel 2 (411x731px) Responsivness tested using ChromeDev inspector tool, as shown in the screenshot below:
- <img width="981" alt="Pixel2" src="https://user-images.githubusercontent.com/61980577/104646603-f2a40380-56b0-11eb-87c8-e2e81507a3d5.png">
+ 4. Iphone 6/7/8 (375x667px) Responsivness tested using ChromeDev inspector tool, as shown in the screenshot below:
+ <img width="778" alt="iPhone 6:7" src="https://user-images.githubusercontent.com/61980577/114226911-8f0a3900-9974-11eb-9f2e-3a32f4cc0646.png">
+ 
+ 5. Iphone X (375x812px) Responsivness tested using ChromeDev inspector tool, as shown in the screenshot below:
+ <img width="778" alt="iPhone x" src="https://user-images.githubusercontent.com/61980577/114227081-c8db3f80-9974-11eb-9408-d72a5b271333.png">
 
- 3. Pixel 2 XL (411x823px) Responsivness tested using ChromeDev inspector tool, as shown in the screenshot below:
- <img width="981" alt="Pixel3 lg" src="https://user-images.githubusercontent.com/61980577/104646587-ec158c00-56b0-11eb-883c-802ae6c62ed4.png">
+ 6. Surface Duo (540x720px) Responsivness tested using ChromeDev inspector tool, as shown in the screenshot below:
+ <img width="778" alt="surface duo" src="https://user-images.githubusercontent.com/61980577/114226917-92052980-9974-11eb-8423-20f1d81445f4.png">
 
- 4. Iphone 6/7/8 (375x677px) Responsivness tested using ChromeDev inspector tool, as shown in the screenshot below:
- <img width="981" alt="Iphone 5:6:7" src="https://user-images.githubusercontent.com/61980577/104646578-e7e96e80-56b0-11eb-9532-02e00ec4987f.png">
-
- 5. Iphone 6/7/8 Plus (414x736px) Responsivness tested using ChromeDev inspector tool, as shown in the screenshot below:
- <img width="981" alt="iphone plus" src="https://user-images.githubusercontent.com/61980577/104646978-7d84fe00-56b1-11eb-9e5b-e6923e055fb7.png">
-
- 6. Iphone X (375x812px) Responsivness tested using ChromeDev inspector tool, as shown in the screenshot below:
-<img width="981" alt="iphone x" src="https://user-images.githubusercontent.com/61980577/104646563-e324ba80-56b0-11eb-888d-cc6090e0f746.png">
-
- 7. Surface Duo (540x720px) Responsivness tested using ChromeDev inspector tool, as shown in the screenshot below:
-<img width="981" alt="Surface duo" src="https://user-images.githubusercontent.com/61980577/104646477-c4bebf00-56b0-11eb-88a9-8edbab33c677.png">
 
 ---
 
@@ -242,13 +237,15 @@ EditBook: [Edit_book] (https://github.com/GiovanniSalvi/New_Library/blob/master/
 
     2. Add heroku git repository replacing with the name of the app.
 
-    3. Create a requirenments.txt file in order heroku can identify the project as a python project and insert in the root folder.
+    3. Edit config vars from  app’s Settings tab in the Heroku Dashboard such      as:MONGO_DBNAME,MONGO_URI,SECRET_KEY.
 
-    4. Create a procfile which contains  the name of the python file that runs your application and the name of the app.
+    4. Create a requirenments.txt file in order heroku can identify the project as a python project and insert in the root folder.
 
-    5. Add and commit using git add. and git commit -m "message" commands.
+    5. Create a procfile which contains  the name of the python file that runs your application and the name of the app.
 
-    6. Finally push the app using git push command.
+    6. Add and commit using git add. and git commit -m "message" commands.
+
+    7. Finally push the app using git push command.
 
 ---
 
@@ -272,7 +269,7 @@ EditBook: [Edit_book] (https://github.com/GiovanniSalvi/New_Library/blob/master/
 
 ### Bugs 
 
-
+  1. Not significant bugs found.
 ---
 
 ### Code  

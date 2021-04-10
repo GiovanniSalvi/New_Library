@@ -1,57 +1,5 @@
 {% extends "base.html" %} {% block body %}
 <!-- Editable table -->
-<!---<div class="container">
-  <h3 class="card-header text-center text-uppercase  py-4" style="color:black;">
-    Book<strong>Edit</strong>
-  </h3>
-  <div class="card-body row">
-    <div id="table" class="table-editable">
-    <form novalidate method="POST">
-      <table class="table table-bordered table-responsive-md table-striped text-center">
-        <thead>
-          <tr style="color:black;">
-            <th class="text-center">Title</th>
-            <th class="text-center">Author</th>
-            <th class="text-center">Genre</th>
-            <th class="text-center">Year</th>
-            <th class="text-center">Country</th>
-            <th class="text-center">Location</th>
-            <th class="text-center">Price</th>
-            <th class="text-center"></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="content-table">
-            <td class="pt-3-half" contenteditable="true"><input type="text" name="Title" pattern="[A-Z-a-z-0-9 ]{1,40}" required />{{ archive.Title }}</td>
-            <td class="pt-3-half" name="Author" contenteditable="true"><input type="text" name="Author" pattern="[A-Z-a-z .]{1,40}" required />{{ archive.Author }}</td>
-            <td class="pt-3-half" name="Genre" contenteditable="true"><input type="text" name="Genre" pattern="[A-Z-a-z-0-9 ]{1,40}" required />{{ archive.Genre }}</td>
-            <td class="pt-3-half" value="{{ archive.Year }}" contenteditable="true"><input type="text" name="Year" pattern="[a-z .0-9]{1,4}" required/>{{ archive.Year }}</td>
-            <td class="pt-3-half" type="text" name="Country" contenteditable="true" pattern="[A-Z a-z .]{1,40}"><input  name="Country"  required />{{ archive.Country }}</td>
-            <td class="pt-3-half" name="Location" contenteditable="true"> <input type="text" name="Location" pattern="[A-Z0-9]{2}$" required />{{ archive.Location }}</td>
-            <td class="pt-3-half" name="Price" contenteditable="true"><input type="text" name="Price" pattern=".{6,}" required/>{{ archive.Price }}</td>
-              <span class="table-up"
-                ><a href="#!" class="indigo-text"
-                  ><i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i></a
-              ></span>
-              <span class="table-down"
-                ><a href="#!" class="indigo-text"
-                  ><i class="fas fa-long-arrow-alt-down" aria-hidden="true"></i></a
-              ></span>
-            <td>
-              <span class="table-remove">
-    <button type="submit" class="btn btn-danger btn-rounded btn-sm my-0" tabindex="-1" >
-                  Update
-                </button>
-            </span>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </form>
-    </div>
-  </div>
-</div>--->
-<!-- Editable table -->
 <h2 class="adding">Edit<strong>Book</strong></h2>
 <div class="container">
     <form class="needs-validation row" novalidate method="POST">
@@ -69,7 +17,7 @@
             <div class="col-mb-4 form-row">
                 <label for="validationCustomEmailAddress">Genre</label>
                 <div class="input-group" style="justify-content: center;">
-                    <input type="text" name="Genre" class="form-control genre" id="validationCustomUsername" value="{{ archive.Genre }}" pattern="[A-Z-a-z-0-9 ]{1,40}" required />
+                    <input type="text" name="Genre" class="form-control genre" id="validationCustomEmailAddress" value="{{ archive.Genre }}" pattern="[A-Z-a-z-0-9 ]{1,40}" required />
                 </div>
             </div>
         </div>
@@ -88,31 +36,27 @@
             </div>
             <div class="col-mb-4 form-row">
                 <label for="validationCustom03">Price</label>
-                <input type="text" name="Price" class="form-control" id="validationCustom06" value="{{ archive.Price }}" pattern=".{6,}" required/>
+                <input type="text" name="Price" class="form-control" id="validationCustom06" value="{{ archive.Price }}" pattern=".{6,}" required />
             </div>
         </div>
 
-                       <!-----add button--->
+        <!---add_task button--->
         <span style="text-align: center;">
-        <button type="submit" class="btn btn-danger btn-rounded btn-sm my-0" tabindex="-1" >
-                  Update
-        </button>
+            <button type="submit" class="btn btn-danger btn-rounded btn-sm my-0" tabindex="-1">
+                Update
+            </button>
         </span>
-                        
-
-        
     </form>
 </div>
 
-                       <!----flash message-->
+<!--flash message-->
 
-    <div>
-        {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
-            <div style="position: relative; left: 3rem; bottom: 36.5rem;" class="row flashes">
-                <h5>{{ message }}</h5>
-            </div>
-            {% endfor %} {% endif %} {% endwith %}
-        </div>
-
+<div>
+    {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
+    <div style="position: relative; left: 3rem; bottom: 36.5rem;" class="row flashes">
+        <h5>{{ message }}</h5>
+    </div>
+    {% endfor %} {% endif %} {% endwith %}
+</div>
 
 {% endblock %}

@@ -1,6 +1,6 @@
 body {
     width: 100vw;
-    background-image: url(https://cdn.wallpapersafari.com/62/74/WigTJs.jpg); 
+    background-image: url(https://cdn.wallpapersafari.com/62/74/WigTJs.jpg);
     background-size: cover;
     height: 100vh;
     background-position-x: center;
@@ -15,10 +15,9 @@ body {
     line-height: 2.5;
     margin: 10px 0 50px 0;
 
-           /*--CSS multi-line--*/
-
+    /*--CSS multi-line--*/
 }
-.form-row{
+.form-row {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,7 +32,7 @@ div span {
     font-family: "Courier New", Courier, monospace;
     position: relative;
     bottom: 15px;
-    text-shadow: black;
+    text-shadow:#000000;
     text-transform: uppercase;
     font-weight: bold;
     color: #051d40;
@@ -60,7 +59,6 @@ div span {
     color: white;
     position: relative;
     top: 5%;
-
 }
 .menu-list {
     position: relative;
@@ -69,7 +67,7 @@ div span {
 }
 main {
     position: relative;
-    top:2%;
+    top: 2%;
 }
 
 .col {
@@ -95,7 +93,7 @@ main {
 
 .form-control {
     max-width: 80%;
-    margin:  5px 0 20px;
+    margin: 5px 0 20px;
     position: relative;
 }
 .catalogue {
@@ -113,12 +111,12 @@ main {
     font-size: 20px;
     color: #dc3545;
     position: relative;
-    bottom: 5px;
+    bottom: 7px;
 }
 input:focus::placeholder {
     color: transparent;
 }
-.book-details{
+.book-details {
     list-style-type: none;
     margin-bottom: -15em;
     line-height: 30px;
@@ -134,7 +132,7 @@ label {
     font-weight: 400;
     padding: 10px;
     color: black;
-    left:51%;
+    left: 51%;
 }
 
 .register {
@@ -150,7 +148,7 @@ label {
 .adding {
     text-align: center;
     position: relative;
-    bottom: 2.8rem;
+    bottom: 5.8rem;
     color: #d61f31;
     padding-bottom: 10px;
     font-size: 30px;
@@ -188,21 +186,20 @@ li span {
     color: #031023;
     text-align: start;
 }
-.user-details{
+.user-details {
     margin-top: 5em;
-    color:black;
+    color: black;
 }
 
 .btn.btn-secondary {
     position: relative;
     left: 37%;
-}                        
+}
 
-.btn.btn-success{
+.btn.btn-success {
     position: relative;
-    margin-bottom: -5%;
+    margin-bottom: -4.7%;
     font-size: 1rem;
-    
 }
 
 .btn.btn-link {
@@ -211,21 +208,21 @@ li span {
     background-color: #ffe8e8e6;
     font-size: 1rem;
 }
-.btn.btn-danger{
+.btn.btn-danger {
     font-size: 1rem;
 }
-.remove{
-    position: relative; 
-    right: 3rem; 
+.remove {
+    position: relative;
+    right: 0;
     box-shadow: none;
 }
-.back{
+.back {
     border: 1px #0d6efd solid;
     text-decoration: none;
     background-color: #ffe8e8e6;
     position: relative;
 }
-.box{
+.box {
     background-color: #d9e3ec;
     margin: 25px 15px;
     width: 47%;
@@ -237,41 +234,41 @@ li span {
     display: inline-table;
     text-align: center;
 }
-.box-container{
+.box-container {
     min-width: inherit;
     text-align: center;
 }
-.btn.btn-dark{
-    background-color: #020202!important;
+.btn.btn-dark {
+    background-color: #020202 !important;
     margin-top: 5%;
     margin-bottom: auto;
 }
-.content-table{
+.content-table {
     font-size: 25px;
-    color:black
-    ;
+    color: black;
 }
-.card-header{
+.card-header {
     color: black;
     position: relative;
     font-size: 30px;
     font-weight: normal;
 }
-.sell-button{
+.sell-button {
     position: relative;
     right: 1%;
     float: left;
     font-size: 1em;
 }
-#Search::-webkit-search-cancel-button{
-    position:relative;
-    right:20%;    
+#Search::-webkit-search-cancel-button {
+    position: relative;
+    right: 20%;
 }
-.hyde{
-    display:none;
+.remove::-webkit-search-cancel-button {
+    position: relative;
+    right: 20%;
 }
 
-                                      /*----responsive design------*/
+/*----responsive design----*/
 
 @media screen and (max-width: 420px) {
     .btn.btn-primary {
@@ -295,7 +292,7 @@ li span {
 @media screen and (max-width: 980px) {
     .btn.btn-success {
         position: relative;
-        bottom:0;
+        bottom: 0;
     }
 }
 @media screen and (max-width: 980px) {
@@ -356,8 +353,8 @@ li span {
 }
 @media screen and (max-width: 780px) {
     .search {
-        position:relative;
-        right:0%;
+        position: relative;
+        right: 0%;
     }
 }
 @media screen and (max-width: 480px) {
@@ -368,7 +365,7 @@ li span {
 @media screen and (max-width: 1420px) {
     .edit {
         position: relative;
-        bottom:30px;
+        bottom: 30px;
     }
 }
 @media screen and (max-width: 1020px) {
@@ -379,6 +376,11 @@ li span {
 
 @media screen and (max-width: 980px) {
     .remove {
-        position:unset;
+        position: unset;
+    }
+}
+@media screen and (max-width: 680px) {
+    .box {
+        width: unset;
     }
 }

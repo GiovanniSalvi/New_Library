@@ -1,12 +1,10 @@
 import os
-from flask import (
-    Flask, flash, render_template,
-    redirect, request, url_for)
+from flask import Flask, flash, render_template, redirect, request, url_for
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
+
 if os.path.exists("env.py"):
     import env
-
 
 app = Flask(__name__)
 
@@ -29,15 +27,15 @@ def edit_task(archive):
     if request.method == "POST":
         book = mongo.db.BooksData.find_one({"_id": ObjectId(archive)})
         update = {
-                    "Title": request.form.get("Title").title,
-                    "Author": request.form.get("Author").title,
-                    "Genre": request.form.get("Genre").title,
-                    "Year": request.form.get("Year"),
-                    "Country": request.form.get("Country").title,
-                    "Location": request.form.get("Location"),
-                    "Status": book.get("Status"),
-                    "Price": request.form.get("Price")
-                }
+            "Title": request.form.get("Title").title(),
+            "Author": request.form.get("Author").title(),
+            "Genre": request.form.get("Genre").title(),
+            "Year": request.form.get("Year"),
+            "Country": request.form.get("Country").title(),
+            "Location": request.form.get("Location"),
+            "Status": book.get("Status"),
+            "Price": request.form.get("Price"),
+        }
 
         mongo.db.BooksData.update({"_id": ObjectId(archive)}, update)
         flash("Book updated")
@@ -56,14 +54,16 @@ def book_add(new_book):
 @app.route("/home", methods=["GET", "POST"])
 def search_book():
     if request.method == "POST":
-        existing_book = mongo.db.BooksData.find_one(
-            {"Title": request.form.get("search_book").title()})
+        query = request.form.get("query")
+        existing_book = list(mongo.db.BooksData.find(
+            {"$text": {"$search": query}}
+            ))
 
         if existing_book:
-            return redirect(url_for(
-                "task", books=existing_book.get("_id")))
+            return render_template("task.html", books=existing_book)
+
         else:
-            flash("Book does not exist in the database")
+            flash("Book does not exist in the archive")
             return redirect(url_for("home"))
 
     return render_template("home.html")
@@ -71,15 +71,15 @@ def search_book():
 
 @app.route("/task/<books>", methods=["GET"])
 def task(books):
-    book = mongo.db.BooksData.find({"_id": ObjectId(books)})
-    return render_template("task.html", books=book)
+    return render_template("task.html", books=books)
 
 
 @app.route("/sell_book/<archive>", methods=["GET", "POST"])
 def sell_book(archive):
     if request.method == "POST":
-        existing_email = mongo.db.UsersData.find_one({
-            "Email": request.form.get("Email")})
+        existing_email = mongo.db.UsersData.find_one(
+            {"Email": request.form.get("Email")}
+        )
         book = mongo.db.BooksData.find_one({"_id": ObjectId(archive)})
         status = book.get("Status")
         if status == "Available":
@@ -94,19 +94,21 @@ def sell_book(archive):
                     "Country": book.get("Country"),
                     "Location": book.get("Location"),
                     "Status": new_status,
-                    "Price": book.get("Price")
+                    "Price": book.get("Price"),
                 }
 
                 mongo.db.BooksData.update({"_id": ObjectId(archive)}, submit)
-                return redirect(url_for(
-                    "book_selling", existing_email=existing_email.get(
-                        '_id')))
+                return redirect(
+                    url_for(
+                        "book_selling", existing_email=existing_email.get(
+                            "_id"))
+                )
             else:
                 flash("User not registered")
                 return redirect(url_for("sell_book", archive=archive))
         else:
             flash(
-                "Not possible to complete this operation,Book is temporary ran out"
+                "Book is temporary ran out"
                 )
             return redirect(url_for("sell_book", archive=archive))
 
@@ -117,7 +119,8 @@ def sell_book(archive):
 @app.route("/book_selling/<existing_email>", methods=["GET"])
 def book_selling(existing_email):
     existing_email = mongo.db.UsersData.find_one(
-        {"_id": ObjectId(existing_email)})
+        {"_id": ObjectId(
+            existing_email)})
     flash("Book bought by:")
     return render_template("book_selling.html", existing_email=existing_email)
 
@@ -125,15 +128,21 @@ def book_selling(existing_email):
 @app.route("/add_task", methods=["GET", "POST"])
 def add_task():
     if request.method == "POST":
+        existing_location = mongo.db.BooksData.find_one(
+            {"Location": request.form.get("Location")}
+        )
         existing_title = mongo.db.BooksData.find_one(
-            {"Title": request.form.get("Title")})
+            {"Title": request.form.get("Title")}
+        )
         if existing_title:
             flash("Book already exists")
+            return redirect(url_for("add_task"))
+        if existing_location:
+            flash("Location already taken")
             return redirect(url_for("add_task"))
         else:
 
             add = {
-
                 "Title": request.form.get("Title").title(),
                 "Author": request.form.get("Author").title(),
                 "Genre": request.form.get("Genre").title(),
@@ -141,8 +150,7 @@ def add_task():
                 "Country": request.form.get("Country").title(),
                 "Location": request.form.get("Location").title(),
                 "Status": "Available",
-                "Price": request.form.get("Price")
-
+                "Price": request.form.get("Price"),
             }
             new_book = mongo.db.BooksData.insert_one(add)
 
@@ -155,12 +163,12 @@ def add_task():
 @app.route("/remove", methods=["GET", "POST"])
 def remove():
     if request.method == "POST":
-        existing_book = mongo.db.BooksData.find_one(
-            {"Title": request.form.get("remove_book").title()})
+        query = request.form.get("query")
+        existing_book = list(
+            mongo.db.BooksData.find(
+                {"$text": {"$search": query}}))
         if existing_book:
-            return redirect(url_for(
-                "remove_book", archive=existing_book.get(
-                    '_id')))
+            return render_template("remove_book.html", archive=existing_book)
         else:
             flash("Book not in stock")
             return redirect(url_for("remove"))
@@ -173,11 +181,11 @@ def remove_book(archive):
         try:
             mongo.db.BooksData.remove({"_id": ObjectId(archive)})
             flash("Book successful removed")
+            return redirect(url_for("home"))
         except ValueError:
             flash("Removing book failed, try again")
-            return redirect(url_for("home"))
+            return redirect(url_for("remove"))
 
-    archive = mongo.db.BooksData.find_one({"_id": ObjectId(archive)})
     return render_template("remove_book.html", archive=archive)
 
 
@@ -185,7 +193,8 @@ def remove_book(archive):
 def register():
     if request.method == "POST":
         existing_user = mongo.db.UsersData.find_one(
-            {"Email": request.form.get("Email").lower()})
+            {"Email": request.form.get("Email").lower()}
+        )
 
         if existing_user:
             flash("User already exists")
@@ -197,8 +206,7 @@ def register():
             "dob": request.form.get("dob").lower(),
             "Tel": request.form.get("Tel").lower(),
             "Postcode": request.form.get("Postcode").lower(),
-            "Email": request.form.get("Email").lower()
-
+            "Email": request.form.get("Email").lower(),
         }
         mongo.db.UsersData.insert_one(register)
 
@@ -209,6 +217,8 @@ def register():
 
 
 if __name__ == "__main__":
-    app.run(host=os.environ.get("IP"),
-            port=int(os.environ.get("PORT")),
-            debug=True)
+    app.run(
+        host=os.environ.get(
+            "IP"), port=int(
+                os.environ.get(
+                    "PORT")), debug=True)

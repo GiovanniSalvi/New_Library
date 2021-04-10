@@ -1,19 +1,18 @@
 {% extends "base.html" %} {% block body %}
 
 <div>
-                          <!-- flash messages -->
+    <!-- flash messages -->
 
     {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
-        <div style="position: relative; top: -0.3em;" class="row flashes">
-            <h5>{{ message }}</h5>
-        </div>
+    <div style="position: relative; top: -0.3em;" class="row flashes">
+        <h5>{{ message }}</h5>
+    </div>
     {% endfor %} {% endif %} {% endwith %}
 </div>
 
+<!----This will show the details of the book which is just added to the library---->
 
-                        <!-----This will show the details of the book which is just added to the library---->
-
-<div class="container box-container" style="display:table;">
+<div class="container box-container" style="display: table;">
     <div class="book_display row" style="line-height: 2;">
         <ul>
             <li>Title: {{ new_book.Title }}</li>
@@ -32,10 +31,8 @@
             <br />
             <li>Price: {{ new_book.Price }}</li>
         </ul>
-       </div>
-       <button style="box-shadow: none;" class="btn btn-link" type="submit"><a href="{{ url_for('home') }}">Back</a></button>
     </div>
-    
-
+    <button style="box-shadow: none;" class="btn btn-link" type="submit"><a href="{{ url_for('home') }}">Back</a></button>
+</div>
 
 {% endblock %}
