@@ -29,17 +29,6 @@ Welcome! [github.com](https://github.com/GiovanniSalvi/New_Library)
 
 ## Project's Mockup screenshots:
 
-* Homepage:<img width="641" alt="Homepage" src="https://user-images.githubusercontent.com/61980577/113729286-26faef00-96f7-11eb-998d-d9455a513083.png">
-
-* AddBook:(<img width="641" alt="Addbook" src="https://user-images.githubusercontent.com/61980577/113729123-00d54f00-96f7-11eb-993e-eaaef5fc4c2c.png">)
-
-* RemoveBook:<img width="641" alt="Removebook" src="https://user-images.githubusercontent.com/61980577/113728952-d5eafb00-96f6-11eb-8463-08eded4cb8b0.png">
-
-* Register:<img width="641" alt="Registration" src="https://user-images.githubusercontent.com/61980577/113728780-ab00a700-96f6-11eb-9f8d-bf65a38c8566.png">
-
-* SellBook:<img width="641" alt="Sellbook" src="https://user-images.githubusercontent.com/61980577/113728600-860c3400-96f6-11eb-838b-bf762ddd12f4.png">
-
-* EditBook:<img width="641" alt="Editbook" src="https://user-images.githubusercontent.com/61980577/113728660-92908c80-96f6-11eb-975e-2cd0ee3914b0.png">
 
 ---
 
