@@ -29,7 +29,7 @@ Welcome! [github.com](https://github.com/GiovanniSalvi/New_Library)
 
 ## Project's Mockup screenshots:
 
-Home: [Homepage] (<img width="641" alt="Homepage" src="https://user-images.githubusercontent.com/61980577/113729286-26faef00-96f7-11eb-998d-d9455a513083.png">)
+Home: [Homepage] (https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/Homepage.png)
 
 AddBook: [Add_book] (<img width="641" alt="Addbook" src="https://user-images.githubusercontent.com/61980577/113729123-00d54f00-96f7-11eb-993e-eaaef5fc4c2c.png">)
 
