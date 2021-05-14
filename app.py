@@ -168,7 +168,7 @@ def remove():
             mongo.db.BooksData.find(
                 {"$text": {"$search": query}}
                 ))
-                
+
         if existing_book:
             return render_template("remove_book.html", archive=existing_book)
         else:

@@ -29,13 +29,17 @@ Welcome! [github.com](https://github.com/GiovanniSalvi/New_Library)
 
 ## Project's Mockup screenshots
 
-* [Homepage](https://indigo-spider-ttgwug91.ws-eu03.gitpod.io/#/workspace/New_Library)
+* [Homepage](https://github.com/GiovanniSalvi/New_Library/blob/master/static/mockups/Homepage.png)
 
-* [Add_book](https://indigo-spider-ttgwug91.ws-eu03.gitpod.io/#/workspace/New_Library)
+* [Add_book](https://github.com/GiovanniSalvi/New_Library/blob/master/static/mockups/addBook.png)
 
-* [Register](https://indigo-spider-ttgwug91.ws-eu03.gitpod.io/#/workspace/New_Library)
+* [Register](https://github.com/GiovanniSalvi/New_Library/blob/master/static/mockups/registerUser.png)
 
-* [Remove](https://indigo-spider-ttgwug91.ws-eu03.gitpod.io/#/workspace/New_Library)
+* [Remove](https://github.com/GiovanniSalvi/New_Library/blob/master/static/mockups/removeBook.png)
+
+* [Editbook](https://github.com/GiovanniSalvi/New_Library/blob/master/static/mockups/editBook.png)
+
+* [Sellbook](https://github.com/GiovanniSalvi/New_Library/blob/master/static/mockups/sellBook.png)
 
 
 ---
