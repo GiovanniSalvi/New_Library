@@ -99,19 +99,19 @@ Welcome! [github.com](https://github.com/GiovanniSalvi/New_Library)
 ## Testing
 
 ### In order to navigate easily through the site:
-* In the homepage, users can find all books title in the archive:[homepage](https://indigo-spider-ttgwug91.ws-eu03.gitpod.io/#/workspace/New_Library).At the top of the page are displayed navbar links to navigate through the app:[navbar](https://indigo-spider-ttgwug91.ws-eu03.gitpod.io/#/workspace/New_Library)
-and a search tab to explore site contents just below:[searchtab](https://indigo-spider-ttgwug91.ws-eu03.gitpod.io/#/workspace/New_Library)
+* In the homepage, users can find all books title in the archive:[homepage]().At the top of the page are displayed navbar links to navigate through the app:[navbar]()
+and a search tab to explore site contents just below:[searchtab]()
 
-* Add_book link leads to the form to adding new books to the archive:[addBook](https://indigo-spider-ttgwug91.ws-eu03.gitpod.io/#/workspace/New_Library)
+* Add_book link leads to the form to adding new books to the archive:[addBook]()
 
-* Remove_book link leads to a search tab to find the book title users are supposed to remove clicking delete button below the book features:[removebook](https://indigo-spider-ttgwug91.ws-eu03.gitpod.io/#/workspace/New_Library)
+* Remove_book link leads to a search tab to find the book title users are supposed to remove clicking delete button below the book features:[removebook]()
 
-* Register_user link leads to the form to adding new users to the database:[registration](https://indigo-spider-ttgwug91.ws-eu03.gitpod.io/#/workspace/New_Library)
+* Register_user link leads to the form to adding new users to the database:[registration]()
 
-* Every box in the homepage contains a single product;'edit':[editbutton](https://indigo-spider-ttgwug91.ws-eu03.gitpod.io/#/workspace/New_Library) button positioned at the bottom of the box allows users to update a book.
-'Sell!'button:[sellbutton](https://indigo-spider-ttgwug91.ws-eu03.gitpod.io/#/workspace/New_Library) next to edit button leads to a form to fill with users/buyer details in order to complete purchase operation.
+* Every box in the homepage contains a single product;'edit':[editbutton]() button positioned at the bottom of the box allows users to update a book.
+'Sell!'button:[sellbutton]() next to edit button leads to a form to fill with users/buyer details in order to complete purchase operation.
 
-* The footer provides social links:[footer](https://indigo-spider-ttgwug91.ws-eu03.gitpod.io/#/workspace/New_Library).
+* The footer provides social links:[footer]().
 
 ### The project has been validated and beautified using:
 
@@ -231,7 +231,7 @@ and a search tab to explore site contents just below:[searchtab](https://indigo-
 
     2. Add heroku git repository replacing with the name of the app.
 
-    3. Edit config vars from  app’s Settings tab in the Heroku Dashboard such      as:MONGO_DBNAME,MONGO_URI,SECRET_KEY.
+    3. Edit config vars from  app’s Settings tab in the Heroku Dashboard such as:MONGO_DBNAME,MONGO_URI,SECRET_KEY.
 
     4. Create a requirenments.txt file in order heroku can identify the project as a python project and insert in the root folder.
 

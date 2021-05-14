@@ -279,11 +279,10 @@ li span {
 }
 @media screen and (max-width: 680px) {
     .form-control {
-        max-width: 65%;
+        max-width: 90%;
         position: unset;
     }
 }
-
 @media screen and (max-width: 420px) {
     #registration {
         font-size: 15px;
@@ -314,8 +313,7 @@ li span {
 
 @media screen and (max-width: 1025px) {
     #footer {
-        position: relative;
-        top: 50%;
+        position: relative;;
         left: 0;
     }
 }
@@ -382,5 +380,10 @@ li span {
 @media screen and (max-width: 680px) {
     .box {
         width: unset;
+    }
+}
+@media screen and (max-width: 780px) {
+    .icon-bar {
+        margin:0;
     }
 }
