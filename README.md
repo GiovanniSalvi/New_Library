@@ -29,7 +29,7 @@ Welcome! [github.com](https://github.com/GiovanniSalvi/New_Library)
 
 ## Project's Mockup screenshots
 
-* [Homepage](https://indigo-spider-ttgwug91.ws-eu03.gitpod.io/#/workspace/New_Library)
+* [Homepage](https://github.com/GiovanniSalvi/New_Library/blob/master/static/mockups/Homepage.png)
 
 * [Add_book](https://indigo-spider-ttgwug91.ws-eu03.gitpod.io/#/workspace/New_Library)
 
