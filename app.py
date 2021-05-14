@@ -166,7 +166,9 @@ def remove():
         query = request.form.get("query")
         existing_book = list(
             mongo.db.BooksData.find(
-                {"$text": {"$search": query}}))
+                {"$text": {"$search": query}}
+                ))
+                
         if existing_book:
             return render_template("remove_book.html", archive=existing_book)
         else:
@@ -221,4 +223,4 @@ if __name__ == "__main__":
         host=os.environ.get(
             "IP"), port=int(
                 os.environ.get(
-                    "PORT")), debug=False)
+                    "PORT")), debug=True)
