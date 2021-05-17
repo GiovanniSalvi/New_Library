@@ -32,7 +32,6 @@ div span {
     font-family: "Courier New", Courier, monospace;
     position: relative;
     bottom: 15px;
-    text-shadow:#000000;
     text-transform: uppercase;
     font-weight: bold;
     color: #051d40;
@@ -89,10 +88,11 @@ main {
 .icon-bar {
     display: inline-block;
     font-size: 20px;
+    margin: 10px 0 20px 0;
 }
 
 .form-control {
-    max-width: 80%;
+    width: 60%;
     margin: 5px 0 20px;
     position: relative;
 }
@@ -184,7 +184,6 @@ li span {
 
 .user_details {
     color: #031023;
-    text-align: start;
 }
 .user-details {
     margin-top: 5em;

@@ -1,3 +1,4 @@
+ <!DOCTYPE html>
 {% extends "base.html" %} {% block body %}
 <!-- Editable table -->
 <h2 class="adding">Edit<strong>Book</strong></h2>
@@ -17,7 +18,7 @@
             <div class="col-mb-4 form-row">
                 <label for="validationCustomEmailAddress">Genre</label>
                 <div class="input-group" style="justify-content: center;">
-                    <input type="text" name="Genre" class="form-control genre" id="validationCustomEmailAddress" value="{{ archive.Genre }}" pattern="[A-Z-a-z-0-9 ]{1,40}" required />
+                    <input style="max-width: 60%;" type="text" name="Genre" class="form-control genre" id="validationCustomEmailAddress" value="{{ archive.Genre }}" pattern="[A-Z-a-z-0-9 ]{1,40}" required />
                 </div>
             </div>
         </div>

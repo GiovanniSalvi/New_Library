@@ -99,7 +99,7 @@ Welcome! [github.com](https://github.com/GiovanniSalvi/New_Library)
 ## Testing
 
 ### In order to navigate easily through the site:
-* In the homepage, users can find all books title in the archive:[homepage]().At the top of the page are displayed navbar links to navigate through the app:[navbar]()
+* In the homepage, users can find all books title in the archive: [homepage](). At the top of the page are displayed navbar links to navigate through the app:[navbar]()
 and a search tab to explore site contents just below:[searchtab]()
 
 * Add_book link leads to the form to adding new books to the archive:[addBook]()
@@ -117,7 +117,27 @@ and a search tab to explore site contents just below:[searchtab]()
 
 * HTML:
 
-    • Base:[https://validator.w3.org/nu/](https://validator.w3.org/nu/?doc=https%3A%2F%2Fgiovannisalvi.github.io%2FNew_Library%2F)
+    • Base:[https://validator.w3.org/nu/](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fgithub.com%2FGiovanniSalvi%2FNew_Library%2Fblob%2Fmaster%2Ftemplates%2Fbase.html)
+
+    • add_task:[https://validator.w3.org/nu/](https://validator.w3.org/nu/?doc=https%3A%2F%2Fgithub.com%2FGiovanniSalvi%2FNew_Library%2Fblob%2Fmaster%2Ftemplates%2Fadd_task.html#textarea)
+
+    • book_add:[https://validator.w3.org/nu/](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fgithub.com%2FGiovanniSalvi%2FNew_Library%2Fblob%2Fmaster%2Ftemplates%2Fbook_add.html)
+
+    • book_selling:[https://validator.w3.org/nu/](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fgithub.com%2FGiovanniSalvi%2FNew_Library%2Fblob%2Fmaster%2Ftemplates%2Fbook_selling.html)
+
+    • edit_task:[https://validator.w3.org/nu/](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fgithub.com%2FGiovanniSalvi%2FNew_Library%2Fblob%2Fmaster%2Ftemplates%2Fedit_task.html)
+
+    • home:[https://validator.w3.org/nu/](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fgithub.com%2FGiovanniSalvi%2FNew_Library%2Fblob%2Fmaster%2Ftemplates%2Fhome.html)
+
+    • register:[https://validator.w3.org/nu/](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fgithub.com%2FGiovanniSalvi%2FNew_Library%2Fblob%2Fmaster%2Ftemplates%2Fregister.html)
+
+    • remove_book:[https://validator.w3.org/nu/](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fgithub.com%2FGiovanniSalvi%2FNew_Library%2Fblob%2Fmaster%2Ftemplates%2Fremove_book.html)
+
+    • remove:[https://validator.w3.org/nu/](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fgithub.com%2FGiovanniSalvi%2FNew_Library%2Fblob%2Fmaster%2Ftemplates%2Fremove.html)
+
+    • sell_book:[https://validator.w3.org/nu/](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fgithub.com%2FGiovanniSalvi%2FNew_Library%2Fblob%2Fmaster%2Ftemplates%2Fsell_book.html)
+    
+    • task:[https://validator.w3.org/nu/](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fgithub.com%2FGiovanniSalvi%2FNew_Library%2Fblob%2Fmaster%2Ftemplates%2Ftask.html)
 
 
 * HTML: [https://webformatter.com/](https://webformatter.com/)
@@ -127,7 +147,7 @@ and a search tab to explore site contents just below:[searchtab]()
 
 * CSS: [https://webformatter.com/](https://webformatter.com/)
 
-* JAVASCRIPT:[https://jshint.com/]
+* JAVASCRIPT: [https://jshint.com/](https://jshint.com/)
 
 * JAVASCRIPT:<img width="1248" alt="javascript valid" src="https://user-images.githubusercontent.com/61980577/114250922-9266ea00-999f-11eb-9628-12fd7c548bcc.png">
 

@@ -1,3 +1,4 @@
+ <!DOCTYPE html>
 {% extends "base.html" %} {% block body %}
 
 <!----flash message-->
@@ -32,21 +33,21 @@
         <li>Price: {{ archive.Price }}</li>
     </ul>
 </div>
-
+</div>
 <!------user details form-->
 
 <div class="user-details">
     <form class="needs-validation" action="{{ url_for('sell_book', archive=archive._id) }}" novalidate method="POST">
-        <div class="form-row box" style="align-items: start !important;">
-            <div class="col-md-6 mb-6">
+        <div class="form-row box" style="margin-left: 25%;">
+            <div class="col-md-6 mb-6" style="width:100%;">
                 <h4 class="user_details">Users Details</h4>
                 <input type="text" class="form-control" name="First" id="validationCustom01" pattern="(?=.*[a-z])(?=.*[A-Z]).{2,}$" placeholder="First name" required />
                 <div class="valid-feedback"></div>
             </div>
-            <div class="col-md-6 mb-6">
+            <div class="col-md-6 mb-6" style="width:100%;">
                 <input type="text" class="form-control" name="Last" id="validationCustom02" pattern="(?=.*[a-z])(?=.*[A-Z]).{2,}$" placeholder="Last name" required />
             </div>
-            <div class="col-md-6 mb-6">
+            <div class="col-md-6 mb-6" style="width:100%;">
                 <input type="text" class="form-control" name="Email" id="validationCustom03" placeholder="Email Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required />
                 <div class="invalid-feedback"></div>
             </div>
@@ -59,8 +60,7 @@
                     action="{{ url_for('sell_book',  archive=archive._id) }}"
                     type="submit"
                     class="btn btn-success"
-                    id="success"
-                >
+                    id="success">
                     Sell!
                 </button>
             </div>
