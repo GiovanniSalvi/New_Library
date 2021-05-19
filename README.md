@@ -108,8 +108,8 @@ and a [search tab](https://github.com/GiovanniSalvi/New_Library/blob/master/stat
 
 * Register_user link leads to the [form](https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/test%20registration.png) to adding new users to the database.
 
-* Every box in the homepage contains a single product;[edit button](https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/test%20button.png) positioned at the bottom of the box leads users to a form to update a book.
-['Sell!'button](https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/test%20button.png) next to edit button leads to a form to fill with users/buyer details in order to complete purchase operation.
+* Every box in the homepage contains a single product.[Edit button](https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/test%20button.png) positioned at the bottom of the box leads users to a [form](https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/updateBook.png) to update a book.
+['Sell!'button](https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/test%20button.png) next to edit button leads to a [form](https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/sellBooks.png) to fill with users/buyer details in order to complete purchase operation.
 
 * The [footer](https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/test%20footer.png) provides social links.
 
