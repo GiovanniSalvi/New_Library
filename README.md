@@ -99,19 +99,19 @@ Welcome! [github.com](https://github.com/GiovanniSalvi/New_Library)
 ## Testing
 
 ### In order to navigate easily through the site:
-* In the homepage, users can find all [books title](https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/test%20homepage.png) in the archive.At the top of the page are displayed navbar links to navigate through the app:[navbar]()
-and a search tab to explore site contents just below:[searchtab]()
+* In the homepage, users can find all [books title](https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/test%20homepage.png) in the archive.At the top of the page are displayed [navbar](https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/test%20navbar.png) links to navigate through the app.
+and a [search tab](https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/test%20search%20tab.png) to explore site contents just below
 
-* Add_book link leads to the form to adding new books to the archive:[addBook]()
+* Add_book link leads to the [form](https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/test%20add%20form.png) to adding new books to the archive
 
-* Remove_book link leads to a search tab to find the book title users are supposed to remove clicking delete button below the book features:[removebook]()
+* Remove_book link leads to a [search tab](https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/test%20removeBook.png) to find the book title users are supposed to remove clicking delete button below the book features.
 
-* Register_user link leads to the form to adding new users to the database:[registration]()
+* Register_user link leads to the [form](https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/test%20registration.png) to adding new users to the database.
 
-* Every box in the homepage contains a single product;'edit':[editbutton]() button positioned at the bottom of the box allows users to update a book.
-'Sell!'button:[sellbutton]() next to edit button leads to a form to fill with users/buyer details in order to complete purchase operation.
+* Every box in the homepage contains a single product;[edit button](https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/test%20button.png) positioned at the bottom of the box leads users to a form to update a book.
+['Sell!'button](https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/test%20button.png) next to edit button leads to a form to fill with users/buyer details in order to complete purchase operation.
 
-* The footer provides social links:[footer]().
+* The [footer](https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/test%20footer.png) provides social links.
 
 ### The project has been validated and beautified using:
 
