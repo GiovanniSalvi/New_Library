@@ -102,7 +102,7 @@ Welcome! [github.com](https://github.com/GiovanniSalvi/New_Library)
 * In the homepage, users can find all books title in the archive:[homepage](). At the top of the page are displayed navbar links to navigate through the app:[navbar]()
 and a search tab to explore site contents just below:[searchtab]()
 
-* Add_book link leads to the form to adding new books to the archive:[addBook](static/images/test add form.png)
+* Add_book link leads to the form to adding new books to the archive:[addBook]()
 
 * Remove_book link leads to a search tab to find the book title users are supposed to remove clicking delete button below the book features:[removebook]()
 
