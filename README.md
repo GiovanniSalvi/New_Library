@@ -99,7 +99,7 @@ Welcome! [github.com](https://github.com/GiovanniSalvi/New_Library)
 ## Testing
 
 ### In order to navigate easily through the site:
-* In the homepage, users can find all books title in the archive: [homepage](). At the top of the page are displayed navbar links to navigate through the app:[navbar]()
+* In the homepage, users can find all books title in the archive:[homepage](static/images/test homepage.png). At the top of the page are displayed navbar links to navigate through the app:[navbar]()
 and a search tab to explore site contents just below:[searchtab]()
 
 * Add_book link leads to the form to adding new books to the archive:[addBook]()
