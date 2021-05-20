@@ -63,10 +63,10 @@ def book_add(new_book):
 def search_book():
     if request.method == "POST":
         query = request.form.get("query")
+        print('query:' + query)
         existing_book = list(mongo.db.BooksData.find(
             {"$text": {"$search": query}}
             ))
-
         if existing_book:
             return render_template("task.html", books=existing_book)
 
@@ -77,17 +77,21 @@ def search_book():
     return render_template("home.html")
 
 
-@app.route("/user_list", methods=["GET", "POST"])
+@app.route("/user_list/user_details", methods=["GET", "POST"])
 def search_user():
     if request.method == "POST":
+        print("text")
         query = request.form.get("query")
+        print('query:' + query)
         existing_user = list(mongo.db.UsersData.find(
             {"$text": {"$search": query}}
             ))
+        print(existing_user)
         if existing_user:
-            return render_template("user_details.html", user=existing_user)
+            return render_template(
+                "user_details.html", existing_user=existing_user)
         else:
-            flash("User does not exist in the archive")
+            flash("User does not exist in the database")
             return redirect(url_for("user_list"))
 
     return render_template("user_list.html")
@@ -99,17 +103,8 @@ def task(books):
 
 
 @app.route("/user_details/<existing_user>", methods=["GET"])
-def user_details(user):
-    # if request.method == "POST":
-        # try:
-            # mongo.db.UsersData.remove({"_id": ObjectId(existing_user)})
-            # flash("User details removed")
-            # return redirect(url_for("home"))
-        # except ValueError:
-            # flash("Removing user failed, try again")
-            # return redirect(url_for("user_list"))
-
-    return render_template("user_details.html", user=user)
+def userDetails(existing_user):
+    return render_template("user_details.html", existing_user=existing_user)
 
 
 @app.route("/sell_book/<archive>", methods=["GET", "POST"])
@@ -229,19 +224,20 @@ def remove_book(archive):
     return render_template("remove_book.html", archive=archive)
 
 
-@app.route("/remove_user/<users>", methods=["GET", "POST"])
-def remove_user(users):
+@app.route("/user_details/<userId>", methods=["GET", "POST"])
+def remove_user(userId):
     if request.method == "POST":
-        users = mongo.db.UsersData.find_one({"_id": ObjectId(users)})
+        print(userId)
         try:
-            mongo.db.UsersData.remove({"_id": ObjectId(users)})
+            mongo.db.UsersData.remove({"_id": ObjectId(userId)})
+            print(userId)
             flash("User successful removed")
             return redirect(url_for("home"))
         except ValueError:
             flash("Removing user failed, try again")
             return redirect(url_for("user_list"))
 
-    return render_template("user_list.html", users=users)
+    return render_template("user_list.html", user=userId)
 
 
 @app.route("/register", methods=["GET", "POST"])
