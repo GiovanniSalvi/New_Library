@@ -22,6 +22,13 @@ def home():
     return render_template("home.html", register=register)
 
 
+@app.route("/users_list", methods=["GET", "POST"])
+def user_list():
+
+    users = mongo.db.UsersData.find()
+    return render_template("user_list.html", users=users)
+
+
 @app.route("/edit_task/<archive>", methods=["GET", "POST"])
 def edit_task(archive):
     if request.method == "POST":
@@ -47,6 +54,7 @@ def edit_task(archive):
 
 @app.route("/book_add/<new_book>", methods=["GET"])
 def book_add(new_book):
+
     new_book = mongo.db.BooksData.find_one({"_id": ObjectId(new_book)})
     return render_template("book_add.html", new_book=new_book)
 
@@ -67,6 +75,24 @@ def search_book():
             return redirect(url_for("home"))
 
     return render_template("home.html")
+
+
+@app.route("/user_list", methods=["GET", "POST"])
+def search_user():
+    if request.method == "POST":
+        query = request.form.get("query")
+        existing_user = list(mongo.db.UsersData.find(
+            {"$text": {"$search": query}}
+            ))
+
+        if existing_user:
+            return render_template(".html", user=existing_user)
+
+        else:
+            flash("User does not exist in the archive")
+            return redirect(url_for("user_list"))
+
+    return render_template("user_list.html")
 
 
 @app.route("/task/<books>", methods=["GET"])
@@ -189,6 +215,21 @@ def remove_book(archive):
             return redirect(url_for("remove"))
 
     return render_template("remove_book.html", archive=archive)
+
+
+@app.route("/remove_user/<users>", methods=["GET", "POST"])
+def remove_user(users):
+    if request.method == "POST":
+        users = mongo.db.Users.Data.find_one({"_id": ObjectId(users)})
+        try:
+            mongo.db.UsersData.remove({"_id": ObjectId(users)})
+            flash("User successful removed")
+            return redirect(url_for("home"))
+        except ValueError:
+            flash("Removing user failed, try again")
+            return redirect(url_for("user_list"))
+
+    return render_template("user_list.html", users=users)
 
 
 @app.route("/register", methods=["GET", "POST"])
