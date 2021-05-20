@@ -7,7 +7,7 @@
 {% endfor %} {% endif %} {% endwith %}
 
 <div class="container box-container" style="display: table;">
-    {% for user in users %}
+    {% for user in existing_user %}
     <div class="box">
         <p>Firstname: {{ user.First }}</p>
         <p>Lastname: {{ user.Last }}</p>
@@ -25,3 +25,4 @@
     </div>
     {% endfor %}
 </div>
+{% endblock %}

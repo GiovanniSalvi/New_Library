@@ -27,6 +27,7 @@ Welcome! [github.com](https://github.com/GiovanniSalvi/New_Library)
 
 * [AddBook iPhone](https://github.com/GiovanniSalvi/New_Library/blob/master/static/wireframes/Addbook%20iphone.png)
 
+
 ## Project's Mockup screenshots
 
 * [Homepage](https://github.com/GiovanniSalvi/New_Library/blob/master/static/mockups/Homepage.png)
@@ -41,6 +42,7 @@ Welcome! [github.com](https://github.com/GiovanniSalvi/New_Library)
 
 * [Sellbook](https://github.com/GiovanniSalvi/New_Library/blob/master/static/mockups/sellBook.png)
 
+* [Userslist]()
 
 ---
 
@@ -104,9 +106,11 @@ and a [search tab](https://github.com/GiovanniSalvi/New_Library/blob/master/stat
 
 * Add_book link leads to the [form](https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/test%20add%20form.png) to adding new books to the archive
 
-* Remove_book link leads to a [search tab](https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/test%20removeBook.png) to find the book title users are supposed to remove clicking delete button below the book features.
+* Remove_book link leads to a [search tab](https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/test%20removeBook.png) to find the book title users are supposed to be removed, clicking delete button below the book features.
 
-* Register_user link leads to the [form](https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/test%20registration.png) to adding new users to the database.
+* Add_user link leads to the [form](https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/test%20registration.png) to adding new users to the database.
+
+* User_list link leads to a [page]() where all users details in the database are displayed. Users details contained in a box include all required fields to be registered. A [delete]() button at the bottom of the box allows to remove one's user-details to be removed.
 
 * Every box in the homepage contains a single product.[Edit button](https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/test%20button.png) positioned at the bottom of the box leads users to a [form](https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/updateBook.png) to update a book.
 ['Sell!'button](https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/test%20button.png) next to edit button leads to a [form](https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/sellBooks.png) to fill with users/buyer details in order to complete purchase operation.
@@ -138,6 +142,8 @@ and a [search tab](https://github.com/GiovanniSalvi/New_Library/blob/master/stat
     • sell_book:[https://validator.w3.org/nu/](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fgithub.com%2FGiovanniSalvi%2FNew_Library%2Fblob%2Fmaster%2Ftemplates%2Fsell_book.html)
     
     • task:[https://validator.w3.org/nu/](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fgithub.com%2FGiovanniSalvi%2FNew_Library%2Fblob%2Fmaster%2Ftemplates%2Ftask.html)
+
+    • user_list: [https://validator.w3.org/nu/]()
 
 
 * HTML: [https://webformatter.com/](https://webformatter.com/)
@@ -199,6 +205,10 @@ and a [search tab](https://github.com/GiovanniSalvi/New_Library/blob/master/stat
   8. As a user I want to find a quick way to edit a book-title selected.
 
   • On the Homepage  all books in the archive are displayed wrapped in a box,clicking on the button "edit" at the bottom of the box leads user to an editable form to complete the operation.Updates the required input fields then clicking the button "update" at the bottom of the form.A flash message shows if operation was successful.
+
+  9. As a user I want to find all clients details.
+
+  • 
   
   
 ### The project has beeen designed to make pages render well on a variety of devices and window or screen sizes such as:
@@ -240,27 +250,36 @@ and a [search tab](https://github.com/GiovanniSalvi/New_Library/blob/master/stat
 
 ## Deployment
 
-* Installing Heroku CLI
+### This App was deployed on Heroku server with the following steps:
 
-* Create a Heroku Account
+* Go to [Heroku](https://id.heroku.com/login) page where you can log in or sign up for the free account than complete password and email steps.
+
+* Once you have created an Heroku free account, click on 'Create a new app' button to create an App, then give a name to the app and select a region.
 
 
 ### In order to deploy the project, you need to perform some steps:
 
-    1. You need to create a heroku application which will provide a link to be accessed.
+    1. Open your IDE terminal, run heroku login and fill out required fields.
 
     2. Add heroku git repository replacing with the name of the app.
 
-    3. Edit config vars from  app’s Settings tab in the Heroku Dashboard such as:MONGO_DBNAME,MONGO_URI,SECRET_KEY.
+    3. Go back to Heroku dashboard click on  Settings tab, from here you can get the Heroku git URL.
 
-    4. Create a requirenments.txt file in order heroku can identify the project as a python project and insert in the root folder.
+    4. Back to the IDE terminal run 'git add remote heroku'
 
-    5. Create a procfile which contains  the name of the python file that runs your application and the name of the app.
+    5. Install Gunicorn using 'pip3 install gunicorn' command, which will be necessary as part of deployment.
 
-    6. Add and commit using git add. and git commit -m "message" commands.
+    6. Create a requirenments.txt file 'pip3 freeze --local > requirements.txt', so that Heroku can identify the project as a python project and commit in your local git repository.
 
-    7. Finally push the app using git push command.
+    7. Add a Procfile using 'echo web: gunicorn app:app > Procfile' command, which contains the name of the python file that runs your application and the name of the app.
 
+    8. Add and commit using 'git add' and 'git commit -m "message"' commands.
+
+    9. Finally push the app to Heroku using 'git push -u origin master' command.
+
+    10. Check if the application is running, clicking 'Open app' button top left of the page on your app Heroku dashboard.
+
+*   For any issues with the deployment you can check files and logs with following commands: heroku run bash -a app, heroku logs, heroku         logs --tail.
 ---
 
 ## Credits

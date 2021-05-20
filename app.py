@@ -22,7 +22,7 @@ def home():
     return render_template("home.html", register=register)
 
 
-@app.route("/users_list", methods=["GET", "POST"])
+@app.route("/user_list", methods=["GET", "POST"])
 def user_list():
 
     users = mongo.db.UsersData.find()
@@ -84,10 +84,8 @@ def search_user():
         existing_user = list(mongo.db.UsersData.find(
             {"$text": {"$search": query}}
             ))
-
         if existing_user:
-            return render_template(".html", user=existing_user)
-
+            return render_template("user_details.html", user=existing_user)
         else:
             flash("User does not exist in the archive")
             return redirect(url_for("user_list"))
@@ -98,6 +96,20 @@ def search_user():
 @app.route("/task/<books>", methods=["GET"])
 def task(books):
     return render_template("task.html", books=books)
+
+
+@app.route("/user_details/<existing_user>", methods=["GET"])
+def user_details(user):
+    # if request.method == "POST":
+        # try:
+            # mongo.db.UsersData.remove({"_id": ObjectId(existing_user)})
+            # flash("User details removed")
+            # return redirect(url_for("home"))
+        # except ValueError:
+            # flash("Removing user failed, try again")
+            # return redirect(url_for("user_list"))
+
+    return render_template("user_details.html", user=user)
 
 
 @app.route("/sell_book/<archive>", methods=["GET", "POST"])
@@ -220,7 +232,7 @@ def remove_book(archive):
 @app.route("/remove_user/<users>", methods=["GET", "POST"])
 def remove_user(users):
     if request.method == "POST":
-        users = mongo.db.Users.Data.find_one({"_id": ObjectId(users)})
+        users = mongo.db.UsersData.find_one({"_id": ObjectId(users)})
         try:
             mongo.db.UsersData.remove({"_id": ObjectId(users)})
             flash("User successful removed")
