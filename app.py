@@ -80,13 +80,10 @@ def search_book():
 @app.route("/user_list/user_details", methods=["GET", "POST"])
 def search_user():
     if request.method == "POST":
-        print("text")
         query = request.form.get("query")
-        print('query:' + query)
         existing_user = list(mongo.db.UsersData.find(
             {"$text": {"$search": query}}
             ))
-        print(existing_user)
         if existing_user:
             return render_template(
                 "user_details.html", existing_user=existing_user)
@@ -103,7 +100,7 @@ def task(books):
 
 
 @app.route("/user_details/<existing_user>", methods=["GET"])
-def userDetails(existing_user):
+def user_details(existing_user):
     return render_template("user_details.html", existing_user=existing_user)
 
 
@@ -224,7 +221,7 @@ def remove_book(archive):
     return render_template("remove_book.html", archive=archive)
 
 
-@app.route("/user_details/<userId>", methods=["GET", "POST"])
+@app.route("/user_details/remove_user/<userId>", methods=["GET", "POST"])
 def remove_user(userId):
     if request.method == "POST":
         print(userId)
@@ -232,12 +229,12 @@ def remove_user(userId):
             mongo.db.UsersData.remove({"_id": ObjectId(userId)})
             print(userId)
             flash("User successful removed")
-            return redirect(url_for("home"))
+            return redirect(url_for("user_list"))
         except ValueError:
             flash("Removing user failed, try again")
             return redirect(url_for("user_list"))
 
-    return render_template("user_list.html", user=userId)
+    return render_template("remove_user.html", userId=userId)
 
 
 @app.route("/register", methods=["GET", "POST"])
