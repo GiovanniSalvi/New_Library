@@ -31,7 +31,7 @@
                 <p>Phone Number: {{ user.Tel }}</p>
                 <p>Postcode: {{ user.Postcode }}</p>
                 <p>Email: {{ user.Email }}</p>
-                 <form method="POST" action="{{url_for('remove_user', userId=user._id)}}">
+                 <form method="POST" action="{{url_for('user_details', existing_user=user._id)}}">
                 <span style="top:0.5em">
                     <button style="box-shadow: none;" tabindex="1" type="submit" class="btn btn-danger">Delete</button>           
                 </span>

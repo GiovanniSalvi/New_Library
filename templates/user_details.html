@@ -15,11 +15,12 @@
         <p>Phone Number: {{ user.Tel }}</p>
         <p>Postcode: {{ user.Postcode }}</p>
         <p>Email: {{ user.Email }}</p>
+        <form action="{{ url_for('user_details', existing_user=user._id) }}" method="POST">
         <span style="top:0.5em">
-            <a href="{{ url_for('remove_user', userId=user._id) }}"><button style="box-shadow: none;" method="POST"
-                    name="deleteUser" tabindex="1" value="remove_user" type="submit"
-                    class="btn btn-danger">Delete</button></a>
-        </span>
+            <button style="box-shadow: none;" name="deleteUser" tabindex="1" value="removeUser" type="submit"
+                class="btn btn-danger">Delete</button>
+            </span>
+        </form>
     </div>
     {% endfor %}
 </div>

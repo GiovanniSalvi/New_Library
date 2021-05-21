@@ -99,8 +99,19 @@ def task(books):
     return render_template("task.html", books=books)
 
 
-@app.route("/user_details/<existing_user>", methods=["GET"])
+@app.route("/user_details/<existing_user>", methods=["GET", "POST"])
 def user_details(existing_user):
+    if request.method == "POST":
+        print(existing_user)
+        try:
+            mongo.db.UsersData.remove({"_id": ObjectId(existing_user)})
+            print(existing_user)
+            flash("User successful removed")
+            return redirect(url_for("user_list"))
+        except ValueError:
+            flash("Removing user failed, try again")
+            return redirect(url_for("user_list"))
+
     return render_template("user_details.html", existing_user=existing_user)
 
 
@@ -219,22 +230,6 @@ def remove_book(archive):
             return redirect(url_for("remove"))
 
     return render_template("remove_book.html", archive=archive)
-
-
-@app.route("/user_details/remove_user/<userId>", methods=["GET", "POST"])
-def remove_user(userId):
-    if request.method == "POST":
-        print(userId)
-        try:
-            mongo.db.UsersData.remove({"_id": ObjectId(userId)})
-            print(userId)
-            flash("User successful removed")
-            return redirect(url_for("user_list"))
-        except ValueError:
-            flash("Removing user failed, try again")
-            return redirect(url_for("user_list"))
-
-    return render_template("remove_user.html", userId=userId)
 
 
 @app.route("/register", methods=["GET", "POST"])
