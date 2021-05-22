@@ -16,9 +16,9 @@
         <p>Postcode: {{ user.Postcode }}</p>
         <p>Email: {{ user.Email }}</p>
         <form action="{{ url_for('user_details', existing_user=user._id) }}" method="POST">
-        <span style="top:0.5em">
-            <button style="box-shadow: none;" name="deleteUser" tabindex="1" value="removeUser" type="submit"
-                class="btn btn-danger">Delete</button>
+            <span style="top:0.5em">
+                <button style="box-shadow: none;" name="deleteUser" tabindex="1" value="removeUser" type="submit"
+                    class="btn btn-danger">Delete</button>
             </span>
         </form>
     </div>

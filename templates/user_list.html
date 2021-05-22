@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 {% extends "base.html" %} {% block menu %} {% endblock %}
 
 <!---Homepage--->
@@ -6,40 +6,40 @@
 {% block body %}
 <div class="search-form row">
     <h2 class="catalogue">Library<strong>Search</strong></h2>
-    <form method="POST" action="{{ url_for('search_user') }}" class="form-inline d-flex justify-content-center md-form form-sm" style="padding-bottom: 5%; padding-left: 5%;">
-        <input class="form-control form-control-sm mr-3" id="search" name="query" type="text" placeholder="insert Firstname(format:First)" aria-label="Search" required />
+    <form method="POST" action="{{ url_for('search_user') }}"
+        class="form-inline d-flex justify-content-center md-form form-sm" style="padding-bottom: 5%; padding-left: 5%;">
+        <input class="form-control form-control-sm mr-3" id="search" name="query" type="text"
+            placeholder="insert Firstname(format:First)" aria-label="Search" required />
         <button style="box-shadow: none;" type="submit" class="btn search"><i class="fa fa-search"></i></button>
     </form>
 </div>
-    <div class="row">
-        <!-- flash messages -->
+<div class="row">
+    <!-- flash messages -->
 
-        {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
-        <div class="row flashes">
-            <h5>{{ message }}</h5>
-        </div>
-        {% endfor %} {% endif %} {% endwith %}
-
-        <!--content-->
-
-        <div class="container box-container" style="display: table;">
-            {% for user in users %}
-            <div class="box">
-                <p>Firstname: {{ user.First }}</p>
-                <p>Lastname: {{ user.Last }}</p>
-                <p>Date of Birth: {{ user.dob }}</p>
-                <p>Phone Number: {{ user.Tel }}</p>
-                <p>Postcode: {{ user.Postcode }}</p>
-                <p>Email: {{ user.Email }}</p>
-                 <form method="POST" action="{{url_for('user_details', existing_user=user._id)}}">
-                <span style="top:0.5em">
-                    <button style="box-shadow: none;" tabindex="1" type="submit" class="btn btn-danger">Delete</button>           
-                </span>
-                </form>  
-            </div>
-
-            {% endfor %}
-        </div>
-
-        {% endblock %}
+    {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
+    <div class="row flashes">
+        <h5>{{ message }}</h5>
     </div>
+    {% endfor %} {% endif %} {% endwith %}
+
+    <!--content-->
+
+    <div class="container box-container" style="display: table;">
+        {% for user in users %}
+        <div class="box">
+            <p>Firstname: {{ user.First }}</p>
+            <p>Lastname: {{ user.Last }}</p>
+            <p>Date of Birth: {{ user.dob }}</p>
+            <p>Phone Number: {{ user.Tel }}</p>
+            <p>Postcode: {{ user.Postcode }}</p>
+            <p>Email: {{ user.Email }}</p>
+            <form method="POST" action="{{url_for('user_details', existing_user=user._id)}}">
+                <span style="top:0.5em">
+                    <button style="box-shadow: none;" tabindex="1" type="submit" class="btn btn-danger">Delete</button>
+                </span>
+            </form>
+        </div>
+        {% endfor %}
+    </div>
+    {% endblock %}
+</div>
