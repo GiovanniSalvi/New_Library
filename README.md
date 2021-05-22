@@ -60,15 +60,17 @@ Welcome! [github.com](https://github.com/GiovanniSalvi/New_Library)
 
 * Feature5: Remove_book link leads to search tab input.Typing the title it'll give access to the book title requested.Click button "remove" to delete the book selected.
 
-* Feature6: Registration link leads to form for adding new users to the database filling all required fields.Clicking Submit button will add a new user on the libray database.
+* Feature6: Registration link leads to form for adding new users to the database filling all required fields.Clicking Submit button will add a new user in the libray database.
 
 * Feature7: Clicking button "Edit" inside the boxes in the homepage, which contain books titles in stock, leads users to a form to edit the item.
+
+* Feature8: UserList link leads to a fully displayed list of all users registered in the library's database.
+
+* Feature9: Clicking a delete button inside the box where users details are showed will remove users details from the database. 
 
 ### Features left to implement
 
 * Implement the app, adding a login functionality for users(Librarians) in the Homepage.
-
-* Implement the app, adding search tab and input form to search remove or modify users from the library database.
 
 * Implement the app, adding E-Commerce functionality.
 
@@ -143,7 +145,9 @@ and a [search tab](https://github.com/GiovanniSalvi/New_Library/blob/master/stat
     
     • task:[https://validator.w3.org/nu/](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fgithub.com%2FGiovanniSalvi%2FNew_Library%2Fblob%2Fmaster%2Ftemplates%2Ftask.html)
 
-    • user_list: [https://validator.w3.org/nu/]()
+    • user_list: [https://validator.w3.org/nu/](https://validator.w3.org/nu/?doc=https%3A%2F%2Fgithub.com%2FGiovanniSalvi%2FNew_Library%2Fblob%2Fmaster%2Ftemplates%2Fuser_list.html)
+
+    • user_details [https://validator.w3.org/nu/](https://validator.w3.org/nu/?doc=https%3A%2F%2Fgithub.com%2FGiovanniSalvi%2FNew_Library%2Fblob%2Fmaster%2Ftemplates%2Fuser_details.html)
 
 
 * HTML: [https://webformatter.com/](https://webformatter.com/)
@@ -204,11 +208,11 @@ and a [search tab](https://github.com/GiovanniSalvi/New_Library/blob/master/stat
 
   8. As a user I want to find a quick way to edit a book-title selected.
 
-  • On the Homepage  all books in the archive are displayed wrapped in a box,clicking on the button "edit" at the bottom of the box leads user to an editable form to complete the operation.Updates the required input fields then clicking the button "update" at the bottom of the form.A flash message shows if operation was successful.
+  • In the Homepage  all books in the archive are displayed wrapped in a box,clicking on the button "edit" at the bottom of the box leads user to an editable form to complete the operation.Updates the required input fields then clicking the button "update" at the bottom of the form.A flash message shows if operation was successful.
 
   9. As a user I want to find all clients details.
 
-  • 
+  • User list link in the navabar leads to a fully displayed list of all users registered in the library's database, users details are contained in a box which provides first and lastname of the user, an email address , data of birth, phone nuber and a post code.Clicking on the 'delete' button inside the box allows you to remove the user from the library.A search tab, above the boxes, allows to find any users already registered in the library inserting the 'firstname' of the user, in the search tab input.
   
   
 ### The project has beeen designed to make pages render well on a variety of devices and window or screen sizes such as:
