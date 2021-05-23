@@ -386,3 +386,9 @@ li span {
         margin:0;
     }
 }
+@media screen and (max-width: 680px) {
+    .users {
+        max-width: 20em!important;
+        display: block;
+    }
+}
