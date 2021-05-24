@@ -2,7 +2,7 @@ Welcome! [github.com](https://github.com/GiovanniSalvi/New_Library)
 
 # UX
 
-## I realized this project as part of the Data centric development module that I am completing at "code academy" training course.
+## I realized this project as part of the Data centric development module that I am attending at "code academy" training course.
 
 ### The App is built for a librarian or whoever is in charge to run,create or manipulate data for a library.
 
