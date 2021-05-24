@@ -54,7 +54,7 @@ Welcome! [github.com](https://github.com/GiovanniSalvi/New_Library)
 
 * Feature2: Homepage's body provides a background hero-image, an home-button  which redirects users to the homepage, a complete list of book titles in the database, both "available" and "sold" status ('sold' ones are supposed to be removed)and a social media links footer.
 
-* Feature3: Homepage provides any books in the library, wrapped in a box.Click button "Sell" inside the box to purchase the item selected if books status is Available.
+* Feature3: Homepage provides any books in the library, wrapped in a box.Clicking button "Sell" inside the box to purchase the item selected if books status is Available.
 
 * Feature4: Add_book nav link leads to form for adding new books to the database filling all required fields.Clicking Add button at the bottom page will add a new book title in the libray.
 
