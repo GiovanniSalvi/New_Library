@@ -165,7 +165,7 @@ and a [search tab](https://github.com/GiovanniSalvi/New_Library/blob/master/stat
 * JAVASCRIPT: [https://webformatter.com/](https://webformatter.com/)
 
 
-* PYTHON: [http://pep8online.com/](http://pep8online.com/checkresult)
+* PYTHON: [http://pep8online.com/](http://pep8online.com/checkresult#)
 
 
 ### The quality of the website was measured using Google Lighthouse:
