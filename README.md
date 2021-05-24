@@ -58,7 +58,7 @@ Welcome! [github.com](https://github.com/GiovanniSalvi/New_Library)
 
 * Feature4: Add_book nav link leads to a form for adding new books to the database filling all required fields.Clicking Add button at the bottom page will add a new book title in the library.
 
-* Feature5: Remove_book link leads to search tab input.Typing the title it'll give access to the book title requested.Click button "remove" to delete the book selected.
+* Feature5: Remove_book link leads to search tab input.Typing the title to find out the book title requested from the archive. Clicking the  button "remove" to delete the book selected.
 
 * Feature6: Registration link leads to form for adding new users to the database filling all required fields.Clicking Submit button will add a new user in the libray database.
 
