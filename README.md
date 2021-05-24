@@ -62,7 +62,7 @@ Welcome! [github.com](https://github.com/GiovanniSalvi/New_Library)
 
 * Feature6: Registration link leads to a form for adding new users to the database filling all required fields.Clicking Submit button will add a new user in the libray users list.
 
-* Feature7: Clicking button "Edit" inside the boxes in the homepage, which contain books titles in stock, leads users to a form to edit the item.
+* Feature7: Clicking button "Edit" inside the boxes in the homepage(which contain books titles in the archive) leads to a form to update the books details.
 
 * Feature8: UserList link leads to a fully displayed list of all users registered in the library's database.
 
