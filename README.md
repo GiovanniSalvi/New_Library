@@ -171,7 +171,7 @@ and a [search tab](https://github.com/GiovanniSalvi/New_Library/blob/master/stat
 
 ### The quality of the website was measured using Google Lighthouse:
 
-* Chrome lighthouse Tool:(<img width="1272" alt="Google lighthouse" src="https://user-images.githubusercontent.com/61980577/114251782-9d6f4980-99a2-11eb-95e0-4448a491d57b.png">)
+* Chrome lighthouse Tool: <img width="1272" alt="Google lighthouse" src="https://user-images.githubusercontent.com/61980577/114251782-9d6f4980-99a2-11eb-95e0-4448a491d57b.png">
 
 ---
 
