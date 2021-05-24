@@ -64,7 +64,7 @@ Welcome! [github.com](https://github.com/GiovanniSalvi/New_Library)
 
 * Feature7: Clicking button "Edit" inside the boxes in the homepage(which contain books titles in the archive) leads to a form to update the books details.
 
-* Feature8: UserList link leads to a fully displayed list of all users registered in the library's database.
+* Feature8: UserList link leads to a fully displayed list of all users registered in the library.
 
 * Feature9: Clicking a delete button inside the box where users details are showed will remove users details from the database. 
 
