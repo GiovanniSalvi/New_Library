@@ -52,7 +52,7 @@ Welcome! [github.com](https://github.com/GiovanniSalvi/New_Library)
 
 * Feature1: Menu-bar provides a fluid navigation through the site.
 
-* Feature2: Homepage's body provides a background hero-image, an home-button  which redirects users to the homepage, a complete list of book titles in the database, both "available" and "sold"(whom are supposed to be removed)and a social media links footer.
+* Feature2: Homepage's body provides a background hero-image, an home-button  which redirects users to the homepage, a complete list of book titles in the database, both "available" and "sold" status ('sold' ones are supposed to be removed)and a social media links footer.
 
 * Feature3: Homepage provides any books in the library, wrapped in a box.Click button "Sell" inside the box to purchase the item selected if books status is Available.
 
