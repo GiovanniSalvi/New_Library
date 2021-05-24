@@ -74,7 +74,7 @@ Welcome! [github.com](https://github.com/GiovanniSalvi/New_Library)
 
 * Implement the app, adding E-Commerce functionality.
 
-* Implement the app, adding on mongo.db a new database collection with Superusers who are supposed to use the website,a librarian or anyone in charge to run Library's database.
+* Implement the app, adding on mongo.db a new database collection with Superusers who are supposed to use this app, a librarian or anyone in charge to run Library's database.
 
 * Implement the app, adding a functionality which allows to calculate the monthly Library revenue.
 
