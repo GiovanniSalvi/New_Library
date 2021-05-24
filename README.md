@@ -103,8 +103,8 @@ Welcome! [github.com](https://github.com/GiovanniSalvi/New_Library)
 ## Testing
 
 ### In order to navigate easily through the site:
-* In the homepage, users can find all [books title](https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/test%20homepage.png) in the archive.At the top of the page are displayed [navbar](https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/test%20navbar.png) links to navigate through the app.
-and a [search tab](https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/test%20search%20tab.png) to explore site contents just below
+* In the homepage, users can find all [books title](https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/test%20homepage.png) in the archive.At the top of the page are displayed [navbar](https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/test%20navbar.png) links to navigate through the app 
+and a [search tab](https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/test%20search%20tab.png) to explore site contents just below.
 
 * Add_book link leads to the [form](https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/test%20add%20form.png) to adding new books to the archive
 
