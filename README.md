@@ -284,7 +284,7 @@ and a [search tab](https://github.com/GiovanniSalvi/New_Library/blob/master/stat
 
     10. Check if the application is running, clicking 'Open app' button top left of the page on your app Heroku dashboard.
 
-*   For any issues with the deployment you can check files and logs with following commands: heroku run bash -a app, heroku logs, heroku         logs --tail.
+*   For any issues with the deployment you can check files and logs with following commands: heroku run bash -a app, heroku  logs --tail.
 ---
 
 ## Credits
