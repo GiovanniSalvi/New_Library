@@ -106,7 +106,7 @@ Welcome! [github.com](https://github.com/GiovanniSalvi/New_Library)
 * In the homepage, users can find all [books title](https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/test%20homepage.png) in the archive.At the top of the page are displayed [navbar](https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/test%20navbar.png) links to navigate through the app 
 and a [search tab](https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/test%20search%20tab.png) to explore site contents just below.
 
-* Add_book link leads to the [form](https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/test%20add%20form.png) to adding new books to the archive
+* Add_book link leads to the [form](https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/test%20add%20form.png) for adding new books to the archive
 
 * Remove_book link leads to a [search tab](https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/test%20removeBook.png) to find the book title users are supposed to be removed, clicking delete button below the book features.
 
