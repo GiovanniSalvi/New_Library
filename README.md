@@ -153,7 +153,7 @@ and a [search tab](https://github.com/GiovanniSalvi/New_Library/blob/master/stat
 * HTML: [https://webformatter.com/](https://webformatter.com/)
 
 
-* CSS: [https://jigsaw.w3.org/css-validator/](https://validator.w3.org/nu/?doc=https://giovannisalvi.github.io/New_Library/#textarea)
+* CSS: [https://jigsaw.w3.org/css-validator/](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fgithub.com%2FGiovanniSalvi%2FNew_Library%2Fblob%2Fmaster%2Fstatic%2Fcss%2Fstyle.css)
 
 * CSS: [https://webformatter.com/](https://webformatter.com/)
 
