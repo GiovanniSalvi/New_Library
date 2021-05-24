@@ -60,13 +60,13 @@ Welcome! [github.com](https://github.com/GiovanniSalvi/New_Library)
 
 * Feature5: Remove_book link leads to a search tab input.Typing the title to find out the book title requested from the archive. Clicking the  button "remove" to delete the book selected.
 
-* Feature6: Registration link leads to a form for adding new users to the database filling all required fields.Clicking Submit button will add a new user in the libray users list.
+* Feature6: Registration link leads to a form for adding new users to the database filling all required fields.Clicking Submit button will add a new user in the libray users-list.
 
 * Feature7: Clicking button "Edit" inside the boxes in the homepage(which contain books titles in the archive) leads to a form to update the books details.
 
 * Feature8: UserList link leads to a fully displayed list of all users registered in the library.
 
-* Feature9: Clicking a delete button inside the box where users details are showed will remove users details from the database. 
+* Feature9: Clicking the button 'Delete', inside the box where users details are showed, will remove users from the Libray's users-list. 
 
 ### Features left to implement
 
@@ -74,9 +74,9 @@ Welcome! [github.com](https://github.com/GiovanniSalvi/New_Library)
 
 * Implement the app, adding E-Commerce functionality.
 
-* Implement the app, adding on mongo.db a new database collection with users who are supposed to run the website,a librarian or anyone working in a library, which is the reason why this app is built.
+* Implement the app, adding on mongo.db a new database collection with Superusers who are supposed to use the website,a librarian or anyone in charge to run Library's database.
 
-* Implement the app, adding a functionality which allows to calculate the monthly library revenue.
+* Implement the app, adding a functionality which allows to calculate the monthly Library revenue.
 
 * Implement the app, adding an Authentication and Security functionality.
 
