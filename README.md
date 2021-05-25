@@ -115,7 +115,7 @@ and a [search tab](https://github.com/GiovanniSalvi/New_Library/blob/master/stat
 * User_list link leads to a [page](https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/userList.png) where all registered users are displayed. Users details contained in a box include all required fields to be registered. A [delete](https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/deleteButton.png) button at the bottom of the box allows to one's user-details to be removed.
 
 * Every box in the homepage contains a single product.[Edit button](https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/test%20button.png) positioned at the bottom of the box leads users to a [form](https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/updateBook.png) to update any books details in the Library.
-['Sell!'button](https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/test%20button.png) next to edit button leads to a [form](https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/sellBooks.png) to fill with users/buyer email in order to complete the purchase procedure.
+['Sell!'button](https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/test%20button.png) next to edit button leads to a [form]() to fill with users/buyer email in order to complete the purchase procedure.
 
 * The [footer](https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/test%20footer.png) provides social network links.
 
