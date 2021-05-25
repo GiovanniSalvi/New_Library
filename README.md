@@ -42,7 +42,7 @@ Welcome! [github.com](https://github.com/GiovanniSalvi/New_Library)
 
 * [Sellbook](https://github.com/GiovanniSalvi/New_Library/blob/master/static/mockups/sellBook.png)
 
-* [Userslist](https://github.com/GiovanniSalvi/New_Library/blob/master/static/images/User-list.png)
+* [Userslist](https://github.com/GiovanniSalvi/New_Library/blob/master/static/mockups/User-list.png)
 
 ---
 
