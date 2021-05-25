@@ -177,43 +177,43 @@ and a [search tab](https://github.com/GiovanniSalvi/New_Library/blob/master/stat
 
 ### User stories :
 
-1. As a User I want navigate the site to find what I need easily.
+1. As an User I want to navigate the site to find easily what I need.
 
-  • In every page of the site it's possible to navigate through easily, Home button displayed at the top right leads back from every pages of the site to the Homepage.
+  • In every page of the site it's possible to navigate through easily, Homepage button displayed at the top right leads back from every pages of the site to the Homepage.
   
   • Navigation bar is easily to find  at the top of the Homepage.
 
-2. As a User I want to have a quick access to the page which allows me to register new customer/users in the library database.
+2. As an User I want to have a quick access to the page which allows me to register new customer/users in the Library.
 
-  • Register link which leads to the form to fill(all fields are required) in order to register new potential customer to the database is in the nav-bar of the Homepage , clicking button "submit" at the bottom of the form in order to complete the operation.A flash message shows if operation is successful.
+  • Register link which leads to the form to be filled (all fields are required) in order to register new potential customers to the Library is in the nav-bar, clicking button "submit" at the bottom of the form in order to complete the operation.A flash message appears if operation was successful.
 
-3. As a User I want to find a simple way to check the status, location and others details of the books in the library.
+3. As an User I want to find a simple way to check the status, location and others details of the books in the library.
 
-  • In the Homepage users can find displayed any books currently in stock.
+  • In the Homepage users can find displayed all books currently in stock.
 
-4. As a user I want to find a clear way to add a new book in the library's database.
+4. As an user I want to find a clear way to add a new book in the library's database.
 
-  • Add_book link leads users to the form(all fields are required) which allows to add new books, filling the required details of the new item,than click the button "add" at the end of the form.A flash message shows if operation is successful.
+  • Add_book link leads users to the form(all fields are required) which allows to add new books, filling the required fields of the new item than click the button "add" at the end of the form.A flash message appears if operation was successful.
 
-5. As a user I want to find an easy way to remove a book from the database.
+5. As an user I want to find an easy way to remove a book from the Library.
 
-  • Remove link is at the top of the page, clicking on remove navbar-link leads user to a search tab which allows to find the book by its title, if the  book status is available, so item is currently in the library, click remove button at the bottom of the box to complete the operation.A flash message shows if operation is successful.
+  • Remove link is at the top of the page, clicking on remove navbar-link allows user to find the book typing its title in the search input.If the  book status is available, so item is currently in stock, click 'remove' button at the bottom of the box to complete the operation.A flash message appears if operation was successful.
   
- 6. As a user I want to find a quick way to sell a book requested by a potential customer.
+ 6. As an user I want to find a quick way to sell a book requested by a potential customer.
  
-  • In the search_book page navigabile by search_book navbar-link from the Homepage,a search tab allows to find any book in the library, if the book selected has a status of "Available" it makes possible the item saleable, clicking the "Sell Book" button at the bottom of the box leads to a users details form to complete the purchase.A flash message shows if operation is successful.
+  • In the Homepage a search input allows users to find every books in the Library, if the book selected has a status of "Available",clicking the "Sell Book" button at the bottom of the box leads to a confirmation email form to complete the purchase inserting the registered users email in the input.A flash message appears if operation was successful.
   
- 7. As a user I want to access to the social networks in order to advertise or share new info about Library catalogue.
+ 7. As a user I want to access to the social networks in order to advertise or share new info about Library's catalogue.
  
-  • The footer is  at the bottom of any pages and provides few links to the most popular social networks across the worls(Facebook,Twitter)and other links to important platforms like Linkedin and Youtube.
+  • The footer is  at the bottom of any pages and provides few links to the most popular social networks across the worls Facebook,Twitter and other links to important platforms like Linkedin and Youtube.
 
-  8. As a user I want to find a quick way to edit a book-title selected.
+  8. As a user I want to find a quick way to edit a books details.
 
-  • In the Homepage  all books in the archive are displayed wrapped in a box,clicking on the button "edit" at the bottom of the box leads user to an editable form to complete the operation.Updates the required input fields then clicking the button "update" at the bottom of the form.A flash message shows if operation was successful.
+  • In the Homepage  all books  are displayed contained in a box,clicking on the button "edit" at the bottom of the box leads users to an editable form to complete the operation.Update the required input fields then clicking the button "update" at the bottom of the form.A flash message appears if operation was successful.
 
-  9. As a user I want to find all clients details.
+  9. As a user I want to find all users details.
 
-  • User list link in the navabar leads to a fully displayed list of all users registered in the library's database, users details are contained in a box which provides first and lastname of the user, an email address , data of birth, phone nuber and a post code.Clicking on the 'delete' button inside the box allows you to remove the user from the library.A search tab, above the boxes, allows to find any users already registered in the library inserting the 'firstname' of the user, in the search tab input.
+  • User-list link in the navabar leads to a fully displayed list of all users registered in the Library, users details are contained in a box which provides first and lastname of the user, an email address , data of birth, phone nuber and a PostCode.Clicking on the 'delete' button inside the box allows you to remove the user from the Library.A search tab, above the boxes, allows to find any users already registered in the Library inserting the 'firstname' of the user, in the search input.
   
   
 ### The project has beeen designed to make pages render well on a variety of devices and window or screen sizes such as:
